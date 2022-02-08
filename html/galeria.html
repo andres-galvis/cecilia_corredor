@@ -28,9 +28,10 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
-                        <a class="nav-link" href="../html/galeria.html">Galeria</a>
+                        <a class="nav-link" href="../index.html">Home</a>
+                        <a class="nav-link active" aria-current="page" href="../html/galeria.html">Galeria</a>
                         <a class="nav-link" href="../html/about.html">Sobre mí</a>
+                        <a class="nav-link" href="../html/exposiciones.html">Exposiciones y reconocimientos</a>
                         <a class="nav-link" href="../html/contacto.html">Contacto</a>
                     </div>
                 </div>
@@ -38,7 +39,7 @@
         </nav>
     </header>
 
-    <main class=" main_galeria">
+    <main class="main_galeria">
 
         <div class="main_gallery">
 
@@ -193,7 +194,7 @@
             <article class="img_1">
                 <div id="carouselExampleControls1" class="carousel slide" data-interval="false">
                     <div class="carousel-inner">
-                        <div class="carousel-item active">
+                        <div class="carousel-item active" id="img--1">
                             <div class="d-block w-100" id="item1" alt=""> </div>
                         </div>
                         <div class="carousel-item">
@@ -213,7 +214,7 @@
                 </div>
             </article>
 
-            <article class="img_2">
+            <article class="img_2" id="img--2">
                 <div id="carouselExampleControls2" class="carousel slide" data-interval="false">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -236,7 +237,7 @@
                 </div>
             </article>
 
-            <article class="img_3">
+            <article class="img_3" id="img--3">
                 <div id="carouselExampleControls3" class="carousel slide" data-interval="false">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -259,7 +260,7 @@
                 </div>
             </article>
 
-            <article class="img_4">
+            <article class="img_4" id="img--4">
                 <div id="carouselExampleControls4" class="carousel slide" data-interval="false">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -282,7 +283,7 @@
                 </div>
             </article>
 
-            <article class="img_5">
+            <article class="img_5" id="img--5">
                 <div id="carouselExampleControls5" class="carousel slide" data-interval="false">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -305,7 +306,7 @@
                 </div>
             </article>
 
-            <article class="img_6">
+            <article class="img_6" id="img--6">
                 <div id="carouselExampleControls6" class="carousel slide" data-interval="false">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -328,7 +329,7 @@
                 </div>
             </article>
 
-            <article class="img_7">
+            <article class="img_7" id="img--7">
                 <div id="carouselExampleControls7" class="carousel slide" data-interval="false">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -351,7 +352,7 @@
                 </div>
             </article>
 
-            <article class="img_8">
+            <article class="img_8" id="img--8">
                 <div id="carouselExampleControls8" class="carousel slide" data-interval="false">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -374,7 +375,7 @@
                 </div>
             </article>
 
-            <article class="img_9">
+            <article class="img_9" id="img--9">
                 <div id="carouselExampleControls9" class="carousel slide" data-interval="false">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -397,7 +398,7 @@
                 </div>
             </article>
 
-            <article class="img_10">
+            <article class="img_10" id="img--10">
                 <div id="carouselExampleControls10" class="carousel slide" data-interval="false">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -418,7 +419,32 @@
                         <span class="visually-hidden">Next</span>
                     </button>
                 </div>
+                
             </article>
+
+             <section class="btn--offcanvas">
+
+                <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Galería</button>
+
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Galería de imágenes</h5>
+                      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <a href="#img--1"><img src="../img/img_galeria/img11_ver.jpg" alt=""></a>
+                        <a href="#img--2"><img src="../img/img_galeria/img13_hz.jpg" alt=""></a>
+                        <a href="#img--3"><img src="../img/img_galeria/img16_ver.jpg" alt=""></a>
+                        <a href="#img--4"><img src="../img/img_galeria/img14_hz.jpg" alt=""></a>
+                        <a href="#img--5"><img src="../img/img_galeria/img15_hz.jpg" alt=""></a>
+                        <a href="#img--6"><img src="../img/img_galeria/img17_ver.jpg" alt=""></a>
+                        <a href="#img--7"><img src="../img/img_galeria/img18_hz.jpg" alt=""></a>
+                        <a href="#img--8"><img src="../img/img_galeria/img21_ver.jpg" alt=""></a>
+                        <a href="#img--9"><img src="../img/img_galeria/img19_hz.jpg" alt=""></a>
+                        <a href="#img--10"><img src="../img/img_galeria/img20_ver.jpg" alt=""></a>
+                    </div>
+                  </div>
+            </section>
 
 
         </section>
