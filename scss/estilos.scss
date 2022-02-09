@@ -3901,11 +3901,11 @@
             display: grid;
             grid-template-columns: repeat(5, 1fr);
             grid-template-rows: repeat(5, 1fr);
-            grid-template-areas: "a1 a1 a2 a3 a3"
-                "a1 a1 a2 a3 a3"
-                "a4 a4 a4 a4 a4"
-                "a5 a5 a7 a6 a6"
-                "a5 a5 a7 a6 a6";
+            grid-template-areas: "a4 a4 a2 a3 a3"
+                                 "a1 a1 a2 a3 a3"
+                                 "a1 a1 a0 a0 a0"
+                                 "a5 a5 a7 a6 a6"
+                                 "a5 a5 a7 a6 a6";
 
             .hoja1 {
                 display: block;
@@ -4478,8 +4478,8 @@
             height: 100%;
 
             .hoja1{
-                width: 50%;
-                height: 50%;
+                width: 60%;
+                height: 60%;
             }
         }
     }
