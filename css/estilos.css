@@ -2824,7 +2824,13 @@
 @media screen and (min-width: 1200px) {
   .main_index {
     width: 100%;
-    height: 900px; }
+    height: 1000px; }
+    .main_index .contenedor_main_responsive {
+      width: 100%;
+      height: 100%; }
+      .main_index .contenedor_main_responsive .hoja1 {
+        width: 50%;
+        height: 50%; }
   /**footer**/
   .footer_main {
     width: 100%;

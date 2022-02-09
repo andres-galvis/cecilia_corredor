@@ -4471,7 +4471,17 @@
 
     .main_index{
         width: 100%;
-        height: 900px;
+        height: 1000px;
+
+        .contenedor_main_responsive{
+            width: 100%;
+            height: 100%;
+
+            .hoja1{
+                width: 50%;
+                height: 50%;
+            }
+        }
     }
 
     /**footer**/
