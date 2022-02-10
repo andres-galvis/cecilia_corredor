@@ -2558,7 +2558,7 @@
 
     .main_second {
         width: 100%;
-        height: 1840px;
+        height: 1940px;
 
         .about_contain {
             width: 100%;
@@ -2602,7 +2602,7 @@
 
                 & .cuadro1 {
                     width: 100%;
-                    height: 45%;
+                    height: 50%;
                 }
 
                 & .cuadro2 {
@@ -3114,8 +3114,7 @@
     #main_xl {
         width: 100%;
         height: 1500px;
-        padding-top: 20px;
-        padding-bottom: 20px;
+        
 
         #contacto_xl {
             width: 100%;
@@ -3125,6 +3124,8 @@
             grid-template-rows: 50% 50%;
             grid-template-areas: "a1"
                 "a2";
+                padding-top: 10px;
+                padding-bottom: 20px;
 
             .mapa_google {
                 grid-area: a2;
@@ -3588,8 +3589,6 @@
     #main_xl {
         width: 100%;
         height: 1500px;
-        padding-top: 20px;
-        padding-bottom: 20px;
 
         #contacto_xl {
             width: 100%;
@@ -3599,6 +3598,9 @@
             grid-template-rows: 50% 50%;
             grid-template-areas: "a1"
                 "a2";
+
+            padding-top: 10px;
+            padding-bottom: 20px;
 
 
             .mapa_google {
@@ -3886,6 +3888,54 @@
         }
     }
 
+
+    /****sobremi***/
+
+    .main_second {
+
+        width: 100%;
+        height: 1200px;
+
+        .about_contain {
+            width: 100%;
+            height: 100%;
+            grid-template-rows: 10% 40% 50%;
+            grid-template-columns: 50% 50%;
+            grid-template-areas: "a1 a1"
+                "a2 a2"
+                "a3 a3";
+
+            .text_about {
+
+                width: 100%;
+                height: 100%;
+
+                & p {
+                    font-size: 18px;
+                }
+            }
+
+            .img_about {
+                width: 100%;
+                height: 100%;
+
+                & .cuadro1 {
+                    width: 45%;
+                    height: auto;
+                }
+
+                & .cuadro2 {
+                    width: 45%;
+                    height: auto;
+                }
+            }
+        }
+    }
+
+
+
+
+
 }
 
 @media screen and (min-width:1023px) {
@@ -3902,10 +3952,10 @@
             grid-template-columns: repeat(5, 1fr);
             grid-template-rows: repeat(5, 1fr);
             grid-template-areas: "a4 a4 a2 a3 a3"
-                                 "a1 a1 a2 a3 a3"
-                                 "a1 a1 a0 a0 a0"
-                                 "a5 a5 a7 a6 a6"
-                                 "a5 a5 a7 a6 a6";
+                "a5 a5 a2 a3 a3"
+                "a5 a5 a0 a0 a0"
+                "a1 a1 a7 a6 a6"
+                "a1 a1 a7 a6 a6";
 
             .hoja1 {
                 display: block;
@@ -4467,17 +4517,17 @@
 }
 
 
-@media screen and (min-width:1200px){
+@media screen and (min-width:1200px) {
 
-    .main_index{
+    .main_index {
         width: 100%;
         height: 1000px;
 
-        .contenedor_main_responsive{
+        .contenedor_main_responsive {
             width: 100%;
             height: 100%;
 
-            .hoja1{
+            .hoja1 {
                 width: 60%;
                 height: 60%;
             }
@@ -4486,78 +4536,72 @@
 
     /**footer**/
 
-    .footer_main{
+    .footer_main {
         width: 100%;
         height: 550px;
 
-        .contain_footer{
+        .contain_footer {
             width: 100%;
             height: 100%;
-            grid-template-rows: repeat(4,1fr);
-            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(4, 1fr);
+            grid-template-columns: repeat(4, 1fr);
             grid-template-areas: "a1 a2 a3 a3"
-                                 "a0 a2 a3 a3"
-                                 "a4 a4 a6 a6"
-                                 "a7 a7 a7 a7";
+                "a0 a2 a3 a3"
+                "a4 a4 a6 a6"
+                "a7 a7 a7 a7";
 
-            .logo_footer{
+            .logo_footer {
                 grid-area: a1;
-                background-color: aqua;
                 width: 100%;
                 height: 100%;
             }
 
-            .contenedor_2{
+            .contenedor_2 {
                 grid-area: a2;
                 width: 100%;
                 height: 100%;
-                background-color: blueviolet;
             }
 
-            .contenedor_1{
+            .contenedor_1 {
                 width: 100%;
                 height: 100%;
-                background-color: #e4c954;
                 grid-area: a3;
 
-                & p{
+                & p {
                     font-size: 18px;
                 }
             }
 
-            .contenedor_3{
+            .contenedor_3 {
                 width: 100%;
                 height: 100%;
                 grid-area: a4;
-                background-color: aquamarine;
                 padding-bottom: 20px;
 
-                .gmail{
-    
-                    & p{
+                .gmail {
+
+                    & p {
                         font-size: 18px;
                     }
                 }
 
-                .call{
+                .call {
 
-                    & p{
+                    & p {
                         font-size: 18px;
                     }
                 }
             }
 
-            .contenedor_5{
+            .contenedor_5 {
                 width: 100%;
                 height: 100%;
                 grid-area: a6;
-                background-color: skyblue;
             }
 
-            .contenedor_copy{
+            .contenedor_copy {
                 width: 100%;
                 height: 100%;
-                background-color: purple;
                 grid-area: a7;
                 font-size: 20px;
             }
@@ -4566,47 +4610,47 @@
 
     /****contacto****/
 
-    #main_xl{
+    #main_xl {
         width: 100%;
         height: 1000px;
 
-        #contacto_xl{
+        #contacto_xl {
             width: 100%;
             height: 100%;
             display: grid;
             grid-template-columns: 50% 50%;
-            grid-template-rows: repeat(4,1fr);
+            grid-template-rows: repeat(4, 1fr);
             grid-template-areas: "a1 a2"
-                                 "a1 a2"
-                                 "a1 a2"
-                                 "a1 a2";
+                "a1 a2"
+                "a1 a2"
+                "a1 a2";
 
-            .mapa_google{
+            .mapa_google {
                 padding: 40px 40px;
             }
 
-            .contenedor_facebook{
+            .contenedor_facebook {
 
-                & p{
+                & p {
                     font-size: 18px;
                 }
             }
 
-            .contenedor_telefono{
+            .contenedor_telefono {
 
-                & p{
+                & p {
                     font-size: 18px;
                 }
             }
 
-            .contenedor_correo{
+            .contenedor_correo {
 
-                & p{
+                & p {
                     font-size: 18px;
                 }
             }
         }
-        
+
     }
 
 

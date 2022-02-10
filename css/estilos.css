@@ -1704,7 +1704,7 @@
   /**************seccion about***********/
   .main_second {
     width: 100%;
-    height: 1840px; }
+    height: 1940px; }
     .main_second .about_contain {
       width: 100%;
       height: 100%;
@@ -1731,7 +1731,7 @@
         grid-area: a3; }
         .main_second .about_contain .img_about .cuadro1 {
           width: 100%;
-          height: 45%; }
+          height: 50%; }
         .main_second .about_contain .img_about .cuadro2 {
           width: 100%;
           height: 50%;
@@ -2041,16 +2041,16 @@
   /******************contacto*************/
   #main_xl {
     width: 100%;
-    height: 1500px;
-    padding-top: 20px;
-    padding-bottom: 20px; }
+    height: 1500px; }
     #main_xl #contacto_xl {
       width: 100%;
       height: 100%;
       display: grid;
       grid-template-columns: 100%;
       grid-template-rows: 50% 50%;
-      grid-template-areas: "a1" "a2"; }
+      grid-template-areas: "a1" "a2";
+      padding-top: 10px;
+      padding-bottom: 20px; }
       #main_xl #contacto_xl .mapa_google {
         grid-area: a2;
         width: 100%;
@@ -2327,16 +2327,16 @@
   /***************contacto seccion*****************/
   #main_xl {
     width: 100%;
-    height: 1500px;
-    padding-top: 20px;
-    padding-bottom: 20px; }
+    height: 1500px; }
     #main_xl #contacto_xl {
       width: 100%;
       height: 100%;
       display: grid;
       grid-template-columns: 100%;
       grid-template-rows: 50% 50%;
-      grid-template-areas: "a1" "a2"; }
+      grid-template-areas: "a1" "a2";
+      padding-top: 10px;
+      padding-bottom: 20px; }
       #main_xl #contacto_xl .mapa_google {
         grid-area: a2;
         width: 100%;
@@ -2517,7 +2517,31 @@
             padding-top: 10px; }
           .main_galeria .galeria_carousel .btn--offcanvas .offcanvas-body a:hover {
             transition: all 0.3s ease;
-            opacity: 60%; } }
+            opacity: 60%; }
+  /****sobremi***/
+  .main_second {
+    width: 100%;
+    height: 1200px; }
+    .main_second .about_contain {
+      width: 100%;
+      height: 100%;
+      grid-template-rows: 10% 40% 50%;
+      grid-template-columns: 50% 50%;
+      grid-template-areas: "a1 a1" "a2 a2" "a3 a3"; }
+      .main_second .about_contain .text_about {
+        width: 100%;
+        height: 100%; }
+        .main_second .about_contain .text_about p {
+          font-size: 18px; }
+      .main_second .about_contain .img_about {
+        width: 100%;
+        height: 100%; }
+        .main_second .about_contain .img_about .cuadro1 {
+          width: 45%;
+          height: auto; }
+        .main_second .about_contain .img_about .cuadro2 {
+          width: 45%;
+          height: auto; } }
 
 @media screen and (min-width: 1023px) {
   .main_index {
@@ -2530,7 +2554,7 @@
       display: grid;
       grid-template-columns: repeat(5, 1fr);
       grid-template-rows: repeat(5, 1fr);
-      grid-template-areas: "a4 a4 a2 a3 a3" "a1 a1 a2 a3 a3" "a1 a1 a0 a0 a0" "a5 a5 a7 a6 a6" "a5 a5 a7 a6 a6"; }
+      grid-template-areas: "a4 a4 a2 a3 a3" "a5 a5 a2 a3 a3" "a5 a5 a0 a0 a0" "a1 a1 a7 a6 a6" "a1 a1 a7 a6 a6"; }
       .main_index .contenedor_main .hoja1 {
         display: block;
         grid-area: a1; }
@@ -2843,18 +2867,15 @@
       grid-template-areas: "a1 a2 a3 a3" "a0 a2 a3 a3" "a4 a4 a6 a6" "a7 a7 a7 a7"; }
       .footer_main .contain_footer .logo_footer {
         grid-area: a1;
-        background-color: aqua;
         width: 100%;
         height: 100%; }
       .footer_main .contain_footer .contenedor_2 {
         grid-area: a2;
         width: 100%;
-        height: 100%;
-        background-color: blueviolet; }
+        height: 100%; }
       .footer_main .contain_footer .contenedor_1 {
         width: 100%;
         height: 100%;
-        background-color: #e4c954;
         grid-area: a3; }
         .footer_main .contain_footer .contenedor_1 p {
           font-size: 18px; }
@@ -2862,7 +2883,6 @@
         width: 100%;
         height: 100%;
         grid-area: a4;
-        background-color: aquamarine;
         padding-bottom: 20px; }
         .footer_main .contain_footer .contenedor_3 .gmail p {
           font-size: 18px; }
@@ -2871,12 +2891,10 @@
       .footer_main .contain_footer .contenedor_5 {
         width: 100%;
         height: 100%;
-        grid-area: a6;
-        background-color: skyblue; }
+        grid-area: a6; }
       .footer_main .contain_footer .contenedor_copy {
         width: 100%;
         height: 100%;
-        background-color: purple;
         grid-area: a7;
         font-size: 20px; }
   /****contacto****/
