@@ -122,10 +122,11 @@
         align-content: center;
         text-align: center;
         opacity: 0%;
-        color: #fff; }
-        .main_galeria .main_gallery .img1 .contenedorimg1:hover {
-          opacity: 80%;
-          transition: all 0.3s ease; }
+        color: #fff;
+        /*&:hover {
+                    opacity: 80%;
+                    transition: all 0.3s ease;
+                }*/ }
     .main_galeria .main_gallery .img2 {
       width: 100%;
       height: 100%;
@@ -541,7 +542,8 @@
 /**************************seccion contacto*************************/
 .main_second {
   width: 100%;
-  height: 820px; }
+  /* height: 820px; */
+  height: 100%; }
   .main_second .contenedor_contacto {
     width: 100%;
     height: 100%;
@@ -1016,7 +1018,8 @@
   /**************seccion about***********/
   .main_second {
     width: 100%;
-    height: 1650px; }
+    /*height: 1650px;*/
+    height: 100%; }
     .main_second .about_contain {
       padding-top: 0px;
       padding-bottom: 20px;
@@ -1024,7 +1027,7 @@
       height: 100%;
       display: grid;
       grid-template-columns: 100%;
-      grid-template-rows: repeat(3, 1fr);
+      grid-template-rows: 10% 40% 40%;
       grid-template-areas: "a1" "a2" "a3";
       padding: 20px 20px; }
       .main_second .about_contain .titulo_about {
@@ -1357,7 +1360,8 @@
   /**************seccion about***********/
   .main_second {
     width: 100%;
-    height: 1000px; }
+    /* height: 1000px; */
+    height: 100%; }
     .main_second .about_contain {
       padding: 20px 20px;
       width: 100%;
@@ -1704,13 +1708,14 @@
   /**************seccion about***********/
   .main_second {
     width: 100%;
-    height: 1940px; }
+    /* height: 1940px; */
+    height: 100%; }
     .main_second .about_contain {
       width: 100%;
       height: 100%;
       display: grid;
       grid-template-columns: 100%;
-      grid-template-rows: repeat(3, 1fr);
+      grid-template-rows: 20% 40% 40%;
       grid-template-areas: "a1" "a2" "a3";
       padding: 20px 20px; }
       .main_second .about_contain .titulo_about {
@@ -1723,7 +1728,8 @@
         .main_second .about_contain .titulo_about .logo_about {
           display: none; }
       .main_second .about_contain .text_about {
-        grid-area: a2; }
+        grid-area: a2;
+        padding: 0px 10px; }
         .main_second .about_contain .text_about p {
           font-size: 14px;
           text-align: justify; }
@@ -2018,7 +2024,8 @@
   /**************seccion about***********/
   .main_second {
     width: 100%;
-    height: 1000px; }
+    /* height: 1000px; */
+    height: 100%; }
     .main_second .about_contain {
       padding-top: 0px;
       padding-bottom: 20px;
@@ -2026,18 +2033,21 @@
       height: 100%;
       display: grid;
       grid-template-columns: 100%;
-      grid-template-rows: repeat(3, 1fr);
+      grid-template-rows: 10% 50% 10%;
       grid-template-areas: "a1" "a2" "a3"; }
       .main_second .about_contain .titulo_about {
         grid-area: a1; }
         .main_second .about_contain .titulo_about .titulo_about a {
           display: none; }
       .main_second .about_contain .text_about {
-        grid-area: a2; }
+        grid-area: a2;
+        padding: 0px 15px; }
         .main_second .about_contain .text_about .text_about p {
           font-size: 14px; }
       .main_second .about_contain .img_about {
-        grid-area: a3; }
+        grid-area: a3;
+        width: 100%;
+        height: 100%; }
   /******************contacto*************/
   #main_xl {
     width: 100%;
@@ -2278,7 +2288,8 @@
   /*************************about**********/
   .main_second {
     width: 100%;
-    height: 1000px; }
+    /* height: 1000px; */
+    height: 100%; }
     .main_second .about_contain {
       width: 100%;
       height: 100%;
@@ -2293,15 +2304,14 @@
         background: none; }
         .main_second .about_contain .titulo_about h1 {
           color: #000;
-          padding-top: 40px; }
+          padding-top: 20px; }
         .main_second .about_contain .titulo_about .logo_about {
           display: none; }
       .main_second .about_contain .text_about {
-        width: 80%;
+        width: 100%;
         height: 100%;
         grid-area: a2;
-        padding: 0px 0px;
-        margin-top: 60px; }
+        padding: 0px 20px; }
         .main_second .about_contain .text_about .text_about p {
           font-size: 16px;
           width: 100%;
@@ -2312,7 +2322,7 @@
         width: 100%;
         height: 100%;
         grid-area: a3;
-        margin-top: 30px;
+        margin-top: 0px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -2521,7 +2531,8 @@
   /****sobremi***/
   .main_second {
     width: 100%;
-    height: 1200px; }
+    /* height: 1200px; */
+    height: 100%; }
     .main_second .about_contain {
       width: 100%;
       height: 100%;
@@ -2530,7 +2541,8 @@
       grid-template-areas: "a1 a1" "a2 a2" "a3 a3"; }
       .main_second .about_contain .text_about {
         width: 100%;
-        height: 100%; }
+        height: 100%;
+        padding: 0px 20px; }
         .main_second .about_contain .text_about p {
           font-size: 18px; }
       .main_second .about_contain .img_about {
@@ -2542,6 +2554,17 @@
         .main_second .about_contain .img_about .cuadro2 {
           width: 45%;
           height: auto; } }
+
+@media screen and (min-width: 998px) {
+  /*sobremi*/
+  .main_second {
+    width: 100%;
+    height: 100%; }
+    .main_second .about_contain {
+      width: 100%;
+      height: 100%; }
+      .main_second .about_contain .img_about {
+        padding-bottom: 20px; } }
 
 @media screen and (min-width: 1023px) {
   .main_index {
@@ -2597,22 +2620,27 @@
   /****sobre mi*****/
   .main_second {
     width: 100%;
-    height: 1400px; }
+    /* height: 1600px; */
+    height: 100%; }
     .main_second .about_contain {
       width: 100%;
-      height: 100%; }
+      height: 100%;
+      grid-template-rows: 10% 40% 40%; }
       .main_second .about_contain .titulo_about .logo_about {
         display: none; }
       .main_second .about_contain .titulo_about h1 {
         font-size: 80px; }
       .main_second .about_contain .text_about {
         margin-top: 0px;
-        text-align: left;
+        text-align: justify;
         width: 100%;
-        height: 100%; }
+        height: 100%;
+        padding: 0px 30px; }
         .main_second .about_contain .text_about p {
-          padding-top: 40px;
+          padding-top: 10px;
           font-size: 18px; }
+      .main_second .about_contain .img_about {
+        padding-top: 15px; }
   /***foooter***/
   .footer_main {
     width: 100%;
@@ -2624,6 +2652,20 @@
         padding-top: 0px; } }
 
 @media screen and (min-width: 1024px) {
+  /*sobremi*/
+  .main_second {
+    width: 100%;
+    /* height: 1600px; */
+    height: 100%; }
+    .main_second .about_contain {
+      width: 100%;
+      height: 100%;
+      grid-template-rows: 10% 40% 40%; }
+      .main_second .about_contain .img_about {
+        width: 100%;
+        height: 100%;
+        padding-bottom: 20px;
+        margin: 0px 0px; }
   /*****galeria****/
   .main_galeria {
     width: 100%;
@@ -2662,9 +2704,11 @@
         grid-area: a1;
         background-image: url(../img/img_galeria/img1_ver.jpg);
         background-size: cover; }
-        .main_galeria .main_gallery .img1 .contenedorimg1:hover {
-          opacity: 80%;
-          transition: all 0.3s ease; }
+        .main_galeria .main_gallery .img1 .contenedorimg1 {
+          /*&:hover {
+                        opacity: 80%;
+                        transition: all 0.3s ease;
+                    }*/ }
       .main_galeria .main_gallery .img2 {
         width: 100%;
         height: 100%;
@@ -2864,7 +2908,7 @@
       height: 100%;
       grid-template-rows: repeat(4, 1fr);
       grid-template-columns: repeat(4, 1fr);
-      grid-template-areas: "a1 a2 a3 a3" "a0 a2 a3 a3" "a4 a4 a6 a6" "a7 a7 a7 a7"; }
+      grid-template-areas: "a1 a2 a3 a3" "a0 a2 a3 a3" "a0 a4 a6 a6" "a7 a7 a7 a7"; }
       .footer_main .contain_footer .logo_footer {
         grid-area: a1;
         width: 100%;
@@ -2915,4 +2959,32 @@
       #main_xl #contacto_xl .contenedor_telefono p {
         font-size: 18px; }
       #main_xl #contacto_xl .contenedor_correo p {
-        font-size: 18px; } }
+        font-size: 18px; }
+  /*sobremi*/
+  .main_second {
+    width: 100%;
+    /* height: 1300px; */
+    height: 100%; }
+    .main_second .about_contain {
+      width: 100%;
+      height: 100%;
+      grid-template-rows: 10% 60% 30%; }
+      .main_second .about_contain .text_about {
+        grid-area: a2;
+        width: 100%;
+        height: 100%;
+        padding: 0px 40px;
+        text-align: justify; }
+      .main_second .about_contain .img_about {
+        grid-area: a3;
+        width: 100%;
+        height: 100%;
+        margin: 0px 0px;
+        padding-bottom: 20px;
+        padding-top: 40px; }
+        .main_second .about_contain .img_about .cuadro1 {
+          width: 30%;
+          height: auto; }
+        .main_second .about_contain .img_about .cuadro2 {
+          width: 30%;
+          height: auto; } }

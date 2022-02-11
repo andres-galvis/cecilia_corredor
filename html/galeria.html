@@ -13,6 +13,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script><!--javascript alert script-->
+
 </head>
 
 <body>
@@ -43,7 +45,7 @@
 
         <div class="main_gallery">
 
-            <div class="img1">
+            <div class="img1" id="imagen_1">
                 <div class="contenedorimg1 textos_img">
                     <h2>Pinturas</h2>
                     <h3>$600.000COP</h3>
@@ -419,31 +421,44 @@
                         <span class="visually-hidden">Next</span>
                     </button>
                 </div>
-                
+
             </article>
 
-             <section class="btn--offcanvas">
+            <section class="btn--offcanvas">
 
-                <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Galería</button>
+                <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Galería</button>
 
-                <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+                    id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
                     <div class="offcanvas-header">
-                      <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Galería de imágenes</h5>
-                      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Galería de imágenes</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body">
-                        <a href="#img--1"><img src="../img/img_galeria/img11_ver.jpg" alt=""></a>
-                        <a href="#img--2"><img src="../img/img_galeria/img13_hz.jpg" alt=""></a>
-                        <a href="#img--3"><img src="../img/img_galeria/img16_ver.jpg" alt=""></a>
-                        <a href="#img--4"><img src="../img/img_galeria/img14_hz.jpg" alt=""></a>
-                        <a href="#img--5"><img src="../img/img_galeria/img15_hz.jpg" alt=""></a>
-                        <a href="#img--6"><img src="../img/img_galeria/img17_ver.jpg" alt=""></a>
-                        <a href="#img--7"><img src="../img/img_galeria/img18_hz.jpg" alt=""></a>
-                        <a href="#img--8"><img src="../img/img_galeria/img21_ver.jpg" alt=""></a>
-                        <a href="#img--9"><img src="../img/img_galeria/img19_hz.jpg" alt=""></a>
-                        <a href="#img--10"><img src="../img/img_galeria/img20_ver.jpg" alt=""></a>
+                        <a href="#img--1" onclick="offcanvas_img()"><img src="../img/img_galeria/img11_ver.jpg"
+                                alt=""></a>
+                        <a href="#img--2" onclick="offcanvas_img()"><img src="../img/img_galeria/img13_hz.jpg"
+                                alt=""></a>
+                        <a href="#img--3" onclick="offcanvas_img()"><img src="../img/img_galeria/img16_ver.jpg"
+                                alt=""></a>
+                        <a href="#img--4" onclick="offcanvas_img()"><img src="../img/img_galeria/img14_hz.jpg"
+                                alt=""></a>
+                        <a href="#img--5" onclick="offcanvas_img()"><img src="../img/img_galeria/img15_hz.jpg"
+                                alt=""></a>
+                        <a href="#img--6" onclick="offcanvas_img()"><img src="../img/img_galeria/img17_ver.jpg"
+                                alt=""></a>
+                        <a href="#img--7" onclick="offcanvas_img()"><img src="../img/img_galeria/img18_hz.jpg"
+                                alt=""></a>
+                        <a href="#img--8" onclick="offcanvas_img()"><img src="../img/img_galeria/img21_ver.jpg"
+                                alt=""></a>
+                        <a href="#img--9" onclick="offcanvas_img()"><img src="../img/img_galeria/img19_hz.jpg"
+                                alt=""></a>
+                        <a href="#img--10" onclick="offcanvas_img()"><img src="../img/img_galeria/img20_ver.jpg"
+                                alt=""></a>
                     </div>
-                  </div>
+                </div>
             </section>
 
 
@@ -475,6 +490,7 @@
                     <li><a href="galeria.html">Galería</a></li>
                     <li><a href="about.html">Sobre mi</a></li>
                     <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="exposiciones.html">Exposiciones</a></li>
                 </ul>
             </div>
 
@@ -511,6 +527,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="../js/galeria.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
