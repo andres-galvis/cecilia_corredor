@@ -10,8 +10,13 @@
     height: 150px;
 
     .logo_nav {
-        width: 42px;
-        height: 42px;
+        width: 52px;
+        height: 52px;
+
+        &:hover {
+            transition: all 0.3s ease;
+            opacity: 50%;
+        }
     }
 
 }
@@ -154,6 +159,18 @@
             background-image: url(../img/img_galeria/img1_ver.jpg);
             background-size: cover;
 
+             .contenedor_img_1{
+                width: 100%;
+                height: 100%;
+                object-position: center center;
+                object-fit: cover;
+
+                &:hover{
+                    opacity: 80%;
+                    transition: all 0.2s ease;
+                }
+            } 
+
             .contenedorimg1 {
                 width: 100%;
                 height: 100%;
@@ -164,12 +181,7 @@
                 align-content: center;
                 text-align: center;
                 opacity: 0%;
-                color: #fff;
-
-                /*&:hover {
-                    opacity: 80%;
-                    transition: all 0.3s ease;
-                }*/
+                color: rgb(255, 255, 255);
             }
         }
 
@@ -914,7 +926,7 @@
 .footer_main {
     width: 100%;
     height: 500px;
-    background-color: rgb(175, 175, 175);
+    background-color: #afafaf;
 
     .contain_footer {
         width: 100%;
@@ -948,8 +960,13 @@
             padding: 20px 30px;
 
             & img {
-                width: 80px;
-                height: 80px;
+                width: 100px;
+                height: 100px;
+
+                &:hover {
+                    opacity: 50%;
+                    transition: all 0.3s ease;
+                }
             }
         }
 
@@ -3123,7 +3140,7 @@
     #main_xl {
         width: 100%;
         height: 1500px;
-        
+
 
         #contacto_xl {
             width: 100%;
@@ -3133,8 +3150,8 @@
             grid-template-rows: 50% 50%;
             grid-template-areas: "a1"
                 "a2";
-                padding-top: 10px;
-                padding-bottom: 20px;
+            padding-top: 10px;
+            padding-bottom: 20px;
 
             .mapa_google {
                 grid-area: a2;
@@ -3949,19 +3966,19 @@
 
 }
 
-@media screen and (min-width:998px){
+@media screen and (min-width:998px) {
     /*sobremi*/
 
-    .main_second{
+    .main_second {
         width: 100%;
         height: 100%;
 
-        .about_contain{
+        .about_contain {
 
             width: 100%;
             height: 100%;
 
-            .img_about{
+            .img_about {
                 padding-bottom: 20px;
             }
         }
@@ -4095,7 +4112,7 @@
                 }
             }
 
-            .img_about{
+            .img_about {
                 padding-top: 15px;
             }
 
@@ -4126,17 +4143,17 @@
 
     /*sobremi*/
 
-    .main_second{
+    .main_second {
         width: 100%;
         /* height: 1600px; */
         height: 100%;
 
-        .about_contain{
+        .about_contain {
             width: 100%;
             height: 100%;
             grid-template-rows: 10% 40% 40%;
 
-            .img_about{
+            .img_about {
                 width: 100%;
                 height: 100%;
                 padding-bottom: 20px;
@@ -4188,12 +4205,12 @@
 
                     @extend .clase_imagenes--hover;
 
-                    /*&:hover {
+                    &:hover {
                         opacity: 80%;
                         transition: all 0.3s ease;
-                    }*/
+                    }
                 }
-            }
+            } 
 
             /**contenedor img2***/
 
@@ -4605,9 +4622,9 @@
             grid-template-rows: repeat(4, 1fr);
             grid-template-columns: repeat(4, 1fr);
             grid-template-areas: "a1 a2 a3 a3"
-                                 "a0 a2 a3 a3"
-                                 "a0 a4 a6 a6"
-                                 "a7 a7 a7 a7";
+                "a0 a2 a3 a3"
+                "a0 a4 a6 a6"
+                "a7 a7 a7 a7";
 
             .logo_footer {
                 grid-area: a1;
@@ -4714,29 +4731,29 @@
 
     /*sobremi*/
 
-    .main_second{
+    .main_second {
         width: 100%;
         /* height: 1300px; */
         height: 100%;
-        
-        .about_contain{
+
+        .about_contain {
             width: 100%;
             height: 100%;
             grid-template-rows: 10% 60% 30%;
 
-            .text_about{
+            .text_about {
                 grid-area: a2;
                 width: 100%;
                 height: 100%;
                 padding: 0px 40px;
                 text-align: justify;
-            
+
             }
 
-            .img_about{
+            .img_about {
                 grid-area: a3;
                 width: 100%;
-                height: 100%;                
+                height: 100%;
                 margin: 0px 0px;
                 padding-bottom: 20px;
                 padding-top: 40px;
@@ -4746,14 +4763,14 @@
                     height: auto;
                 }
 
-                & .cuadro2{
+                & .cuadro2 {
                     width: 30%;
                     height: auto;
                 }
             }
 
         }
-    }    
+    }
 
 
 
