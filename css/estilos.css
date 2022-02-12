@@ -480,10 +480,10 @@
 /**************SECCION ABOUT********************/
 .main_about {
   width: 100%;
-  height: 900px; }
+  /* height: 900px; */ }
   .main_about .about_contain {
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     display: grid;
     grid-template-rows: repeat(6, 1fr);
     grid-template-columns: repeat(6, 1fr);
@@ -553,7 +553,7 @@
   height: 100%; }
   .main_second .contenedor_contacto {
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     display: grid;
     grid-template-columns: 60% 10% 10% 10% 10%;
     grid-template-rows: repeat(5, 1fr);
@@ -661,7 +661,7 @@
   background-color: #afafaf; }
   .footer_main .contain_footer {
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(7, 1fr);
@@ -787,7 +787,8 @@
   .header_main {
     height: auto; }
   .main_index {
-    width: 100%; }
+    width: 100%;
+    height: auto; }
     .main_index .contenedor_main_responsive {
       padding: 0px 0px;
       width: 100%;
@@ -817,10 +818,9 @@
     /* height: 100%; */ }
     .footer_main .contain_footer {
       width: 100%;
-      /* height: 100%; */
       display: grid;
       grid-template-columns: 100%;
-      grid-template-rows: 10% 20% 30% 20% 10% 10%;
+      grid-template-rows: repeat(6, 1fr);
       grid-template-areas: "a1" "a2" "a3" "a4" "a5" "a6";
       padding-top: 0px; }
       .footer_main .contain_footer .logo_footer {
@@ -1038,12 +1038,12 @@
   .main_second {
     width: 100%;
     /*height: 1650px;*/
-    height: 100%; }
+    /* height: 100%; */ }
     .main_second .about_contain {
       padding-top: 0px;
       padding-bottom: 20px;
       width: 100%;
-      height: 100%;
+      /* height: 100%; */
       display: grid;
       grid-template-columns: 100%;
       grid-template-rows: 10% 40% 40%;
@@ -1134,18 +1134,12 @@
       #main_xl #contacto_xl .contenedor_button_contacto {
         display: none; } }
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 321px) {
   .header_main {
     height: auto; }
   .main_index {
     width: 100%;
     height: 600px; }
-    .main_index .hoja1 {
-      display: none; }
-    .main_index .hoja2 {
-      display: none; }
-    .main_index .hoja3 {
-      display: none; }
     .main_index .contenedor_main_responsive {
       padding: 0px 0px;
       width: 100%;
@@ -1153,20 +1147,28 @@
       background-size: 100%;
       background-repeat: no-repeat;
       background-image: url(../img/img_home/fondo_cecilia_vertical.jpg); }
+      .main_index .contenedor_main_responsive .hoja1 {
+        display: block; }
+      .main_index .contenedor_main_responsive .hoja2 {
+        display: block; }
+      .main_index .contenedor_main_responsive .hoja3 {
+        display: block; }
   /*********footer*******************/
   .footer_main {
     width: 100%;
     /* height: 100%; */ }
     .footer_main .contain_footer {
       width: 100%;
-      /* height: 100%; */
+      height: 1100px;
       display: grid;
       grid-template-columns: 100%;
-      grid-template-rows: 10% 20% 30% 20% 10% 10%;
-      grid-template-areas: "a1" "a2" "a3" "a4" "a5" "a6"; }
+      grid-template-rows: repeat(6, 1fr);
+      grid-template-areas: "a1" "a2" "a3" "a4" "a5" "a6";
+      padding: 0px 0px; }
       .footer_main .contain_footer .logo_footer {
         grid-area: a1;
-        text-align: center; }
+        text-align: center;
+        padding-top: 30px; }
       .footer_main .contain_footer .contenedor_1 {
         grid-area: a2;
         text-align: center; }
@@ -1207,7 +1209,8 @@
           align-items: center; }
       .footer_main .contain_footer .contenedor_5 {
         grid-area: a5;
-        text-align: center; }
+        text-align: center;
+        padding-top: 30px; }
         .footer_main .contain_footer .contenedor_5 .redes_sigueme {
           display: flex;
           flex-direction: row;
@@ -1380,11 +1383,11 @@
   .main_second {
     width: 100%;
     /* height: 1000px; */
-    height: 100%; }
+    /* height: 100%; */ }
     .main_second .about_contain {
       padding: 20px 20px;
       width: 100%;
-      height: 100%;
+      height: 1000px;
       display: grid;
       grid-template-columns: 100%;
       grid-template-rows: 10% 40% 40%;
@@ -1485,8 +1488,7 @@
   .header_main {
     height: auto; }
   .main_index {
-    width: 100%;
-    height: 600px; }
+    width: 100%; }
     .main_index .contenedor_main_responsive {
       padding: 0px 0px;
       width: 100%;
@@ -1494,22 +1496,16 @@
       background-size: 100%;
       background-repeat: no-repeat;
       background-image: url(../img/img_home/fondo_cecilia_vertical.jpg); }
-    .main_index .hoja1 {
-      display: none; }
-    .main_index .hoja2 {
-      display: none; }
-    .main_index .hoja3 {
-      display: none; }
   /*********footer*******************/
   .footer_main {
     width: 100%;
     /* height: 100%; */ }
     .footer_main .contain_footer {
       width: 100%;
-      /* height: 100%; */
+      /* height: 1200px; */
       display: grid;
       grid-template-columns: 100%;
-      grid-template-rows: 10% 20% 30% 20% 10% 10%;
+      grid-template-rows: repeat(6, 1fr);
       grid-template-areas: "a1" "a2" "a3" "a4" "a5" "a6"; }
       .footer_main .contain_footer .logo_footer {
         grid-area: a1;
@@ -1727,13 +1723,13 @@
   .main_second {
     width: 100%;
     /* height: 1940px; */
-    height: 100%; }
+    /* height: 100%; */ }
     .main_second .about_contain {
       width: 100%;
-      height: 100%;
+      /* height: 100%; */
       display: grid;
       grid-template-columns: 100%;
-      grid-template-rows: 20% 40% 40%;
+      grid-template-rows: 15% 40% 40%;
       grid-template-areas: "a1" "a2" "a3";
       padding: 20px 20px; }
       .main_second .about_contain .titulo_about {
@@ -1754,12 +1750,13 @@
       .main_second .about_contain .img_about {
         grid-area: a3; }
         .main_second .about_contain .img_about .cuadro1 {
-          width: 100%;
-          height: 50%; }
+          width: 50%;
+          height: auto; }
         .main_second .about_contain .img_about .cuadro2 {
-          width: 100%;
-          height: 50%;
-          padding-top: 10px; }
+          width: 50%;
+          height: auto;
+          padding-top: 10px;
+          padding-left: 10px; }
   /******************contacto*************/
   #main_xl {
     width: 100%;
@@ -1882,22 +1879,27 @@
   /****sobremi***/
   .main_second {
     width: 100%;
+    margin: 0px 0px 150px 0px;
     /* height: 100%; */ }
     .main_second .about_contain {
       width: 100%;
-      /* height: 100%; */
-      grid-template-rows: 10% 40% 50%;
-      grid-template-columns: 50% 50%;
+      grid-template-rows: repeat(3, 1fr);
+      grid-template-columns: 100%;
       grid-template-areas: "a1 a1" "a2 a2" "a3 a3"; }
+      .main_second .about_contain .titulo_about {
+        grid-area: a1;
+        width: 100%;
+        height: 100%; }
       .main_second .about_contain .text_about {
         width: 100%;
         height: 100%;
-        padding: 0px 20px; }
+        grid-area: a2; }
         .main_second .about_contain .text_about p {
           font-size: 18px; }
       .main_second .about_contain .img_about {
         width: 100%;
-        padding-top: 130px; }
+        grid-area: a3;
+        padding-top: 60px; }
         .main_second .about_contain .img_about .cuadro1 {
           width: 45%;
           height: auto; }
@@ -1909,21 +1911,42 @@
     .footer_main .contain_footer {
       width: 100%;
       grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: 30% 30% 30% 10%;
-      grid-template-areas: "a1 a2 a2" "a3 a4 a4" "a3 a5 a5" "a6 a6 a6"; }
+      grid-template-rows: repeat(4, 1fr);
+      grid-template-areas: "a1 a2 a2" "a3 a4 a4" "a5 a5 a5" "a6 a6 a6"; }
+      .footer_main .contain_footer .contenedor_1 p {
+        font-size: 18px; }
+      .footer_main .contain_footer .contenedor_2 {
+        padding-bottom: 40px;
+        padding-top: 0px; }
       .footer_main .contain_footer .contenedor_3 {
-        padding-bottom: 45px; } }
+        padding-bottom: 45px; }
+        .footer_main .contain_footer .contenedor_3 p {
+          font-size: 18px; } }
 
 @media screen and (min-width: 960px) {
+  /*indexhome*/
+  .main_index {
+    width: 100%;
+    margin-bottom: 100px;
+    padding-top: 50px; }
   /*sobremi*/
   .main_second {
     width: 100%;
+    margin-bottom: 100px;
     /* height: 100%; */ }
     .main_second .about_contain {
       width: 100%;
       /* height: 100%; */ }
+      .main_second .about_contain .text_about {
+        padding-top: 40px; }
       .main_second .about_contain .img_about {
-        padding-bottom: 20px; } }
+        padding-bottom: 20px; }
+        .main_second .about_contain .img_about .cuadro1 {
+          width: auto;
+          height: 500px; }
+        .main_second .about_contain .img_about .cuadro2 {
+          width: auto;
+          height: 500px; } }
 
 @media screen and (min-width: 1024px) {
   .main_index {
@@ -1933,14 +1956,21 @@
       width: 100%; }
       .main_index .contenedor_main .hoja2 {
         grid-area: a6; }
+  /*foooter*/
+  .footer_main {
+    width: 100%; }
+    .footer_main .contain_footer {
+      width: 100%;
+      height: 80vh;
+      padding-top: 30px; }
   /*sobremi*/
   .main_second {
     width: 100%;
     /* height: 1600px; */
-    height: 100%; }
+    /*  height: 100%; */ }
     .main_second .about_contain {
       width: 100%;
-      height: 100%;
+      /* height: 100%; */
       grid-template-rows: 10% 40% 40%; }
       .main_second .about_contain .img_about {
         width: 100%;
@@ -2181,18 +2211,18 @@
   .main_index {
     width: 100%;
     /* height: 1000px; */
-    margin-top: 100px;
     margin-bottom: 100px; }
     .main_index .contenedor_main_responsive {
       width: 100%;
+      height: 65vh;
       /* height: 100%; */ }
       .main_index .contenedor_main_responsive .hoja1 {
         width: 60%;
         height: 60%; }
   /*galeria*/
-  .main_second {
+  .main_galeria {
     width: 100%; }
-    .main_second .main_gallery {
+    .main_galeria .main_gallery {
       width: 100%; }
   /**footer**/
   .footer_main {
@@ -2200,10 +2230,10 @@
     /* height: 100%; */ }
     .footer_main .contain_footer {
       width: 100%;
-      /* height: 100%; */
-      grid-template-rows: 30% 25% 25% 20%;
+      height: 100vh;
+      grid-template-rows: repeat(3, 1fr);
       grid-template-columns: repeat(4, 1fr);
-      grid-template-areas: "a1 a2 a3 a3" "a0 a2 a3 a3" "a0 a4 a6 a6" "a7 a7 a7 a7"; }
+      grid-template-areas: "a1 a2 a3 a3" "a0 a4 a6 a6" "a7 a7 a7 a7"; }
       .footer_main .contain_footer .logo_footer {
         grid-area: a1;
         width: 100%;
@@ -2211,7 +2241,8 @@
       .footer_main .contain_footer .contenedor_2 {
         grid-area: a2;
         width: 100%;
-        height: 100%; }
+        height: 100%;
+        padding-top: 60px; }
       .footer_main .contain_footer .contenedor_1 {
         width: 100%;
         height: 100%;
@@ -2222,7 +2253,7 @@
         width: 100%;
         height: 100%;
         grid-area: a4;
-        padding-bottom: 20px; }
+        margin-bottom: 60px; }
         .footer_main .contain_footer .contenedor_3 .gmail p {
           font-size: 18px; }
         .footer_main .contain_footer .contenedor_3 .call p {
@@ -2263,24 +2294,23 @@
     .main_second .about_contain {
       width: 100%;
       /* height: 100%; */
-      grid-template-rows: 10% 60% 30%; }
+      grid-template-rows: repeat(3, 1fr); }
       .main_second .about_contain .text_about {
         grid-area: a2;
         width: 100%;
         height: 100%;
         padding: 0px 40px;
         text-align: justify;
-        padding-top: 60px; }
+        padding-top: 20px; }
       .main_second .about_contain .img_about {
         grid-area: a3;
         width: 100%;
         height: 100%;
         margin: 0px 0px;
-        padding-bottom: 20px;
-        padding-top: 80px; }
+        padding-top: 50px; }
         .main_second .about_contain .img_about .cuadro1 {
-          width: 30%;
-          height: auto; }
+          width: auto;
+          height: 600px; }
         .main_second .about_contain .img_about .cuadro2 {
-          width: 30%;
-          height: auto; } }
+          width: auto;
+          height: 600px; } }
