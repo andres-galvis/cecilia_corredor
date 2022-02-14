@@ -8,6 +8,14 @@
 .header_main {
     width: 100%;
     height: 150px;
+    /* position: fixed;
+    top: 0px;
+    z-index: 999; */
+
+    #navbar {
+        background-color: rgba(0, 0, 0, 0.973);
+        /* backdrop-filter: blur(10px); */
+    }
 
     .logo_nav {
         width: 52px;
@@ -89,13 +97,13 @@
 
 .main_galeria {
     width: 100%;
-    height: 2700px;
+    padding: 15px 15px;
 
     .galeria_carousel {
         display: none;
     }
 
-    .main_gallery h2 {
+    /*  .main_gallery h2 {
         font-size: 30px;
         font-weight: 900;
     }
@@ -127,547 +135,109 @@
         background-color: cadetblue;
         transition: all 0.2s ease;
         color: #fff;
-    }
+    } */
 
     .main_gallery {
-        width: 100%;
-        height: 100%;
+
         display: grid;
-        grid-template-columns: repeat(9, 1fr);
-        grid-template-rows: repeat(15, 1fr);
-        grid-template-areas: "a1 a1 a1 a2 a2 a2 a3 a3 a3"
-            "a1 a1 a1 a2 a2 a2 a3 a3 a3"
-            "a1 a1 a1 a4 a4 a4 a3 a3 a3"
-            "a5 a5 a5 a4 a4 a4 a6 a6 a6"
-            "a5 a5 a5 a4 a4 a4 a6 a6 a6"
-            "a7 a7 a7 a8 a8 a8 a9 a9 a9"
-            "a7 a7 a7 a8 a8 a8 a9 a9 a9"
-            "a7 a7 a7 a10 a10 a10 a9 a9 a9"
-            "a11 a11 a11 a10 a10 a10 a12 a12 a12"
-            "a11 a11 a11 a10 a10 a10 a12 a12 a12"
-            "a13 a13 a13 a14 a14 a14 a15 a15 a15"
-            "a13 a13 a13 a14 a14 a14 a15 a15 a15"
-            "a13 a13 a13 a16 a16 a16 a15 a15 a15"
-            "a17 a17 a17 a16 a16 a16 a18 a18 a18"
-            "a17 a17 a17 a16 a16 a16 a18 a18 a18";
+        grid-template-columns: repeat(5, 1fr);
+        grid-auto-rows: 600px;
+        grid-gap: 15px;
 
-
-        .img1 {
+        .img--class {
             width: 100%;
             height: 100%;
-            grid-area: a1;
-            background-image: url(../img/img_galeria/img1_ver.jpg);
-            background-size: cover;
-
-            .contenedor_img_1 {
-                width: 100%;
-                height: 100%;
-                object-position: center center;
-                object-fit: cover;
-
-                &:hover {
-                    opacity: 80%;
-                    transition: all 0.2s ease;
-                }
-            }
-
-            .contenedorimg1 {
-                width: 100%;
-                height: 100%;
-                background-color: rgb(0, 0, 0);
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-content: center;
-                text-align: center;
-                opacity: 0%;
-                color: rgb(255, 255, 255);
-            }
+            object-fit: cover;
         }
 
-        /**contenedor img2***/
 
-        .img2 {
-            width: 100%;
-            height: 100%;
-            grid-area: a2;
-            background-image: url(../img/img_galeria/img1_hz.jpg);
-            background-size: cover;
-
-            .contenedorimg2 {
-                width: 100%;
-                height: 100%;
-                background-color: rgb(0, 0, 0);
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-content: center;
-                text-align: center;
-                opacity: 0%;
-                color: #fff;
-
-                &:hover {
-                    opacity: 80%;
-                    transition: all 0.3s ease;
-                }
-            }
-
+        .img_containers:nth-child(3) {
+            grid-column-start: span 2;
         }
 
-        /**contenedor img3***/
-
-        .img3 {
-            width: 100%;
-            height: 100%;
-            grid-area: a3;
-            background-image: url(../img/img_galeria/img4_ver.jpg);
-            background-size: cover;
-
-            .contenedorimg3 {
-                width: 100%;
-                height: 100%;
-                background-color: rgb(0, 0, 0);
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-content: center;
-                text-align: center;
-                opacity: 0%;
-                color: #fff;
-
-                &:hover {
-                    opacity: 80%;
-                    transition: all 0.3s ease;
-                }
-            }
+        .img_containers:nth-child(2) {
+            grid-column-start: span 2;
         }
 
-        /**contenedor img4***/
-
-        .img4 {
-            width: 100%;
-            height: 100%;
-            grid-area: a4;
-            background-image: url(../img/img_galeria/img3_hz.jpg);
-            background-size: cover;
-
-            .contenedorimg4 {
-                width: 100%;
-                height: 100%;
-                background-color: rgb(0, 0, 0);
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-content: center;
-                text-align: center;
-                opacity: 0%;
-                color: #fff;
-
-                &:hover {
-                    opacity: 80%;
-                    transition: all 0.3s ease;
-                }
-            }
+        .img_containers:nth-child(4) {
+            grid-column-start: span 3;
         }
 
-        /*contenedorimg5*/
-
-        .img5 {
-            width: 100%;
-            height: 100%;
-            grid-area: a5;
-            background-image: url(../img/img_galeria/img9_ver.jpg);
-            background-size: cover;
-
-            .contenedorimg5 {
-                width: 100%;
-                height: 100%;
-                background-color: rgb(0, 0, 0);
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-content: center;
-                text-align: center;
-                opacity: 0%;
-                color: #fff;
-
-                &:hover {
-                    opacity: 80%;
-                    transition: all 0.3s ease;
-                }
-            }
+        .img_containers:nth-child(5) {
+            grid-column-start: span 2;
         }
 
-        /*contenedor img6*/
+        .img_containers:nth-child(7) {
 
-        .img6 {
-            width: 100%;
-            height: 100%;
-            grid-area: a6;
-            background-image: url(../img/img_galeria/img5_hz.jpg);
-            background-size: cover;
-
-            .contenedorimg6 {
-                width: 100%;
-                height: 100%;
-                background-color: rgb(0, 0, 0);
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-content: center;
-                text-align: center;
-                opacity: 0%;
-                color: #fff;
-
-                &:hover {
-                    opacity: 80%;
-                    transition: all 0.3s ease;
-                }
-
-            }
-
+            grid-column-start: span 2;
+            grid-row-start: span 2;
         }
 
-        /*contenedor img7*/
+        .img_containers:nth-child(8) {
 
-        .img7 {
-            width: 100%;
-            height: 100%;
-            grid-area: a7;
-            background-image: url(../img/img_galeria/img11_ver.jpg);
-            background-size: cover;
-
-            .contenedorimg7 {
-                width: 100%;
-                height: 100%;
-                background-color: rgb(0, 0, 0);
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-content: center;
-                text-align: center;
-                opacity: 0%;
-                color: #fff;
-
-                &:hover {
-                    opacity: 80%;
-                    transition: all 0.3s ease;
-                }
-            }
+            grid-column-start: span 2;
         }
 
-        /*contenedor img8*/
+        .img_containers:nth-child(10) {
 
-        .img8 {
-            width: 100%;
-            height: 100%;
-            grid-area: a8;
-            background-image: url(../img/img_galeria/img6_hz.jpg);
-            background-size: cover;
-
-            .contenedorimg8 {
-                width: 100%;
-                height: 100%;
-                background-color: rgb(0, 0, 0);
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-content: center;
-                text-align: center;
-                opacity: 0%;
-                color: #fff;
-
-                &:hover {
-                    opacity: 80%;
-                    transition: all 0.3s ease;
-                }
-            }
+            grid-column-start: span 2;
         }
 
-        /*comtenedor img9*/
-
-        .img9 {
-            width: 100%;
-            height: 100%;
-            grid-area: a9;
-            background-image: url(../img/img_galeria/img12_ver.jpg);
-            background-size: cover;
-            background-position: center 13%;
-
-            .contenedorimg9 {
-                width: 100%;
-                height: 100%;
-                background-color: rgb(0, 0, 0);
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-content: center;
-                text-align: center;
-                opacity: 0%;
-                color: #fff;
-
-                &:hover {
-                    opacity: 80%;
-                    transition: all 0.3s ease;
-                }
-            }
+        .img_containers:nth-child(12) {
+            grid-column-start: span 2;
         }
 
-        /*contenedor img10*/
+        .img_containers:nth-child(13) {
 
-        .img10 {
-            width: 100%;
-            height: 100%;
-            grid-area: a10;
-            background-image: url(../img/img_galeria/img7_hz.jpg);
-            background-size: cover;
-
-            .contenedorimg10 {
-                width: 100%;
-                height: 100%;
-                background-color: rgb(0, 0, 0);
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-content: center;
-                text-align: center;
-                opacity: 0%;
-                color: #fff;
-
-                &:hover {
-                    opacity: 80%;
-                    transition: all 0.3s ease;
-                }
-            }
+            grid-column-start: span 2;
         }
 
-        /*contenedor img11*/
+        .img_containers:nth-child(14) {
 
-        .img11 {
-            width: 100%;
-            height: 100%;
-            grid-area: a11;
-            background-image: url(../img/img_galeria/img16_ver.jpg);
-            background-size: cover;
-
-            .contenedorimg11 {
-                width: 100%;
-                height: 100%;
-                background-color: rgb(0, 0, 0);
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-content: center;
-                text-align: center;
-                opacity: 0%;
-                color: #fff;
-
-                &:hover {
-                    opacity: 80%;
-                    transition: all 0.3s ease;
-                }
-            }
+            grid-column-start: span 2;
         }
 
-        /*contenedor img12*/
+        .img_containers:nth-child(16) {
 
-        .img12 {
-            width: 100%;
-            height: 100%;
-            grid-area: a12;
-            background-image: url(../img/img_galeria/img8_hz.jpg);
-            background-size: cover;
-
-            .contenedorimg12 {
-                width: 100%;
-                height: 100%;
-                background-color: rgb(0, 0, 0);
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-content: center;
-                text-align: center;
-                opacity: 0%;
-                color: #fff;
-
-                &:hover {
-                    opacity: 80%;
-                    transition: all 0.3s ease;
-                }
-            }
+            grid-column-start: span 2;
         }
 
-        /*contenedor img13*/
-
-        .img13 {
-            width: 100%;
-            height: 100%;
-            grid-area: a13;
-            background-image: url(../img/img_galeria/img17_ver.jpg);
-            background-size: cover;
-
-            .contenedorimg13 {
-                width: 100%;
-                height: 100%;
-                background-color: rgb(0, 0, 0);
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-content: center;
-                text-align: center;
-                opacity: 0%;
-                color: #fff;
-
-                &:hover {
-                    opacity: 80%;
-                    transition: all 0.3s ease;
-                }
-            }
+        .img_containers:nth-child(18) {
+            grid-column-start: span 4;
         }
 
-        /*contenedor img14*/
-
-        .img14 {
-            width: 100%;
-            height: 100%;
-            grid-area: a14;
-            background-image: url(../img/img_galeria/img18_hz.jpg);
-            background-size: cover;
-
-            .contenedorimg14 {
-                width: 100%;
-                height: 100%;
-                background-color: rgb(0, 0, 0);
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-content: center;
-                text-align: center;
-                opacity: 0%;
-                color: #fff;
-
-                &:hover {
-                    opacity: 80%;
-                    transition: all 0.3s ease;
-                }
-            }
+        .img_containers:nth-child(20) {
+            grid-row-start: span 2;
+            grid-column-start: span 2;
         }
 
-        /*contenedor img15*/
-
-        .img15 {
-            width: 100%;
-            height: 100%;
-            grid-area: a15;
-            background-image: url(../img/img_galeria/img20_ver.jpg);
-            background-size: cover;
-            background-position: center center;
-
-            .contenedorimg15 {
-                width: 100%;
-                height: 100%;
-                background-color: rgb(0, 0, 0);
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-content: center;
-                text-align: center;
-                opacity: 0%;
-                color: #fff;
-
-                &:hover {
-                    opacity: 80%;
-                    transition: all 0.3s ease;
-                }
-            }
+        .img_containers:nth-child(24) {
+            grid-column-start: span 2;
         }
 
-        /*contenedor img16*/
-
-        .img16 {
-            width: 100%;
-            height: 100%;
-            grid-area: a16;
-            background-image: url(../img/img_galeria/img9_ver.jpg);
-            background-size: cover;
-
-            .contenedorimg16 {
-                width: 100%;
-                height: 100%;
-                background-color: rgb(0, 0, 0);
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-content: center;
-                text-align: center;
-                opacity: 0%;
-                color: #fff;
-
-                &:hover {
-                    opacity: 80%;
-                    transition: all 0.3s ease;
-                }
-
-            }
+        .img_containers:nth-child(26) {
+            grid-column-start: span 2;
         }
 
-        /*contenedor img17*/
-
-        .img17 {
-            width: 100%;
-            height: 100%;
-            grid-area: a17;
-            background-image: url(../img/img_galeria/img10_hz.jpg);
-            background-size: cover;
-
-            .contenedorimg17 {
-                width: 100%;
-                height: 100%;
-                background-color: rgb(0, 0, 0);
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-content: center;
-                text-align: center;
-                opacity: 0%;
-                color: #fff;
-
-                &:hover {
-                    opacity: 80%;
-                    transition: all 0.3s ease;
-                }
-            }
+        .img_containers:nth-child(29) {
+            grid-column-start: span 3;
         }
 
-        /*contenedor img18*/
-
-        .img18 {
-            width: 100%;
-            height: 100%;
-            grid-area: a18;
-            background-image: url(../img/img_galeria/img22_hz.jpg);
-            background-size: cover;
-
-            .contenedorimg18 {
-                width: 100%;
-                height: 100%;
-                background-color: rgb(0, 0, 0);
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-content: center;
-                text-align: center;
-                opacity: 0%;
-                color: #fff;
-
-                &:hover {
-                    opacity: 80%;
-                    transition: all 0.3s ease;
-                }
-            }
+        .img_containers:nth-child(36) {
+            grid-column-start: span 3;
         }
+
+        .img_containers:nth-child(32) {
+            grid-column-start: span 3;
+        }
+
     }
+
 }
+
+
+
+
 
 
 /**************SECCION ABOUT********************/
@@ -774,7 +344,7 @@
 
 /**************************seccion contacto*************************/
 
-.main_second {
+.contacto {
     width: 100%;
     /* height: 820px; */
     height: 100%;
@@ -925,7 +495,7 @@
 
 .footer_main {
     width: 100%;
-    background-color: #afafaf;
+    background-color: #dad8d8;
 
     .contain_footer {
         width: 100%;
@@ -1155,11 +725,13 @@
     /*********footer*******************/
 
     .footer_main {
+
         width: 100%;
-        /* height: 100%; */
+        height: 130vh;
 
         .contain_footer {
             width: 100%;
+            height: 100%;
             display: grid;
             grid-template-columns: 100%;
             grid-template-rows: repeat(6, 1fr);
@@ -1182,7 +754,7 @@
 
                 & p {
                     text-align: justify;
-                    font-size: 14px;
+                    font-size: 13px;
                 }
 
             }
@@ -1195,6 +767,13 @@
                 flex-wrap: wrap;
                 justify-content: center;
                 align-items: center;
+
+                .ul_contenedor_footer {
+
+                    li a {
+                        font-size: 13px;
+                    }
+                }
             }
 
             .contenedor_3 {
@@ -1211,7 +790,7 @@
                 }
 
                 & p {
-                    font-size: 14px;
+                    font-size: 13px;
                 }
 
                 .gmail {
@@ -1251,6 +830,7 @@
 
             .contenedor_copy {
                 grid-area: a6;
+                font-size: 13px;
             }
         }
     }
@@ -1275,7 +855,7 @@
             .img_1 {
 
                 #item1 {
-                    background-image: url(../img/img_galeria/img11_ver.jpg);
+                    background-image: url(../img/img_galeria/img_v1.jpg);
                     height: 300px;
                     background-position: center center;
                     background-size: cover;
@@ -1293,7 +873,7 @@
                 margin-top: 20px;
 
                 #item3 {
-                    background-image: url(../img/img_galeria/img13_hz.jpg);
+                    background-image: url(../img/img_galeria/horizontales/cecilia_1.jpg);
                     height: 300px;
                     background-position: center center;
                     background-size: cover;
@@ -1311,7 +891,7 @@
                 margin-top: 20px;
 
                 #item5 {
-                    background-image: url(../img/img_galeria/img16_ver.jpg);
+                    background-image: url(../img/img_galeria/img_v12.jpg);
                     height: 300px;
                     background-position: center center;
                     background-size: cover;
@@ -1329,7 +909,7 @@
                 margin-top: 20px;
 
                 #item7 {
-                    background-image: url(../img/img_galeria/img14_hz.jpg);
+                    background-image: url(../img/img_galeria/horizontales/cecilia_10.jpg);
                     height: 300px;
                     background-position: center center;
                     background-size: cover;
@@ -1347,7 +927,7 @@
                 margin-top: 20px;
 
                 #item9 {
-                    background-image: url(../img/img_galeria/img15_hz.jpg);
+                    background-image: url(../img/img_galeria/img_v11.jpg);
                     height: 300px;
                     background-position: center center;
                     background-size: cover;
@@ -1365,7 +945,7 @@
                 margin-top: 20px;
 
                 #item11 {
-                    background-image: url(../img/img_galeria/img17_ver.jpg);
+                    background-image: url(../img/img_galeria/horizontales/cecilia_11.jpg);
                     height: 300px;
                     background-position: center center;
                     background-size: cover;
@@ -1383,7 +963,7 @@
                 margin-top: 20px;
 
                 #item13 {
-                    background-image: url(../img/img_galeria/img18_hz.jpg);
+                    background-image: url(../img/img_galeria/img_v12.jpg);
                     height: 300px;
                     background-position: center center;
                     background-size: cover;
@@ -1402,7 +982,7 @@
                 margin-top: 20px;
 
                 #item15 {
-                    background-image: url(../img/img_galeria/img21_ver.jpg);
+                    background-image: url(../img/img_galeria/horizontales/cecilia_2.jpg);
                     height: 300px;
                     background-position: center center;
                     background-size: cover;
@@ -1420,7 +1000,7 @@
                 margin-top: 20px;
 
                 #item17 {
-                    background-image: url(../img/img_galeria/img19_hz.jpg);
+                    background-image: url(../img/img_galeria/img_v13.jpg);
                     height: 300px;
                     background-position: center center;
                     background-size: cover;
@@ -1438,7 +1018,7 @@
                 margin-top: 20px;
 
                 #item19 {
-                    background-image: url(../img/img_galeria/img20_ver.jpg);
+                    background-image: url(../img/img_galeria/horizontales/cecilia_3.jpg);
                     height: 300px;
                     background-position: center center;
                     background-size: cover;
@@ -1452,6 +1032,277 @@
                 }
             }
 
+            .img_11 {
+                margin-top: 20px;
+
+                #item21 {
+                    background-image: url(../img/img_galeria/img_v14.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+
+                #item22 {
+                    background-image: url(../img/img_cards/fichas.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+            }
+
+            .img_12 {
+                margin-top: 20px;
+
+                #item23 {
+                    background-image: url(../img/img_galeria/horizontales/cecilia_4.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+
+                #item24 {
+                    background-image: url(../img/img_cards/fichas.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+            }
+
+            .img_13 {
+                margin-top: 20px;
+
+                #item25 {
+                    background-image: url(../img/img_galeria/img_v15.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+
+                #item26 {
+                    background-image: url(../img/img_cards/fichas.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+            }
+
+            .img_14 {
+                margin-top: 20px;
+
+                #item27 {
+                    background-image: url(../img/img_galeria/horizontales/cecilia_5.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+
+                #item28 {
+                    background-image: url(../img/img_cards/fichas.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+            }
+
+            .img_15 {
+                margin-top: 20px;
+
+                #item29 {
+                    background-image: url(../img/img_galeria/img_v16.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+
+                #item30 {
+                    background-image: url(../img/img_cards/fichas.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+            }
+
+            .img_16 {
+                margin-top: 20px;
+
+                #item31 {
+                    background-image: url(../img/img_galeria/horizontales/cecilia_6.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+
+                #item32 {
+                    background-image: url(../img/img_cards/fichas.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+            }
+
+            .img_17 {
+                margin-top: 20px;
+
+                #item33 {
+                    background-image: url(../img/img_galeria/img_v17.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+
+                #item34 {
+                    background-image: url(../img/img_cards/fichas.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+            }
+
+            .img_18 {
+                margin-top: 20px;
+
+                #item35 {
+                    background-image: url(../img/img_galeria/horizontales/cecilia_7.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+
+                #item36 {
+                    background-image: url(../img/img_cards/fichas.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+            }
+
+            .img_19 {
+                margin-top: 20px;
+
+                #item37 {
+                    background-image: url(../img/img_galeria/img_v18.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+
+                #item38 {
+                    background-image: url(../img/img_cards/fichas.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+            }
+
+            .img_20 {
+                margin-top: 20px;
+
+                #item39 {
+                    background-image: url(../img/img_galeria/horizontales/cecilia_8.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+
+                #item40 {
+                    background-image: url(../img/img_cards/fichas.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+            }
+
+            .img_21 {
+                margin-top: 20px;
+
+                #item41 {
+                    background-image: url(../img/img_galeria/img_v19.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+
+                #item42 {
+                    background-image: url(../img/img_cards/fichas.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+            }
+
+            .img_22 {
+                margin-top: 20px;
+
+                #item43 {
+                    background-image: url(../img/img_galeria/horizontales/cecilia_9.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+
+                #item44 {
+                    background-image: url(../img/img_cards/fichas.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+            }
+
+            .img_23 {
+                margin-top: 20px;
+
+                #item45 {
+                    background-image: url(../img/img_galeria/img_v20.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+
+                #item46 {
+                    background-image: url(../img/img_cards/fichas.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+            }
+
+            .img_24 {
+                margin-top: 20px;
+
+                #item47 {
+                    background-image: url(../img/img_galeria/horizontales/cecilia_10.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+
+                #item48 {
+                    background-image: url(../img/img_cards/fichas.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+            }
+
+            .img_25 {
+                margin-top: 20px;
+
+                #item49 {
+                    background-image: url(../img/img_galeria/horizontales/cecilia_11.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+
+                #item50 {
+                    background-image: url(../img/img_cards/fichas.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+            }
+
+
 
             .btn--offcanvas {
                 width: 100%;
@@ -1459,7 +1310,7 @@
                 margin-top: 5px;
                 position: fixed;
                 bottom: 10px;
-                right: 150px;
+                right: 130px;
                 height: 100px;
                 z-index: 999;
 
@@ -1687,11 +1538,12 @@
 
     .footer_main {
         width: 100%;
+        height: 135vh;
         /* height: 100%; */
 
         .contain_footer {
             width: 100%;
-            height: 1100px;
+            height: 100%;
             display: grid;
             grid-template-columns: 100%;
             grid-template-rows: repeat(6, 1fr);
@@ -1715,7 +1567,7 @@
 
                 & p {
                     text-align: justify;
-                    font-size: 14px;
+                    font-size: 13px;
                 }
 
             }
@@ -1728,6 +1580,13 @@
                 flex-wrap: wrap;
                 justify-content: center;
                 align-items: center;
+
+                .ul_contenedor_footer {
+
+                    li a {
+                        font-size: 14px;
+                    }
+                }
             }
 
             .contenedor_3 {
@@ -1744,7 +1603,7 @@
                 }
 
                 & p {
-                    font-size: 14px;
+                    font-size: 13px;
                 }
 
                 .gmail {
@@ -1785,6 +1644,7 @@
 
             .contenedor_copy {
                 grid-area: a6;
+                font-size: 14px;
             }
         }
     }
@@ -1794,7 +1654,6 @@
 
     .main_galeria {
         width: 100%;
-        height: 3250px;
 
         .main_gallery {
             display: none;
@@ -1802,14 +1661,14 @@
 
         .galeria_carousel {
             width: 100%;
-            height: 100%;
+            /* height: 100%; */
             padding-top: 20px;
             display: block;
 
             .img_1 {
 
                 #item1 {
-                    background-image: url(../img/img_galeria/img11_ver.jpg);
+                    background-image: url(../img/img_galeria/img_v1.jpg);
                     height: 300px;
                     background-position: center center;
                     background-size: cover;
@@ -1827,7 +1686,7 @@
                 margin-top: 20px;
 
                 #item3 {
-                    background-image: url(../img/img_galeria/img13_hz.jpg);
+                    background-image: url(../img/img_galeria/horizontales/cecilia_1.jpg);
                     height: 300px;
                     background-position: center center;
                     background-size: cover;
@@ -1845,7 +1704,7 @@
                 margin-top: 20px;
 
                 #item5 {
-                    background-image: url(../img/img_galeria/img16_ver.jpg);
+                    background-image: url(../img/img_galeria/img_v12.jpg);
                     height: 300px;
                     background-position: center center;
                     background-size: cover;
@@ -1863,7 +1722,7 @@
                 margin-top: 20px;
 
                 #item7 {
-                    background-image: url(../img/img_galeria/img14_hz.jpg);
+                    background-image: url(../img/img_galeria/horizontales/cecilia_10.jpg);
                     height: 300px;
                     background-position: center center;
                     background-size: cover;
@@ -1881,7 +1740,7 @@
                 margin-top: 20px;
 
                 #item9 {
-                    background-image: url(../img/img_galeria/img15_hz.jpg);
+                    background-image: url(../img/img_galeria/img_v11.jpg);
                     height: 300px;
                     background-position: center center;
                     background-size: cover;
@@ -1899,7 +1758,7 @@
                 margin-top: 20px;
 
                 #item11 {
-                    background-image: url(../img/img_galeria/img17_ver.jpg);
+                    background-image: url(../img/img_galeria/horizontales/cecilia_11.jpg);
                     height: 300px;
                     background-position: center center;
                     background-size: cover;
@@ -1917,7 +1776,7 @@
                 margin-top: 20px;
 
                 #item13 {
-                    background-image: url(../img/img_galeria/img18_hz.jpg);
+                    background-image: url(../img/img_galeria/img_v12.jpg);
                     height: 300px;
                     background-position: center center;
                     background-size: cover;
@@ -1936,7 +1795,7 @@
                 margin-top: 20px;
 
                 #item15 {
-                    background-image: url(../img/img_galeria/img21_ver.jpg);
+                    background-image: url(../img/img_galeria/horizontales/cecilia_2.jpg);
                     height: 300px;
                     background-position: center center;
                     background-size: cover;
@@ -1954,7 +1813,7 @@
                 margin-top: 20px;
 
                 #item17 {
-                    background-image: url(../img/img_galeria/img19_hz.jpg);
+                    background-image: url(../img/img_galeria/img_v13.jpg);
                     height: 300px;
                     background-position: center center;
                     background-size: cover;
@@ -1972,7 +1831,7 @@
                 margin-top: 20px;
 
                 #item19 {
-                    background-image: url(../img/img_galeria/img20_ver.jpg);
+                    background-image: url(../img/img_galeria/horizontales/cecilia_3.jpg);
                     height: 300px;
                     background-position: center center;
                     background-size: cover;
@@ -1986,13 +1845,284 @@
                 }
             }
 
+            .img_11 {
+                margin-top: 20px;
+
+                #item21 {
+                    background-image: url(../img/img_galeria/img_v14.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+
+                #item22 {
+                    background-image: url(../img/img_cards/fichas.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+            }
+
+            .img_12 {
+                margin-top: 20px;
+
+                #item23 {
+                    background-image: url(../img/img_galeria/horizontales/cecilia_4.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+
+                #item24 {
+                    background-image: url(../img/img_cards/fichas.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+            }
+
+            .img_13 {
+                margin-top: 20px;
+
+                #item25 {
+                    background-image: url(../img/img_galeria/img_v15.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+
+                #item26 {
+                    background-image: url(../img/img_cards/fichas.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+            }
+
+            .img_14 {
+                margin-top: 20px;
+
+                #item27 {
+                    background-image: url(../img/img_galeria/horizontales/cecilia_5.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+
+                #item28 {
+                    background-image: url(../img/img_cards/fichas.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+            }
+
+            .img_15 {
+                margin-top: 20px;
+
+                #item29 {
+                    background-image: url(../img/img_galeria/img_v16.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+
+                #item30 {
+                    background-image: url(../img/img_cards/fichas.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+            }
+
+            .img_16 {
+                margin-top: 20px;
+
+                #item31 {
+                    background-image: url(../img/img_galeria/horizontales/cecilia_6.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+
+                #item32 {
+                    background-image: url(../img/img_cards/fichas.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+            }
+
+            .img_17 {
+                margin-top: 20px;
+
+                #item33 {
+                    background-image: url(../img/img_galeria/img_v17.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+
+                #item34 {
+                    background-image: url(../img/img_cards/fichas.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+            }
+
+            .img_18 {
+                margin-top: 20px;
+
+                #item35 {
+                    background-image: url(../img/img_galeria/horizontales/cecilia_7.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+
+                #item36 {
+                    background-image: url(../img/img_cards/fichas.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+            }
+
+            .img_19 {
+                margin-top: 20px;
+
+                #item37 {
+                    background-image: url(../img/img_galeria/img_v18.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+
+                #item38 {
+                    background-image: url(../img/img_cards/fichas.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+            }
+
+            .img_20 {
+                margin-top: 20px;
+
+                #item39 {
+                    background-image: url(../img/img_galeria/horizontales/cecilia_8.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+
+                #item40 {
+                    background-image: url(../img/img_cards/fichas.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+            }
+
+            .img_21 {
+                margin-top: 20px;
+
+                #item41 {
+                    background-image: url(../img/img_galeria/img_v19.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+
+                #item42 {
+                    background-image: url(../img/img_cards/fichas.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+            }
+
+            .img_22 {
+                margin-top: 20px;
+
+                #item43 {
+                    background-image: url(../img/img_galeria/horizontales/cecilia_9.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+
+                #item44 {
+                    background-image: url(../img/img_cards/fichas.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+            }
+
+            .img_23 {
+                margin-top: 20px;
+
+                #item45 {
+                    background-image: url(../img/img_galeria/img_v20.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+
+                #item46 {
+                    background-image: url(../img/img_cards/fichas.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+            }
+
+            .img_24 {
+                margin-top: 20px;
+
+                #item47 {
+                    background-image: url(../img/img_galeria/horizontales/cecilia_10.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+
+                #item48 {
+                    background-image: url(../img/img_cards/fichas.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+            }
+
+            .img_25 {
+                margin-top: 20px;
+
+                #item49 {
+                    background-image: url(../img/img_galeria/horizontales/cecilia_11.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+
+                #item50 {
+                    background-image: url(../img/img_cards/fichas.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+            }
+
+
             .btn--offcanvas {
                 width: 100%;
                 text-align: center;
                 margin-top: 5px;
                 position: fixed;
                 bottom: 10px;
-                right: 130px;
+                right: 110px;
                 height: 100px;
                 z-index: 999;
 
@@ -2215,11 +2345,15 @@
 
     .footer_main {
         width: 100%;
-        /* height: 100%; */
+        padding-top: 20px;
+        height: 120vh;
+        /* height: auto; */
+
 
         .contain_footer {
+
             width: 100%;
-            /* height: 1200px; */
+            height: 100%;
             display: grid;
             grid-template-columns: 100%;
             grid-template-rows: repeat(6, 1fr);
@@ -2229,15 +2363,22 @@
                 "a4"
                 "a5"
                 "a6";
+            grid-gap: 15px;
+            padding-bottom: 300px;
+
 
             .logo_footer {
                 grid-area: a1;
                 text-align: center;
+                margin: 0px;
+                padding: 0px;
             }
 
             .contenedor_1 {
                 grid-area: a2;
                 text-align: center;
+                margin: 0px;
+                padding: 0px 20px;
 
                 & p {
                     text-align: justify;
@@ -2253,6 +2394,8 @@
                 flex-wrap: wrap;
                 justify-content: center;
                 align-items: center;
+                margin: 0px;
+                padding: 0px;
             }
 
             .contenedor_3 {
@@ -2262,6 +2405,8 @@
                 flex-wrap: wrap;
                 justify-content: center;
                 align-items: center;
+                margin: 0px;
+                padding: 0px;
 
                 & a img {
                     width: 32px;
@@ -2293,6 +2438,8 @@
             .contenedor_5 {
                 grid-area: a5;
                 text-align: center;
+                margin: 0px;
+                padding: 0px;
 
                 .redes_sigueme {
                     display: flex;
@@ -2311,6 +2458,8 @@
 
             .contenedor_copy {
                 grid-area: a6;
+                margin: 0px;
+                padding: 15px 0px 0px 0px;
             }
         }
     }
@@ -2322,19 +2471,21 @@
 
     .main_galeria {
         width: 100%;
-        height: 3250px;
 
+        .main_gallery {
+            display: none;
+        }
 
         .galeria_carousel {
             width: 100%;
-            height: 100%;
+            /* height: 100%; */
             padding-top: 20px;
             display: block;
 
             .img_1 {
 
                 #item1 {
-                    background-image: url(../img/img_galeria/img11_ver.jpg);
+                    background-image: url(../img/img_galeria/img_v1.jpg);
                     height: 300px;
                     background-position: center center;
                     background-size: cover;
@@ -2352,7 +2503,7 @@
                 margin-top: 20px;
 
                 #item3 {
-                    background-image: url(../img/img_galeria/img13_hz.jpg);
+                    background-image: url(../img/img_galeria/horizontales/cecilia_1.jpg);
                     height: 300px;
                     background-position: center center;
                     background-size: cover;
@@ -2370,7 +2521,7 @@
                 margin-top: 20px;
 
                 #item5 {
-                    background-image: url(../img/img_galeria/img16_ver.jpg);
+                    background-image: url(../img/img_galeria/img_v12.jpg);
                     height: 300px;
                     background-position: center center;
                     background-size: cover;
@@ -2388,7 +2539,7 @@
                 margin-top: 20px;
 
                 #item7 {
-                    background-image: url(../img/img_galeria/img14_hz.jpg);
+                    background-image: url(../img/img_galeria/horizontales/cecilia_10.jpg);
                     height: 300px;
                     background-position: center center;
                     background-size: cover;
@@ -2406,7 +2557,7 @@
                 margin-top: 20px;
 
                 #item9 {
-                    background-image: url(../img/img_galeria/img15_hz.jpg);
+                    background-image: url(../img/img_galeria/img_v11.jpg);
                     height: 300px;
                     background-position: center center;
                     background-size: cover;
@@ -2424,7 +2575,7 @@
                 margin-top: 20px;
 
                 #item11 {
-                    background-image: url(../img/img_galeria/img17_ver.jpg);
+                    background-image: url(../img/img_galeria/horizontales/cecilia_11.jpg);
                     height: 300px;
                     background-position: center center;
                     background-size: cover;
@@ -2438,13 +2589,11 @@
                 }
             }
 
-
-
             .img_7 {
                 margin-top: 20px;
 
                 #item13 {
-                    background-image: url(../img/img_galeria/img18_hz.jpg);
+                    background-image: url(../img/img_galeria/img_v12.jpg);
                     height: 300px;
                     background-position: center center;
                     background-size: cover;
@@ -2456,15 +2605,14 @@
                     background-position: center center;
                     background-size: cover;
                 }
+
             }
-
-
 
             .img_8 {
                 margin-top: 20px;
 
                 #item15 {
-                    background-image: url(../img/img_galeria/img21_ver.jpg);
+                    background-image: url(../img/img_galeria/horizontales/cecilia_2.jpg);
                     height: 300px;
                     background-position: center center;
                     background-size: cover;
@@ -2478,13 +2626,11 @@
                 }
             }
 
-
-
             .img_9 {
                 margin-top: 20px;
 
                 #item17 {
-                    background-image: url(../img/img_galeria/img19_hz.jpg);
+                    background-image: url(../img/img_galeria/img_v13.jpg);
                     height: 300px;
                     background-position: center center;
                     background-size: cover;
@@ -2498,13 +2644,11 @@
                 }
             }
 
-
-
             .img_10 {
                 margin-top: 20px;
 
                 #item19 {
-                    background-image: url(../img/img_galeria/img20_ver.jpg);
+                    background-image: url(../img/img_galeria/horizontales/cecilia_3.jpg);
                     height: 300px;
                     background-position: center center;
                     background-size: cover;
@@ -2518,18 +2662,291 @@
                 }
             }
 
+            .img_11 {
+                margin-top: 20px;
+
+                #item21 {
+                    background-image: url(../img/img_galeria/img_v14.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+
+                #item22 {
+                    background-image: url(../img/img_cards/fichas.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+            }
+
+            .img_12 {
+                margin-top: 20px;
+
+                #item23 {
+                    background-image: url(../img/img_galeria/horizontales/cecilia_4.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+
+                #item24 {
+                    background-image: url(../img/img_cards/fichas.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+            }
+
+            .img_13 {
+                margin-top: 20px;
+
+                #item25 {
+                    background-image: url(../img/img_galeria/img_v15.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+
+                #item26 {
+                    background-image: url(../img/img_cards/fichas.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+            }
+
+            .img_14 {
+                margin-top: 20px;
+
+                #item27 {
+                    background-image: url(../img/img_galeria/horizontales/cecilia_5.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+
+                #item28 {
+                    background-image: url(../img/img_cards/fichas.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+            }
+
+            .img_15 {
+                margin-top: 20px;
+
+                #item29 {
+                    background-image: url(../img/img_galeria/img_v16.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+
+                #item30 {
+                    background-image: url(../img/img_cards/fichas.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+            }
+
+            .img_16 {
+                margin-top: 20px;
+
+                #item31 {
+                    background-image: url(../img/img_galeria/horizontales/cecilia_6.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+
+                #item32 {
+                    background-image: url(../img/img_cards/fichas.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+            }
+
+            .img_17 {
+                margin-top: 20px;
+
+                #item33 {
+                    background-image: url(../img/img_galeria/img_v17.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+
+                #item34 {
+                    background-image: url(../img/img_cards/fichas.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+            }
+
+            .img_18 {
+                margin-top: 20px;
+
+                #item35 {
+                    background-image: url(../img/img_galeria/horizontales/cecilia_7.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+
+                #item36 {
+                    background-image: url(../img/img_cards/fichas.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+            }
+
+            .img_19 {
+                margin-top: 20px;
+
+                #item37 {
+                    background-image: url(../img/img_galeria/img_v18.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+
+                #item38 {
+                    background-image: url(../img/img_cards/fichas.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+            }
+
+            .img_20 {
+                margin-top: 20px;
+
+                #item39 {
+                    background-image: url(../img/img_galeria/horizontales/cecilia_8.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+
+                #item40 {
+                    background-image: url(../img/img_cards/fichas.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+            }
+
+            .img_21 {
+                margin-top: 20px;
+
+                #item41 {
+                    background-image: url(../img/img_galeria/img_v19.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+
+                #item42 {
+                    background-image: url(../img/img_cards/fichas.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+            }
+
+            .img_22 {
+                margin-top: 20px;
+
+                #item43 {
+                    background-image: url(../img/img_galeria/horizontales/cecilia_9.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+
+                #item44 {
+                    background-image: url(../img/img_cards/fichas.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+            }
+
+            .img_23 {
+                margin-top: 20px;
+
+                #item45 {
+                    background-image: url(../img/img_galeria/img_v20.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+
+                #item46 {
+                    background-image: url(../img/img_cards/fichas.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+            }
+
+            .img_24 {
+                margin-top: 20px;
+
+                #item47 {
+                    background-image: url(../img/img_galeria/horizontales/cecilia_10.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+
+                #item48 {
+                    background-image: url(../img/img_cards/fichas.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+            }
+
+            .img_25 {
+                margin-top: 20px;
+
+                #item49 {
+                    background-image: url(../img/img_galeria/horizontales/cecilia_11.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+
+                #item50 {
+                    background-image: url(../img/img_cards/fichas.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+            }
+
+
+
             .btn--offcanvas {
                 width: 100%;
                 text-align: center;
                 margin-top: 5px;
                 position: fixed;
                 bottom: 10px;
-                right: 180px;
+                right: 170px;
                 height: 100px;
                 z-index: 999;
 
                 .btn {
-                    border-radius: 40px;
+                    border-top-right-radius: 40px;
+                    border-bottom-right-radius: 40px;
                     height: 70px;
                     border: none;
 
@@ -2541,16 +2958,12 @@
 
                 }
 
-                .offcanvas-start {
-                    width: 100%;
-                }
-
 
                 .offcanvas-body {
                     padding-right: 30px;
 
                     & a img {
-                        width: 400px;
+                        width: 300px;
                         height: auto;
                         padding-top: 10px;
                     }
@@ -2561,8 +2974,6 @@
                     }
                 }
             }
-
-
         }
 
         .main_gallery {
@@ -2744,6 +3155,11 @@
 
             .hoja1 {
                 display: block;
+                transform: rotateZ(-30deg);
+
+                img {
+                    width: 200px;
+                }
             }
 
             .hoja2 {
@@ -2760,20 +3176,464 @@
 
     .main_galeria {
         width: 100%;
-        /* height: 5250px; */
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: row;
-        flex-wrap: nowrap;
-
-        .main_gallery {
-            display: none;
-        }
 
         .galeria_carousel {
-            width: 80%;
+            width: 100%;
             /* height: 100%; */
+            padding-top: 20px;
+            display: none;
+
+            .img_1 {
+
+                #item1 {
+                    background-image: url(../img/img_galeria/img_v1.jpg);
+                    height: 400px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+
+                #item2 {
+                    background-image: url(../img/img_cards/fichas.jpg);
+                    height: 400px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+            }
+
+            .img_2 {
+                margin-top: 20px;
+
+                #item3 {
+                    background-image: url(../img/img_galeria/horizontales/cecilia_1.jpg);
+                    height: 400px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+
+                #item4 {
+                    background-image: url(../img/img_cards/fichas.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+            }
+
+            .img_3 {
+                margin-top: 20px;
+
+                #item5 {
+                    background-image: url(../img/img_galeria/img_v12.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+
+                #item6 {
+                    background-image: url(../img/img_cards/fichas.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+            }
+
+            .img_4 {
+                margin-top: 20px;
+
+                #item7 {
+                    background-image: url(../img/img_galeria/horizontales/cecilia_10.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+
+                #item8 {
+                    background-image: url(../img/img_cards/fichas.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+            }
+
+            .img_5 {
+                margin-top: 20px;
+
+                #item9 {
+                    background-image: url(../img/img_galeria/img_v11.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+
+                #item10 {
+                    background-image: url(../img/img_cards/fichas.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+            }
+
+            .img_6 {
+                margin-top: 20px;
+
+                #item11 {
+                    background-image: url(../img/img_galeria/horizontales/cecilia_11.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+
+                #item12 {
+                    background-image: url(../img/img_cards/fichas.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+            }
+
+            .img_7 {
+                margin-top: 20px;
+
+                #item13 {
+                    background-image: url(../img/img_galeria/img_v12.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+
+                #item14 {
+                    background-image: url(../img/img_cards/fichas.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+
+            }
+
+            .img_8 {
+                margin-top: 20px;
+
+                #item15 {
+                    background-image: url(../img/img_galeria/horizontales/cecilia_2.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+
+                #item16 {
+                    background-image: url(../img/img_cards/fichas.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+            }
+
+            .img_9 {
+                margin-top: 20px;
+
+                #item17 {
+                    background-image: url(../img/img_galeria/img_v13.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+
+                #item18 {
+                    background-image: url(../img/img_cards/fichas.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+            }
+
+            .img_10 {
+                margin-top: 20px;
+
+                #item19 {
+                    background-image: url(../img/img_galeria/horizontales/cecilia_3.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+
+                #item20 {
+                    background-image: url(../img/img_cards/fichas.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+            }
+
+            .img_11 {
+                margin-top: 20px;
+
+                #item21 {
+                    background-image: url(../img/img_galeria/img_v14.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+
+                #item22 {
+                    background-image: url(../img/img_cards/fichas.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+            }
+
+            .img_12 {
+                margin-top: 20px;
+
+                #item23 {
+                    background-image: url(../img/img_galeria/horizontales/cecilia_4.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+
+                #item24 {
+                    background-image: url(../img/img_cards/fichas.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+            }
+
+            .img_13 {
+                margin-top: 20px;
+
+                #item25 {
+                    background-image: url(../img/img_galeria/img_v15.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+
+                #item26 {
+                    background-image: url(../img/img_cards/fichas.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+            }
+
+            .img_14 {
+                margin-top: 20px;
+
+                #item27 {
+                    background-image: url(../img/img_galeria/horizontales/cecilia_5.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+
+                #item28 {
+                    background-image: url(../img/img_cards/fichas.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+            }
+
+            .img_15 {
+                margin-top: 20px;
+
+                #item29 {
+                    background-image: url(../img/img_galeria/img_v16.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+
+                #item30 {
+                    background-image: url(../img/img_cards/fichas.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+            }
+
+            .img_16 {
+                margin-top: 20px;
+
+                #item31 {
+                    background-image: url(../img/img_galeria/horizontales/cecilia_6.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+
+                #item32 {
+                    background-image: url(../img/img_cards/fichas.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+            }
+
+            .img_17 {
+                margin-top: 20px;
+
+                #item33 {
+                    background-image: url(../img/img_galeria/img_v17.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+
+                #item34 {
+                    background-image: url(../img/img_cards/fichas.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+            }
+
+            .img_18 {
+                margin-top: 20px;
+
+                #item35 {
+                    background-image: url(../img/img_galeria/horizontales/cecilia_7.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+
+                #item36 {
+                    background-image: url(../img/img_cards/fichas.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+            }
+
+            .img_19 {
+                margin-top: 20px;
+
+                #item37 {
+                    background-image: url(../img/img_galeria/img_v18.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+
+                #item38 {
+                    background-image: url(../img/img_cards/fichas.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+            }
+
+            .img_20 {
+                margin-top: 20px;
+
+                #item39 {
+                    background-image: url(../img/img_galeria/horizontales/cecilia_8.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+
+                #item40 {
+                    background-image: url(../img/img_cards/fichas.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+            }
+
+            .img_21 {
+                margin-top: 20px;
+
+                #item41 {
+                    background-image: url(../img/img_galeria/img_v19.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+
+                #item42 {
+                    background-image: url(../img/img_cards/fichas.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+            }
+
+            .img_22 {
+                margin-top: 20px;
+
+                #item43 {
+                    background-image: url(../img/img_galeria/horizontales/cecilia_9.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+
+                #item44 {
+                    background-image: url(../img/img_cards/fichas.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+            }
+
+            .img_23 {
+                margin-top: 20px;
+
+                #item45 {
+                    background-image: url(../img/img_galeria/img_v20.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+
+                #item46 {
+                    background-image: url(../img/img_cards/fichas.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+            }
+
+            .img_24 {
+                margin-top: 20px;
+
+                #item47 {
+                    background-image: url(../img/img_galeria/horizontales/cecilia_10.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+
+                #item48 {
+                    background-image: url(../img/img_cards/fichas.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+            }
+
+            .img_25 {
+                margin-top: 20px;
+
+                #item49 {
+                    background-image: url(../img/img_galeria/horizontales/cecilia_11.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+
+                #item50 {
+                    background-image: url(../img/img_cards/fichas.jpg);
+                    height: 300px;
+                    background-position: center center;
+                    background-size: cover;
+                }
+            }
+
+
 
             .btn--offcanvas {
                 width: 100%;
@@ -2781,25 +3641,22 @@
                 margin-top: 5px;
                 position: fixed;
                 bottom: 10px;
-                right: 300px;
+                right: 270px;
                 height: 100px;
                 z-index: 999;
 
                 .btn {
-                    border-radius: 40px;
+                    border-top-right-radius: 40px;
+                    border-bottom-right-radius: 40px;
                     height: 70px;
                     border: none;
 
                     &:hover {
                         transition: all 0.3s ease;
-                        background-color: rgb(66, 66, 66);
+                        background-color: rgb(0, 0, 0);
                         color: #fff;
                     }
 
-                }
-
-                .offcanvas-start {
-                    width: 100%;
                 }
 
 
@@ -2807,7 +3664,7 @@
                     padding-right: 30px;
 
                     & a img {
-                        width: 400px;
+                        width: 300px;
                         height: auto;
                         padding-top: 10px;
                     }
@@ -2818,9 +3675,72 @@
                     }
                 }
             }
+        }
+
+        .main_gallery {
+            display: block;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-auto-rows: 400px;
+            grid-gap: 15px;
+
+            .img--class {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            .img_containers:nth-child(1) {
+                grid-column-start: span 2;
+            }
+
+            .img_containers:nth-child(2) {
+                grid-column-start: span 2;
+            }
+
+            .img_containers:nth-child(3) {
+                grid-column-start: span 4;
+            }
+
+            .img_containers:nth-child(4) {
+                grid-column-start: span 2;
+            }
+
+            .img_containers:nth-child(6) {
+                grid-column-start: span 2;
+            }
+
+            .img_containers:nth-child(9) {
+
+                grid-column-start: span 2;
+            }
+
+            .img_containers:nth-child(11) {
+                grid-column-start: span 2;
+            }
+
+            .img_containers:nth-child(25) {
+                grid-column-start: span 2;
+            }
+
+            .img_containers:nth-child(35) {
+                grid-column-start: span 2;
+            }
+
+            .img_containers:nth-child(36) {
+                grid-column-start: span 2;
+            }
+
+            .img_containers:nth-child(37) {
+                grid-column-start: span 2;
+            }
+
+
 
 
         }
+
+
     }
 
 
@@ -2835,7 +3755,7 @@
         .about_contain {
 
             width: 100%;
-            grid-template-rows: repeat(3,1fr);
+            grid-template-rows: repeat(3, 1fr);
             grid-template-columns: 100%;
             grid-template-areas: "a1 a1"
                 "a2 a2"
@@ -2880,33 +3800,45 @@
 
     .footer_main {
         width: 100%;
+        height: 90vh;
 
         .contain_footer {
             width: 100%;
+            height: 75vh;
             grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: repeat(4,1fr);
+            grid-template-rows: repeat(4, 1fr);
             grid-template-areas: "a1 a2 a2"
                 "a3 a4 a4"
                 "a5 a5 a5"
                 "a6 a6 a6";
+            padding-top: 20px;
 
-            .contenedor_1{
+            .contenedor_1 {
 
-                & p{
-                    font-size: 18px;
+                padding-right: 20px;
+
+                & p {
+                    font-size: 14px;
                 }
             }
 
-            .contenedor_2{
+            .contenedor_2 {
                 padding-bottom: 40px;
                 padding-top: 0px;
+
+                .ul_contenedor_footer{
+
+                    li a{
+                        font-size: 14px;
+                    }
+                }
             }
 
             .contenedor_3 {
                 padding-bottom: 45px;
 
-                & p{
-                    font-size: 18px;
+                & p {
+                    font-size: 14px;
                 }
             }
         }
@@ -2918,7 +3850,7 @@
 
     /*indexhome*/
 
-    .main_index{
+    .main_index {
         width: 100%;
         margin-bottom: 100px;
         padding-top: 50px;
@@ -2935,19 +3867,19 @@
             width: 100%;
             /* height: 100%; */
 
-            .text_about{
+            .text_about {
                 padding-top: 40px;
             }
 
             .img_about {
                 padding-bottom: 20px;
 
-                .cuadro1{
+                .cuadro1 {
                     width: auto;
                     height: 500px;
                 }
 
-                .cuadro2{
+                .cuadro2 {
                     width: auto;
                     height: 500px;
                 }
@@ -2955,6 +3887,42 @@
         }
     }
 
+
+    .footer_main{
+        width: 100%;
+        height: 85vh;
+
+        .contain_footer{
+
+            .contenedor_1{
+
+                p{
+                    font-size: 15px;
+                }
+            }
+
+            .contenedor_2{
+
+                .ul_contenedor_footer{
+                    
+                    li a{
+                        font-size: 15px;
+                    }
+                }
+            }
+
+            .contenedor_3{
+
+                p{
+                    font-size: 15px;
+                }
+            }
+
+            .contenedor_copy{
+                font-size: 15px;
+            }
+        }
+    }
 }
 
 
@@ -2976,10 +3944,10 @@
 
     /*foooter*/
 
-    .footer_main{
+    .footer_main {
         width: 100%;
 
-        .contain_footer{
+        .contain_footer {
             width: 100%;
             height: 80vh;
             padding-top: 30px;
@@ -2991,7 +3959,7 @@
     .main_second {
         width: 100%;
         /* height: 1600px; */
-       /*  height: 100%; */
+        /*  height: 100%; */
 
         .about_contain {
             width: 100%;
@@ -3009,429 +3977,100 @@
 
     /*****galeria****/
 
-    .main_galeria {
+    .main_gallery {
 
-        width: 100%;
-        /* height: 2400px; */
-        display: block;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-auto-rows: 600px;
+        grid-gap: 15px;
 
-        .main_gallery {
-            display: block;
-            width: 100%;
-            /* height: 100%; */
-            display: grid;
-            grid-template-columns: repeat(9, 1fr);
-            grid-template-rows: repeat(15, 1fr);
-            grid-template-areas: "a1 a1 a1 a2 a2 a2 a3 a3 a3"
-                "a1 a1 a1 a2 a2 a2 a3 a3 a3"
-                "a1 a1 a1 a4 a4 a4 a3 a3 a3"
-                "a5 a5 a5 a4 a4 a4 a6 a6 a6"
-                "a5 a5 a5 a4 a4 a4 a6 a6 a6"
-                "a7 a7 a7 a8 a8 a8 a9 a9 a9"
-                "a7 a7 a7 a8 a8 a8 a9 a9 a9"
-                "a7 a7 a7 a10 a10 a10 a9 a9 a9"
-                "a11 a11 a11 a10 a10 a10 a12 a12 a12"
-                "a11 a11 a11 a10 a10 a10 a12 a12 a12"
-                "a13 a13 a13 a14 a14 a14 a15 a15 a15"
-                "a13 a13 a13 a14 a14 a14 a15 a15 a15"
-                "a13 a13 a13 a16 a16 a16 a15 a15 a15"
-                "a17 a17 a17 a16 a16 a16 a18 a18 a18"
-                "a17 a17 a17 a16 a16 a16 a18 a18 a18";
-
-
-            .img1 {
-                width: 100%;
-                height: 100%;
-                grid-area: a1;
-                background-image: url(../img/img_galeria/img1_ver.jpg);
-                background-size: cover;
-
-                .contenedorimg1 {
-
-                    @extend .clase_imagenes--hover;
-
-                    &:hover {
-                        opacity: 80%;
-                        transition: all 0.3s ease;
-                    }
-                }
-            }
-
-            /**contenedor img2***/
-
-            .img2 {
-                width: 100%;
-                height: 100%;
-                grid-area: a2;
-                background-image: url(../img/img_galeria/img1_hz.jpg);
-                background-size: cover;
-
-                .contenedorimg2 {
-                    width: 100%;
-                    height: 100%;
-                    background-color: rgb(0, 0, 0);
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-content: center;
-                    text-align: center;
-                    opacity: 0%;
-                    color: #fff;
-
-                    &:hover {
-                        opacity: 80%;
-                        transition: all 0.3s ease;
-                    }
-                }
-
-            }
-
-            /**contenedor img3***/
-
-            .img3 {
-                width: 100%;
-                height: 100%;
-                grid-area: a3;
-                background-image: url(../img/img_galeria/img4_ver.jpg);
-                background-size: cover;
-
-                .contenedorimg3 {
-
-                    @extend .clase_imagenes--hover;
-
-                    &:hover {
-                        opacity: 80%;
-                        transition: all 0.3s ease;
-                    }
-                }
-            }
-
-            /**contenedor img4***/
-
-            .img4 {
-                width: 100%;
-                height: 100%;
-                grid-area: a4;
-                background-image: url(../img/img_galeria/img3_hz.jpg);
-                background-size: cover;
-
-                .contenedorimg4 {
-
-                    @extend .clase_imagenes--hover;
-
-                    &:hover {
-                        opacity: 80%;
-                        transition: all 0.3s ease;
-                    }
-                }
-            }
-
-            /*contenedorimg5*/
-
-            .img5 {
-                width: 100%;
-                height: 100%;
-                grid-area: a5;
-                background-image: url(../img/img_galeria/img9_ver.jpg);
-                background-size: cover;
-
-                .contenedorimg5 {
-
-                    @extend .clase_imagenes--hover;
-
-                    &:hover {
-                        opacity: 80%;
-                        transition: all 0.3s ease;
-                    }
-                }
-            }
-
-            /*contenedor img6*/
-
-            .img6 {
-                width: 100%;
-                height: 100%;
-                grid-area: a6;
-                background-image: url(../img/img_galeria/img5_hz.jpg);
-                background-size: cover;
-
-                .contenedorimg6 {
-
-                    @extend .clase_imagenes--hover;
-
-                    &:hover {
-                        opacity: 80%;
-                        transition: all 0.3s ease;
-                    }
-
-                }
-
-            }
-
-            /*contenedor img7*/
-
-            .img7 {
-                width: 100%;
-                height: 100%;
-                grid-area: a7;
-                background-image: url(../img/img_galeria/img11_ver.jpg);
-                background-size: cover;
-
-                .contenedorimg7 {
-
-                    @extend .clase_imagenes--hover;
-
-                    &:hover {
-                        opacity: 80%;
-                        transition: all 0.3s ease;
-                    }
-                }
-            }
-
-            /*contenedor img8*/
-
-            .img8 {
-                width: 100%;
-                height: 100%;
-                grid-area: a8;
-                background-image: url(../img/img_galeria/img6_hz.jpg);
-                background-size: cover;
-
-                .contenedorimg8 {
-
-                    @extend .clase_imagenes--hover;
-
-                    &:hover {
-                        opacity: 80%;
-                        transition: all 0.3s ease;
-                    }
-                }
-            }
-
-            /*comtenedor img9*/
-
-            .img9 {
-                width: 100%;
-                height: 100%;
-                grid-area: a9;
-                background-image: url(../img/img_galeria/img12_ver.jpg);
-                background-size: cover;
-                background-position: center 13%;
-
-                .contenedorimg9 {
-
-                    @extend .clase_imagenes--hover;
-
-                    &:hover {
-                        opacity: 80%;
-                        transition: all 0.3s ease;
-                    }
-                }
-            }
-
-            /*contenedor img10*/
-
-            .img10 {
-                width: 100%;
-                height: 100%;
-                grid-area: a10;
-                background-image: url(../img/img_galeria/img7_hz.jpg);
-                background-size: cover;
-
-                .contenedorimg10 {
-
-                    @extend .clase_imagenes--hover;
-
-                    &:hover {
-                        opacity: 80%;
-                        transition: all 0.3s ease;
-                    }
-                }
-            }
-
-            /*contenedor img11*/
-
-            .img11 {
-                width: 100%;
-                height: 100%;
-                grid-area: a11;
-                background-image: url(../img/img_galeria/img16_ver.jpg);
-                background-size: cover;
-
-                .contenedorimg11 {
-
-                    @extend .clase_imagenes--hover;
-
-                    &:hover {
-                        opacity: 80%;
-                        transition: all 0.3s ease;
-                    }
-                }
-            }
-
-            /*contenedor img12*/
-
-            .img12 {
-                width: 100%;
-                height: 100%;
-                grid-area: a12;
-                background-image: url(../img/img_galeria/img8_hz.jpg);
-                background-size: cover;
-
-                .contenedorimg12 {
-
-                    @extend .clase_imagenes--hover;
-
-                    &:hover {
-                        opacity: 80%;
-                        transition: all 0.3s ease;
-                    }
-                }
-            }
-
-            /*contenedor img13*/
-
-            .img13 {
-                width: 100%;
-                height: 100%;
-                grid-area: a13;
-                background-image: url(../img/img_galeria/img17_ver.jpg);
-                background-size: cover;
-
-                .contenedorimg13 {
-
-                    @extend .clase_imagenes--hover;
-
-                    &:hover {
-                        opacity: 80%;
-                        transition: all 0.3s ease;
-                    }
-                }
-            }
-
-            /*contenedor img14*/
-
-            .img14 {
-                width: 100%;
-                height: 100%;
-                grid-area: a14;
-                background-image: url(../img/img_galeria/img18_hz.jpg);
-                background-size: cover;
-
-                .contenedorimg14 {
-
-                    @extend .clase_imagenes--hover;
-
-                    &:hover {
-                        opacity: 80%;
-                        transition: all 0.3s ease;
-                    }
-                }
-            }
-
-            /*contenedor img15*/
-
-            .img15 {
-                width: 100%;
-                height: 100%;
-                grid-area: a15;
-                background-image: url(../img/img_galeria/img20_ver.jpg);
-                background-size: cover;
-                background-position: center center;
-
-                .contenedorimg15 {
-
-                    @extend .clase_imagenes--hover;
-
-                    &:hover {
-                        opacity: 80%;
-                        transition: all 0.3s ease;
-                    }
-                }
-            }
-
-            /*contenedor img16*/
-
-            .img16 {
-                width: 100%;
-                height: 100%;
-                grid-area: a16;
-                background-image: url(../img/img_galeria/img9_ver.jpg);
-                background-size: cover;
-
-                .contenedorimg16 {
-
-                    @extend .clase_imagenes--hover;
-
-                    &:hover {
-                        opacity: 80%;
-                        transition: all 0.3s ease;
-                    }
-
-                }
-            }
-
-            /*contenedor img17*/
-
-            .img17 {
-                width: 100%;
-                height: 100%;
-                grid-area: a17;
-                background-image: url(../img/img_galeria/img10_hz.jpg);
-                background-size: cover;
-
-                .contenedorimg17 {
-
-                    @extend .clase_imagenes--hover;
-
-                    &:hover {
-                        opacity: 80%;
-                        transition: all 0.3s ease;
-                    }
-                }
-            }
-
-            /*contenedor img18*/
-
-            .img18 {
-                width: 100%;
-                height: 100%;
-                grid-area: a18;
-                background-image: url(../img/img_galeria/img22_hz.jpg);
-                background-size: cover;
-
-                .contenedorimg18 {
-
-                    @extend .clase_imagenes--hover;
-
-                    &:hover {
-                        opacity: 80%;
-                        transition: all 0.3s ease;
-                    }
-                }
-            }
-        }
-
-        /***extend--galeria**/
-
-        .clase_imagenes--hover {
+        .img--class {
             width: 100%;
             height: 100%;
-            background-color: rgb(0, 0, 0);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-content: center;
-            text-align: center;
-            opacity: 0%;
-            color: #fff;
+            object-fit: cover;
         }
 
-        /******************************/
 
-        .galeria_carousel {
-            display: none;
+        .img_containers:nth-child(3) {
+            grid-column-start: span 2;
         }
+
+        .img_containers:nth-child(2) {
+            grid-column-start: span 2;
+        }
+
+        .img_containers:nth-child(4) {
+            grid-column-start: span 3;
+        }
+
+        .img_containers:nth-child(5) {
+            grid-column-start: span 2;
+        }
+
+        .img_containers:nth-child(7) {
+
+            grid-column-start: span 2;
+            grid-row-start: span 2;
+        }
+
+        .img_containers:nth-child(8) {
+
+            grid-column-start: span 2;
+        }
+
+        .img_containers:nth-child(10) {
+
+            grid-column-start: span 2;
+        }
+
+        .img_containers:nth-child(12) {
+            grid-column-start: span 2;
+        }
+
+        .img_containers:nth-child(13) {
+
+            grid-column-start: span 2;
+        }
+
+        .img_containers:nth-child(14) {
+
+            grid-column-start: span 2;
+        }
+
+        .img_containers:nth-child(16) {
+
+            grid-column-start: span 2;
+        }
+
+        .img_containers:nth-child(18) {
+            grid-column-start: span 4;
+        }
+
+        .img_containers:nth-child(20) {
+            grid-row-start: span 2;
+            grid-column-start: span 2;
+        }
+
+        .img_containers:nth-child(24) {
+            grid-column-start: span 2;
+        }
+
+        .img_containers:nth-child(26) {
+            grid-column-start: span 2;
+        }
+
+        .img_containers:nth-child(29) {
+            grid-column-start: span 3;
+        }
+
+        .img_containers:nth-child(36) {
+            grid-column-start: span 3;
+        }
+
+        .img_containers:nth-child(32) {
+            grid-column-start: span 3;
+        }
+
     }
 
     /*sobremi*/
@@ -3477,11 +4116,125 @@
 
     /*galeria*/
 
+    .galeria_carousel {
+        display: none;
+    }
+
     .main_galeria {
+
         width: 100%;
 
         .main_gallery {
-            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-auto-rows: 600px;
+            grid-gap: 15px;
+
+            .img--class {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            .img_containers:nth-child(1) {
+                grid-column-start: span 2;
+            }
+
+            .img_containers:nth-child(2) {
+                grid-column-start: span 3;
+            }
+
+            .img_containers:nth-child(3) {
+                grid-column-start: span 2;
+            }
+
+            .img_containers:nth-child(4) {
+                grid-column-start: span 3;
+            }
+
+            .img_containers:nth-child(5) {
+                grid-column-start: span 3;
+            }
+
+            .img_containers:nth-child(7) {
+                grid-column-start: span 2;
+                grid-row-start: span 2;
+            }
+
+            .img_containers:nth-child(8) {
+
+                grid-column-start: span 3;
+            }
+
+            .img_containers:nth-child(9) {
+                grid-column-start: span 3;
+            }
+
+            .img_containers:nth-child(10) {
+
+                grid-column-start: span 3;
+            }
+            
+            .img_containers:nth-child(12) {
+                grid-column-start: span 2;
+            }
+
+            .img_containers:nth-child(13) {
+
+                grid-column-start: span 3;
+            }
+
+            .img_containers:nth-child(14) {
+
+                grid-column-start: span 2;
+            }
+
+            .img_containers:nth-child(16) {
+
+                grid-column-start: span 2;
+            }
+
+            .img_containers:nth-child(18) {
+                grid-column-start: span 4;
+            }
+
+            .img_containers:nth-child(20) {
+                grid-row-start: span 1;
+                grid-column-start: span 2;
+            }
+
+            .img_containers:nth-child(23) {
+                grid-column-start: span 2;
+            }
+
+            .img_containers:nth-child(24) {
+                grid-column-start: span 3;
+            }
+
+            .img_containers:nth-child(26) {
+                grid-column-start: span 2;
+            }
+
+            .img_containers:nth-child(29) {
+                grid-column-start: span 3;
+            }
+
+            .img_containers:nth-child(31) {
+                grid-column-start: span 2;
+            }
+
+            .img_containers:nth-child(34) {
+                grid-column-start: span 2;
+            }
+
+            .img_containers:nth-child(36) {
+                grid-column-start: span 3;
+            }
+
+            .img_containers:nth-child(32) {
+                grid-column-start: span 3;
+            }
+
         }
     }
 
@@ -3490,15 +4243,16 @@
     .footer_main {
         width: 100%;
         /* height: 100%; */
+        height: 80vh;
 
         .contain_footer {
             width: 100%;
-            height: 100vh;
-            grid-template-rows: repeat(3,1fr);
+            height: 100%;
+            grid-template-rows: repeat(3, 1fr);
             grid-template-columns: repeat(4, 1fr);
             grid-template-areas: "a1 a2 a3 a3"
-                                 "a0 a4 a6 a6"
-                                 "a7 a7 a7 a7";
+                "a0 a4 a6 a6"
+                "a7 a7 a7 a7";
 
             .logo_footer {
                 grid-area: a1;
@@ -3510,16 +4264,24 @@
                 grid-area: a2;
                 width: 100%;
                 height: 100%;
-                padding-top: 60px;
+                padding-top: 10px;
+
+                .ul_contenedor_footer{
+
+                    li a{
+                        font-size: 16px;
+                    }
+                }
             }
 
             .contenedor_1 {
                 width: 100%;
                 height: 100%;
                 grid-area: a3;
+                padding: 0px 30px;
 
                 & p {
-                    font-size: 18px;
+                    font-size: 16px;
                 }
             }
 
@@ -3527,19 +4289,19 @@
                 width: 100%;
                 height: 100%;
                 grid-area: a4;
-                margin-bottom: 60px;
+                margin-bottom: 0px;
 
                 .gmail {
 
                     & p {
-                        font-size: 18px;
+                        font-size: 16px;
                     }
                 }
 
                 .call {
 
                     & p {
-                        font-size: 18px;
+                        font-size: 16px;
                     }
                 }
             }
@@ -3554,7 +4316,7 @@
                 width: 100%;
                 height: 100%;
                 grid-area: a7;
-                font-size: 20px;
+                font-size: 16px;
             }
         }
     }
@@ -3582,22 +4344,55 @@
 
             .contenedor_facebook {
 
+                & img{
+                    width: 42px;
+                    height: 42px;
+                    cursor: pointer;
+
+                    &:hover{
+                        opacity: 50%;
+                        transition: all 0.3s ease;
+                    }
+                }
+
                 & p {
-                    font-size: 18px;
+                    font-size: 20px;
                 }
             }
 
             .contenedor_telefono {
 
+                & img{
+                    width: 42px;
+                    height: 42px;
+                    cursor: pointer;
+
+                    &:hover{
+                        opacity: 50%;
+                        transition: all 0.3s ease;
+                    }
+                }
+
                 & p {
-                    font-size: 18px;
+                    font-size: 20px;
                 }
             }
 
             .contenedor_correo {
 
+                & img{
+                    width: 42px;
+                    height: 42px;
+                    cursor: pointer;
+
+                    &:hover{
+                        opacity: 50%;
+                        transition: all 0.3s ease;
+                    }
+                }
+
                 & p {
-                    font-size: 18px;
+                    font-size: 20px;
                 }
             }
         }
@@ -3614,7 +4409,7 @@
         .about_contain {
             width: 100%;
             /* height: 100%; */
-            grid-template-rows: repeat(3,1fr);
+            grid-template-rows: repeat(3, 1fr);
 
             .text_about {
                 grid-area: a2;
@@ -3632,7 +4427,7 @@
                 height: 100%;
                 margin: 0px 0px;
                 padding-top: 50px;
-              
+
 
                 & .cuadro1 {
                     width: auto;
@@ -3650,4 +4445,19 @@
 
 
 
+}
+
+@media screen and (max-width:1300px){
+
+    .main_index{
+        width: 100%;
+        margin-top: 0px;
+        height: 80vh;
+        margin-bottom: 30px;
+
+        .contenedor_main_responsive{
+            width: 100%;
+            height: 100%;
+        }
+    }
 }
