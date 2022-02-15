@@ -329,6 +329,7 @@
 /*************************FOOTER*************************/
 .footer_main {
   width: 100%;
+  height: 100%;
   background-color: #dad8d8; }
   .footer_main .contain_footer {
     width: 100%;
@@ -486,13 +487,14 @@
   /*********footer*******************/
   .footer_main {
     width: 100%;
-    height: 130vh; }
+    /* height: 130vh; */
+    height: 100%; }
     .footer_main .contain_footer {
       width: 100%;
-      height: 100%;
+      /* height: 100%; */
       display: grid;
       grid-template-columns: 100%;
-      grid-template-rows: repeat(6, 1fr);
+      grid-template-rows: auto;
       grid-template-areas: "a1" "a2" "a3" "a4" "a5" "a6";
       padding-top: 0px; }
       .footer_main .contain_footer .logo_footer {
@@ -512,6 +514,8 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: center; }
+        .footer_main .contain_footer .contenedor_2 h2 {
+          font-size: 25px; }
         .footer_main .contain_footer .contenedor_2 .ul_contenedor_footer li a {
           font-size: 13px; }
       .footer_main .contain_footer .contenedor_3 {
@@ -521,9 +525,8 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: center; }
-        .footer_main .contain_footer .contenedor_3 a img {
-          width: 32px;
-          height: 32px; }
+        .footer_main .contain_footer .contenedor_3 h2 {
+          font-size: 25px; }
         .footer_main .contain_footer .contenedor_3 p {
           font-size: 13px; }
         .footer_main .contain_footer .contenedor_3 .gmail {
@@ -532,15 +535,23 @@
           flex-wrap: wrap;
           justify-content: center;
           align-items: center; }
+          .footer_main .contain_footer .contenedor_3 .gmail img {
+            width: 24px;
+            height: 24px; }
         .footer_main .contain_footer .contenedor_3 .call {
           display: flex;
           flex-direction: column;
           flex-wrap: wrap;
           justify-content: center;
           align-items: center; }
+          .footer_main .contain_footer .contenedor_3 .call img {
+            width: 24px;
+            height: 24px; }
       .footer_main .contain_footer .contenedor_5 {
         grid-area: a5;
         text-align: center; }
+        .footer_main .contain_footer .contenedor_5 h2 {
+          font-size: 25px; }
         .footer_main .contain_footer .contenedor_5 .redes_sigueme {
           display: flex;
           flex-direction: row;
@@ -548,8 +559,8 @@
           justify-content: center;
           align-items: center; }
           .footer_main .contain_footer .contenedor_5 .redes_sigueme a img {
-            width: 42px;
-            height: 42px; }
+            width: 30px;
+            height: 30px; }
       .footer_main .contain_footer .contenedor_copy {
         grid-area: a6;
         font-size: 13px; }
@@ -892,7 +903,7 @@
   /**************seccion about***********/
   .main_second {
     width: 100%;
-    /*height: 1650px;*/
+    height: 100%;
     /* height: 100%; */ }
     .main_second .about_contain {
       padding-top: 0px;
@@ -901,9 +912,9 @@
       /* height: 100%; */
       display: grid;
       grid-template-columns: 100%;
-      grid-template-rows: 10% 40% 40%;
+      grid-template-rows: auto;
       grid-template-areas: "a1" "a2" "a3";
-      padding: 20px 20px; }
+      grid-gap: 20px; }
       .main_second .about_contain .titulo_about {
         grid-area: a1; }
         .main_second .about_contain .titulo_about h1 {
@@ -1011,14 +1022,12 @@
   /*********footer*******************/
   .footer_main {
     width: 100%;
-    height: 135vh;
-    /* height: 100%; */ }
+    height: 100%; }
     .footer_main .contain_footer {
       width: 100%;
-      height: 100%;
       display: grid;
       grid-template-columns: 100%;
-      grid-template-rows: repeat(6, 1fr);
+      grid-template-rows: auto;
       grid-template-areas: "a1" "a2" "a3" "a4" "a5" "a6";
       padding: 0px 0px; }
       .footer_main .contain_footer .logo_footer {
@@ -1028,6 +1037,8 @@
       .footer_main .contain_footer .contenedor_1 {
         grid-area: a2;
         text-align: center; }
+        .footer_main .contain_footer .contenedor_1 h2 {
+          font-size: 25px; }
         .footer_main .contain_footer .contenedor_1 p {
           text-align: justify;
           font-size: 13px; }
@@ -1039,6 +1050,8 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: center; }
+        .footer_main .contain_footer .contenedor_2 h2 {
+          font-size: 25px; }
         .footer_main .contain_footer .contenedor_2 .ul_contenedor_footer li a {
           font-size: 14px; }
       .footer_main .contain_footer .contenedor_3 {
@@ -1048,9 +1061,8 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: center; }
-        .footer_main .contain_footer .contenedor_3 a img {
-          width: 32px;
-          height: 32px; }
+        .footer_main .contain_footer .contenedor_3 h2 {
+          font-size: 25px; }
         .footer_main .contain_footer .contenedor_3 p {
           font-size: 13px; }
         .footer_main .contain_footer .contenedor_3 .gmail {
@@ -1059,16 +1071,24 @@
           flex-wrap: wrap;
           justify-content: center;
           align-items: center; }
+          .footer_main .contain_footer .contenedor_3 .gmail img {
+            width: 24px;
+            height: 24px; }
         .footer_main .contain_footer .contenedor_3 .call {
           display: flex;
           flex-direction: column;
           flex-wrap: wrap;
           justify-content: center;
           align-items: center; }
+          .footer_main .contain_footer .contenedor_3 .call img {
+            width: 24px;
+            height: 24px; }
       .footer_main .contain_footer .contenedor_5 {
         grid-area: a5;
         text-align: center;
         padding-top: 30px; }
+        .footer_main .contain_footer .contenedor_5 h2 {
+          font-size: 25px; }
         .footer_main .contain_footer .contenedor_5 .redes_sigueme {
           display: flex;
           flex-direction: row;
@@ -1076,11 +1096,11 @@
           justify-content: center;
           align-items: center; }
           .footer_main .contain_footer .contenedor_5 .redes_sigueme a img {
-            width: 42px;
-            height: 42px; }
+            width: 30px;
+            height: 30px; }
       .footer_main .contain_footer .contenedor_copy {
         grid-area: a6;
-        font-size: 14px; }
+        font-size: 13px; }
   /**************main galeria************/
   .main_galeria {
     width: 100%; }
@@ -1420,15 +1440,15 @@
   /**************seccion about***********/
   .main_second {
     width: 100%;
-    /* height: 1000px; */
+    height: 100%;
     /* height: 100%; */ }
     .main_second .about_contain {
       padding: 20px 20px;
       width: 100%;
-      height: 1000px;
       display: grid;
       grid-template-columns: 100%;
-      grid-template-rows: 10% 40% 40%;
+      grid-template-rows: auto;
+      grid-gap: 20px;
       grid-template-areas: "a1" "a2" "a3"; }
       .main_second .about_contain .titulo_about {
         grid-area: a1; }
@@ -1441,21 +1461,23 @@
       .main_second .about_contain .text_about {
         grid-area: a2; }
         .main_second .about_contain .text_about p {
-          font-size: 14px; }
+          font-size: 14px;
+          text-align: justify; }
       .main_second .about_contain .img_about {
         grid-area: a3;
         width: 100%;
         height: 100%;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         flex-wrap: wrap;
         justify-content: space-evenly;
         align-items: center; }
         .main_second .about_contain .img_about .cuadro1 {
-          width: 45%;
+          width: 100%;
           height: auto; }
         .main_second .about_contain .img_about .cuadro2 {
-          width: 45%;
+          padding-top: 10px;
+          width: 100%;
           height: auto; }
   /******************contacto*************/
   #main_xl {
@@ -1538,17 +1560,17 @@
   .footer_main {
     width: 100%;
     padding-top: 20px;
-    height: 120vh;
-    /* height: auto; */ }
+    /* height: 120vh; */
+    height: 100%; }
     .footer_main .contain_footer {
       width: 100%;
-      height: 100%;
+      /* height: 100%; */
       display: grid;
       grid-template-columns: 100%;
-      grid-template-rows: repeat(6, 1fr);
+      grid-template-rows: auto;
       grid-template-areas: "a1" "a2" "a3" "a4" "a5" "a6";
-      grid-gap: 15px;
-      padding-bottom: 300px; }
+      grid-gap: 30px;
+      padding-bottom: 30px; }
       .footer_main .contain_footer .logo_footer {
         grid-area: a1;
         text-align: center;
@@ -1559,6 +1581,8 @@
         text-align: center;
         margin: 0px;
         padding: 0px 20px; }
+        .footer_main .contain_footer .contenedor_1 h2 {
+          font-size: 30px; }
         .footer_main .contain_footer .contenedor_1 p {
           text-align: justify;
           font-size: 14px; }
@@ -1572,6 +1596,10 @@
         align-items: center;
         margin: 0px;
         padding: 0px; }
+        .footer_main .contain_footer .contenedor_2 h2 {
+          font-size: 30px; }
+        .footer_main .contain_footer .contenedor_2 .ul_contenedor_footer li a {
+          font-size: 14px; }
       .footer_main .contain_footer .contenedor_3 {
         grid-area: a4;
         display: flex;
@@ -1581,9 +1609,8 @@
         align-items: center;
         margin: 0px;
         padding: 0px; }
-        .footer_main .contain_footer .contenedor_3 a img {
-          width: 32px;
-          height: 32px; }
+        .footer_main .contain_footer .contenedor_3 h2 {
+          font-size: 30px; }
         .footer_main .contain_footer .contenedor_3 p {
           font-size: 14px; }
         .footer_main .contain_footer .contenedor_3 .gmail {
@@ -1592,12 +1619,18 @@
           flex-wrap: wrap;
           justify-content: center;
           align-items: center; }
+          .footer_main .contain_footer .contenedor_3 .gmail img {
+            width: 30px;
+            height: 30px; }
         .footer_main .contain_footer .contenedor_3 .call {
           display: flex;
           flex-direction: column;
           flex-wrap: wrap;
           justify-content: center;
           align-items: center; }
+          .footer_main .contain_footer .contenedor_3 .call img {
+            width: 30px;
+            height: 30px; }
       .footer_main .contain_footer .contenedor_5 {
         grid-area: a5;
         text-align: center;
@@ -1610,12 +1643,13 @@
           justify-content: center;
           align-items: center; }
           .footer_main .contain_footer .contenedor_5 .redes_sigueme a img {
-            width: 42px;
-            height: 42px; }
+            width: 35px;
+            height: 35px; }
       .footer_main .contain_footer .contenedor_copy {
         grid-area: a6;
         margin: 0px;
-        padding: 15px 0px 0px 0px; }
+        padding: 15px 0px 0px 0px;
+        font-size: 14px; }
   /**************main galeria************/
   .main_galeria {
     width: 100%; }
@@ -1956,16 +1990,17 @@
   /**************seccion about***********/
   .main_second {
     width: 100%;
-    /* height: 1940px; */
+    height: 100%;
     /* height: 100%; */ }
     .main_second .about_contain {
       width: 100%;
       /* height: 100%; */
       display: grid;
       grid-template-columns: 100%;
-      grid-template-rows: 15% 40% 40%;
+      grid-template-rows: auto;
       grid-template-areas: "a1" "a2" "a3";
-      padding: 20px 20px; }
+      padding: 20px 20px;
+      grid-gap: 20px; }
       .main_second .about_contain .titulo_about {
         grid-area: a1; }
         .main_second .about_contain .titulo_about h1 {
@@ -1984,13 +2019,12 @@
       .main_second .about_contain .img_about {
         grid-area: a3; }
         .main_second .about_contain .img_about .cuadro1 {
-          width: 50%;
+          width: 90%;
           height: auto; }
         .main_second .about_contain .img_about .cuadro2 {
-          width: 50%;
+          width: 90%;
           height: auto;
-          padding-top: 10px;
-          padding-left: 10px; }
+          padding-top: 10px; }
   /******************contacto*************/
   #main_xl {
     width: 100%;
@@ -2439,11 +2473,10 @@
   /****sobremi***/
   .main_second {
     width: 100%;
-    margin: 0px 0px 150px 0px;
-    /* height: 100%; */ }
+    height: 100%; }
     .main_second .about_contain {
       width: 100%;
-      grid-template-rows: repeat(3, 1fr);
+      grid-template-rows: auto;
       grid-template-columns: 100%;
       grid-template-areas: "a1 a1" "a2 a2" "a3 a3"; }
       .main_second .about_contain .titulo_about {
@@ -2453,13 +2486,16 @@
       .main_second .about_contain .text_about {
         width: 100%;
         height: 100%;
-        grid-area: a2; }
+        grid-area: a2;
+        padding: 0px 20px; }
         .main_second .about_contain .text_about p {
-          font-size: 18px; }
+          font-size: 14px;
+          margin: 0px 0px; }
       .main_second .about_contain .img_about {
         width: 100%;
         grid-area: a3;
-        padding-top: 60px; }
+        padding-top: 60px;
+        flex-direction: row; }
         .main_second .about_contain .img_about .cuadro1 {
           width: 45%;
           height: auto; }
@@ -2468,27 +2504,41 @@
           height: auto; }
   .footer_main {
     width: 100%;
-    height: 90vh; }
+    /* height: 90vh; */
+    height: 100%; }
     .footer_main .contain_footer {
       width: 100%;
-      height: 75vh;
+      /* height: 75vh; */
       grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(4, 1fr);
-      grid-template-areas: "a1 a2 a2" "a3 a4 a4" "a5 a5 a5" "a6 a6 a6";
+      grid-template-rows: auto;
+      grid-template-areas: "a1 a2 a2" "a3 a5 a4" "a6 a6 a6";
       padding-top: 20px; }
       .footer_main .contain_footer .contenedor_1 {
-        padding-right: 20px; }
+        padding-right: 30px; }
+        .footer_main .contain_footer .contenedor_1 h2 {
+          font-size: 30px; }
         .footer_main .contain_footer .contenedor_1 p {
           font-size: 14px; }
       .footer_main .contain_footer .contenedor_2 {
         padding-bottom: 40px;
         padding-top: 0px; }
+        .footer_main .contain_footer .contenedor_2 h2 {
+          font-size: 30px; }
         .footer_main .contain_footer .contenedor_2 .ul_contenedor_footer li a {
           font-size: 14px; }
       .footer_main .contain_footer .contenedor_3 {
-        padding-bottom: 45px; }
+        padding-right: 20px;
+        justify-content: flex-start; }
+        .footer_main .contain_footer .contenedor_3 h2 {
+          font-size: 30px; }
         .footer_main .contain_footer .contenedor_3 p {
-          font-size: 14px; } }
+          font-size: 14px; }
+      .footer_main .contain_footer .contenedor_5 {
+        padding-bottom: 0px; }
+        .footer_main .contain_footer .contenedor_5 h2 {
+          font-size: 30px; }
+      .footer_main .contain_footer .contenedor_copy {
+        font-size: 14px; } }
 
 @media screen and (min-width: 960px) {
   /*indexhome*/
@@ -2499,24 +2549,27 @@
   /*sobremi*/
   .main_second {
     width: 100%;
-    margin-bottom: 100px;
-    /* height: 100%; */ }
+    height: 100%; }
     .main_second .about_contain {
       width: 100%;
-      /* height: 100%; */ }
+      grid-template-columns: auto;
+      grid-template-rows: auto;
+      grid-gap: 20px; }
       .main_second .about_contain .text_about {
-        padding-top: 40px; }
+        padding: 0px 30px; }
+        .main_second .about_contain .text_about p {
+          font-size: 15px; }
       .main_second .about_contain .img_about {
         padding-bottom: 20px; }
         .main_second .about_contain .img_about .cuadro1 {
-          width: auto;
-          height: 500px; }
+          width: 45%;
+          height: auto; }
         .main_second .about_contain .img_about .cuadro2 {
-          width: auto;
-          height: 500px; }
+          width: 45%;
+          height: auto; }
   .footer_main {
     width: 100%;
-    height: 85vh; }
+    /* height: 85vh; */ }
     .footer_main .contain_footer .contenedor_1 p {
       font-size: 15px; }
     .footer_main .contain_footer .contenedor_2 .ul_contenedor_footer li a {
@@ -2539,17 +2592,34 @@
     width: 100%; }
     .footer_main .contain_footer {
       width: 100%;
-      height: 80vh;
+      /* height: 80vh; */
       padding-top: 30px; }
+      .footer_main .contain_footer .contenedor_1 h2 {
+        font-size: 35px; }
+      .footer_main .contain_footer .contenedor_1 p {
+        font-size: 16px; }
+      .footer_main .contain_footer .contenedor_2 h2 {
+        font-size: 35px; }
+      .footer_main .contain_footer .contenedor_2 .ul_contenedor_footer li a {
+        font-size: 16px; }
+      .footer_main .contain_footer .contenedor_3 p {
+        font-size: 16px; }
+      .footer_main .contain_footer .contenedor_copy {
+        font-size: 16px; }
   /*sobremi*/
   .main_second {
     width: 100%;
+    height: 100%;
     /* height: 1600px; */
     /*  height: 100%; */ }
     .main_second .about_contain {
       width: 100%;
       /* height: 100%; */
-      grid-template-rows: 10% 40% 40%; }
+      grid-template-columns: auto;
+      grid-template-rows: auto;
+      grid-gap: 20px; }
+      .main_second .about_contain .text_about p {
+        font-size: 16px; }
       .main_second .about_contain .img_about {
         width: 100%;
         height: 100%;
@@ -2602,16 +2672,7 @@
     .main_gallery .img_containers:nth-child(36) {
       grid-column-start: span 3; }
     .main_gallery .img_containers:nth-child(32) {
-      grid-column-start: span 3; }
-  /*sobremi*/
-  .main_second {
-    width: 100%; }
-    .main_second .about_contain {
-      width: 100%; }
-      .main_second .about_contain .text_about {
-        padding-top: 30px; }
-      .main_second .about_contain .img_about {
-        padding-top: 50px; } }
+      grid-column-start: span 3; } }
 
 @media screen and (min-width: 1200px) {
   .main_index {
@@ -2690,14 +2751,13 @@
   /**footer**/
   .footer_main {
     width: 100%;
-    /* height: 100%; */
-    height: 80vh; }
+    height: 100%; }
     .footer_main .contain_footer {
       width: 100%;
-      height: 100%;
-      grid-template-rows: repeat(3, 1fr);
-      grid-template-columns: repeat(4, 1fr);
-      grid-template-areas: "a1 a2 a3 a3" "a0 a4 a6 a6" "a7 a7 a7 a7"; }
+      /* height: 100%; */
+      grid-template-rows: auto;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-areas: "a1 a3 a3" "a2 a4 a6" "a7 a7 a7"; }
       .footer_main .contain_footer .logo_footer {
         grid-area: a1;
         width: 100%;
@@ -2705,8 +2765,9 @@
       .footer_main .contain_footer .contenedor_2 {
         grid-area: a2;
         width: 100%;
-        height: 100%;
-        padding-top: 10px; }
+        height: 100%; }
+        .footer_main .contain_footer .contenedor_2 h2 {
+          font-size: 30px; }
         .footer_main .contain_footer .contenedor_2 .ul_contenedor_footer li a {
           font-size: 16px; }
       .footer_main .contain_footer .contenedor_1 {
@@ -2777,19 +2838,24 @@
   /*sobremi*/
   .main_second {
     width: 100%;
+    height: 100%;
     /* height: 1300px; */
     /* height: 100%; */ }
     .main_second .about_contain {
       width: 100%;
       /* height: 100%; */
-      grid-template-rows: repeat(3, 1fr); }
+      grid-template-columns: auto;
+      grid-template-rows: auto;
+      grid-gap: 30px; }
       .main_second .about_contain .text_about {
         grid-area: a2;
         width: 100%;
         height: 100%;
         padding: 0px 40px;
         text-align: justify;
-        padding-top: 20px; }
+        margin: 0px 0px; }
+        .main_second .about_contain .text_about p {
+          font-size: 16px; }
       .main_second .about_contain .img_about {
         grid-area: a3;
         width: 100%;
@@ -2807,8 +2873,30 @@
   .main_index {
     width: 100%;
     margin-top: 0px;
-    height: 80vh;
+    height: 100%;
     margin-bottom: 30px; }
     .main_index .contenedor_main_responsive {
       width: 100%;
-      height: 100%; } }
+      height: auto; } }
+
+@media screen and (min-width: 1550px) {
+  .main_index {
+    width: 100%;
+    margin-top: 0px;
+    height: 100%;
+    margin-bottom: 30px; }
+    .main_index .contenedor_main_responsive {
+      width: 100%;
+      height: auto;
+      padding-top: 40px; } }
+
+@media screen and (min-width: 1800px) {
+  .main_index {
+    width: 100%;
+    margin-top: 0px;
+    height: 100%;
+    margin-bottom: 30px; }
+    .main_index .contenedor_main_responsive {
+      width: 100%;
+      height: auto;
+      padding-top: 50px; } }
