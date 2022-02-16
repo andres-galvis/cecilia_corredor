@@ -894,9 +894,9 @@
         .main_galeria .galeria_carousel .btn--offcanvas .offcanvas-body {
           padding-right: 30px; }
           .main_galeria .galeria_carousel .btn--offcanvas .offcanvas-body a img {
-            width: 300px;
-            height: auto;
-            padding-top: 10px; }
+            width: 100px;
+            height: 100px;
+            padding-top: 5px; }
           .main_galeria .galeria_carousel .btn--offcanvas .offcanvas-body a:hover {
             transition: all 0.3s ease;
             opacity: 60%; }
@@ -1431,9 +1431,9 @@
         .main_galeria .galeria_carousel .btn--offcanvas .offcanvas-body {
           padding-right: 30px; }
           .main_galeria .galeria_carousel .btn--offcanvas .offcanvas-body a img {
-            width: 300px;
-            height: auto;
-            padding-top: 10px; }
+            width: 100px;
+            height: 100px;
+            padding-top: 5px; }
           .main_galeria .galeria_carousel .btn--offcanvas .offcanvas-body a:hover {
             transition: all 0.3s ease;
             opacity: 60%; }
@@ -1979,9 +1979,9 @@
         .main_galeria .galeria_carousel .btn--offcanvas .offcanvas-body {
           padding-right: 30px; }
           .main_galeria .galeria_carousel .btn--offcanvas .offcanvas-body a img {
-            width: 300px;
-            height: auto;
-            padding-top: 10px; }
+            width: 150px;
+            height: 150px;
+            padding-top: 5px; }
           .main_galeria .galeria_carousel .btn--offcanvas .offcanvas-body a:hover {
             transition: all 0.3s ease;
             opacity: 60%; }
