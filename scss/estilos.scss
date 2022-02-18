@@ -8,14 +8,18 @@
 .header_main {
     width: 100%;
     height: 150px;
+    background-color: #000000;
+    position: fixed;
+    z-index: 999;
+
     /* position: fixed;
     top: 0px;
     z-index: 999; */
 
-    #navbar {
+    /* #navbar {
         background-color: rgba(0, 0, 0, 0.973);
-        /* backdrop-filter: blur(10px); */
-    }
+        /* backdrop-filter: blur(10px); 
+    } */
 
     .logo_nav {
         width: 52px;
@@ -235,11 +239,6 @@
 
 }
 
-
-
-
-
-
 /**************SECCION ABOUT********************/
 
 .main_about {
@@ -338,8 +337,168 @@
 
 .main_exposiciones {
     width: 100%;
-    height: 100vh;
-    background-color: #e4c954;
+    height: 100%;
+    padding-top: 150px;
+    
+    .titulo_exposiciones{
+        width: 100%;
+        height: 350px;
+        background-image: url(../img/exposiciones/brush.jpg);
+        background-size: cover;
+        background-position: center center;
+
+        h2{
+            font-weight: 900;
+            color: #fff;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+            font-weight: 900;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 110, 235, 0.781);
+            letter-spacing: 15px;
+            font-size: 50px;
+          
+        }
+    } 
+
+    .contenedor_exposiciones {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(7,1fr);
+        grid-template-rows: repeat(9,1fr);
+        grid-template-areas: "a1 a1 a2 a2 a3 a3 a3"
+                             "a1 a1 a2 a2 a3 a3 a3"
+                             "a4 a4 a4 a4 a3 a3 a3"
+                             "a4 a4 a4 a4 a5 a5 a5"
+                             "a4 a4 a4 a4 a5 a5 a5"
+                             "a6 a6 a8 a8 a5 a5 a5"
+                             "a6 a6 a8 a8 a5 a5 a5"
+                             "a7 a7 a9 a9 a5 a5 a5"
+                             "a7 a7 a9 a9 a5 a5 a5";
+        padding: 0px 70px;
+        
+        & ol{
+            list-style-type: disc;
+
+            & li {
+                font-size: 16px;
+                font-weight: 300;
+                padding-top: 10px;
+            }
+        }
+
+        & h5{
+            font-weight: 900;
+        }
+        
+
+        .contenedor_imagen_1{
+            grid-area: a1;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center center;
+
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .formacion_artistica{
+            grid-area: a2;
+            background-color: #fff;
+            width: 100%;
+            height: 100%;
+            padding: 30px 30px;
+
+            & h5{
+                font-weight: 900;
+            }
+        }
+
+        .contenedor_imagen_2{
+            grid-area: a3;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center center;
+
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .exposiciones{
+            grid-area: a4;
+            background-image: url(../img/exposiciones/cuadro3.jpg);
+            background-size: cover;
+            background-position: center center;
+
+            .exposiciones_container{
+                width: 50%;
+                height: 30%;
+                background-color: rgb(255, 255, 255);
+                padding: 30px 30px;
+            }
+        }
+
+        .contenedor_imagen_3{
+            grid-area: a8;
+            object-fit: cover;
+            object-position: center center;
+            width: 100%;
+            height: 100%;
+
+            img{
+                width: 100%;
+                height: 100%;
+            }
+            
+        }
+
+        .exposiciones_colectivas{
+            grid-area: a5;
+            width: 100%;
+            height: 100%;
+            background-color: #ffffff;
+            padding: 40px 0px 40px 60px;
+        }
+
+        .distinciones{
+            grid-area: a6;
+            width: 100%;
+            height: 100%;
+            background-color: #ffffff;
+            padding: 40px 40px;
+        }
+
+        .contenedor_imagen_4{
+            grid-area: a7;
+            object-fit: cover;
+            object-position: center center;
+            width: 100%;
+            height: 100%;
+
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .publicaciones{
+            grid-area: a9;
+            width: 100%;
+            height: 100%;
+            background-color: #ffffff;
+            padding: 40px 40px;
+        }
+    }
 }
 
 /**************************seccion contacto*************************/
@@ -348,6 +507,12 @@
     width: 100%;
     /* height: 820px; */
     height: 100%;
+    
+    & a{
+        text-decoration: none;
+        color: #000;
+        font-weight: 300;
+    }
 
     .contenedor_contacto {
         width: 100%;
@@ -496,7 +661,13 @@
 .footer_main {
     width: 100%;
     height: 100%;
-    background-color: #dad8d8;
+    background-color: #e0e0e0;
+
+    & a{
+        text-decoration: none;
+        color: #000;
+        font-weight: 300;
+    }
 
     .contain_footer {
         width: 100%;
@@ -683,11 +854,15 @@
 
     .header_main {
         height: auto;
+        background-color: rgb(0, 0, 0);
+        position: fixed;
+        z-index: 999;      
     }
 
     .main_index {
         width: 100%;
         height: auto;
+        padding-top: 50px;
 
         .contenedor_main_responsive {
             padding: 0px 0px;
@@ -859,6 +1034,7 @@
 
     .main_galeria {
         width: 100%;
+        padding-top: 80px;
         /*  height: 3250px; */
 
         .main_gallery {
@@ -1373,11 +1549,13 @@
     .main_second {
         width: 100%;
         height: 100%;
+        padding-top: 100px;
         /* height: 100%; */
 
         & .about_contain {
             padding-top: 0px;
             padding-bottom: 20px;
+            padding: 0px 20px 20px 20px;
             width: 100%;
             /* height: 100%; */
             display: grid;
@@ -1405,7 +1583,8 @@
                 grid-area: a2;
 
                 & p {
-                    font-size: 14px;
+                    font-size: 13px;
+                    text-align: justify;
                 }
             }
 
@@ -1432,7 +1611,7 @@
     #main_xl {
         width: 100%;
         height: 1500px;
-        padding-top: 20px;
+        padding-top: 50px;
         padding-bottom: 20px;
 
         #contacto_xl {
@@ -1526,16 +1705,20 @@
 
     .header_main {
         height: auto;
+        background-color: rgb(0, 0, 0);
+        position: fixed;
+        z-index: 999;
     }
 
     .main_index {
         width: 100%;
-        height: 600px;
+        height: 100%;
+        padding: 110px 0px 80px 0px ;
+
 
         .contenedor_main_responsive {
             padding: 0px 0px;
             width: 100%;
-            height: 100%;
             background-size: 100%;
             background-repeat: no-repeat;
             background-image: url(../img/img_home/fondo_cecilia_vertical.jpg);
@@ -1693,6 +1876,7 @@
 
     .main_galeria {
         width: 100%;
+        padding-top: 80px;
 
         .main_gallery {
             display: none;
@@ -2207,6 +2391,7 @@
     .main_second {
         width: 100%;
         height: 100%;
+        padding-top: 50px;
         /* height: 100%; */
 
         .about_contain {
@@ -2273,7 +2458,7 @@
     #main_xl {
         width: 100%;
         height: 1500px;
-        padding-top: 20px;
+        padding-top: 50px;
         padding-bottom: 20px;
 
         #contacto_xl {
@@ -2367,10 +2552,14 @@
 
     .header_main {
         height: auto;
+        background-color: rgba(0, 0, 0, 0.1);
+        position: fixed;
+        z-index: 999;
     }
 
     .main_index {
         width: 100%;
+        padding-top: 100px;
 
         .contenedor_main_responsive {
             padding: 0px 0px;
@@ -2394,7 +2583,6 @@
         .contain_footer {
 
             width: 100%;
-            /* height: 100%; */
             display: grid;
             grid-template-columns: 100%;
             grid-template-rows: auto;
@@ -3118,7 +3306,6 @@
     #main_xl {
         width: 100%;
         height: 1500px;
-        padding-top: 20px;
         padding-bottom: 20px;
 
         #contacto_xl {
@@ -3944,8 +4131,7 @@
 
     .main_index {
         width: 100%;
-        margin-bottom: 100px;
-        padding-top: 50px;
+        margin-bottom: 60px;
     }
 
     /*sobremi*/
@@ -4029,7 +4215,8 @@
 
     .main_index {
         width: 100%;
-        margin-top: 80px;
+        margin-bottom: 10px;
+        padding-bottom: 30px;
 
         .contenedor_main {
             width: 100%;
@@ -4226,6 +4413,7 @@
     .main_index {
         width: 100%;
         /* height: 1000px; */
+        padding-top: 120px;
         margin-bottom: 100px;
 
         .contenedor_main_responsive {
