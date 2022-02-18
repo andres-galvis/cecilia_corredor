@@ -1,3 +1,5 @@
+@import 'variables.scss';
+
 * {
     margin: 0;
     padding: 0;
@@ -337,169 +339,163 @@
 
 .main_exposiciones {
     width: 100%;
-    height: 100%;
-    padding-top: 150px;
-    
-    .titulo_exposiciones{
-        width: 100%;
-        height: 350px;
-        background-image: url(../img/exposiciones/brush.jpg);
-        background-size: cover;
-        background-position: center center;
+    height: auto;
 
-        h2{
-            font-weight: 900;
-            color: #fff;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: nowrap;
-            justify-content: center;
-            align-items: center;
-            font-weight: 900;
+    .titulo_exposiciones {
+        width: 100%;
+        height: 300px;
+        background-image: url(../img/exposiciones/brush.jpg);
+        background-position: center center;
+        padding-top: 50px;
+
+        h2 {
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 110, 235, 0.781);
-            letter-spacing: 15px;
-            font-size: 50px;
-          
+            background-color: rgba(0, 158, 0, 0.822);
+            color: #fff;
+            font-weight: 900;
+            letter-spacing: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+
+
         }
-    } 
+    }
 
     .contenedor_exposiciones {
         width: 100%;
         display: grid;
-        grid-template-columns: repeat(7,1fr);
-        grid-template-rows: repeat(9,1fr);
-        grid-template-areas: "a1 a1 a2 a2 a3 a3 a3"
-                             "a1 a1 a2 a2 a3 a3 a3"
-                             "a4 a4 a4 a4 a3 a3 a3"
-                             "a4 a4 a4 a4 a5 a5 a5"
-                             "a4 a4 a4 a4 a5 a5 a5"
-                             "a6 a6 a8 a8 a5 a5 a5"
-                             "a6 a6 a8 a8 a5 a5 a5"
-                             "a7 a7 a9 a9 a5 a5 a5"
-                             "a7 a7 a9 a9 a5 a5 a5";
-        padding: 0px 70px;
-        
-        & ol{
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas: "a1 a2 a3"
+            "a4 a4 a5"
+            "a4 a4 a5"
+            "a6 a7 a5"
+            "a8 a9 a0";
+        padding: 40px 80px;
+        grid-gap: 10px;
+
+        & img {
+            width: 100%;
+            height: auto;
+        }
+
+        & ol {
             list-style-type: disc;
 
-            & li {
-                font-size: 16px;
+            li {
                 font-weight: 300;
                 padding-top: 10px;
             }
         }
 
-        & h5{
+        & h5 {
             font-weight: 900;
         }
-        
 
-        .contenedor_imagen_1{
+        & h6 {
+            font-weight: 900;
+        }
+
+        .contenedor_imagen_1 {
             grid-area: a1;
             width: 100%;
             height: 100%;
-            object-fit: cover;
-            object-position: center center;
 
-            img{
+            img {
                 width: 100%;
                 height: 100%;
+                object-fit: cover;
             }
         }
 
-        .formacion_artistica{
+        .formacion_artistica {
             grid-area: a2;
-            background-color: #fff;
-            width: 100%;
-            height: 100%;
+            background-color: $bgcolor_expo;
             padding: 30px 30px;
-
-            & h5{
-                font-weight: 900;
-            }
         }
 
-        .contenedor_imagen_2{
+        .contenedor_imagen_2 {
             grid-area: a3;
             width: 100%;
             height: 100%;
-            object-fit: cover;
-            object-position: center center;
 
-            img{
+            img {
                 width: 100%;
                 height: 100%;
+                object-fit: cover;
             }
         }
 
-        .exposiciones{
+        .exposiciones {
             grid-area: a4;
-            background-image: url(../img/exposiciones/cuadro3.jpg);
+            background-image: url(../img/exposiciones/cuadro5.jpg);
+            background-repeat: no-repeat;
             background-size: cover;
-            background-position: center center;
 
-            .exposiciones_container{
-                width: 50%;
-                height: 30%;
-                background-color: rgb(255, 255, 255);
+            .exposiciones_container {
+                width: 48%;
+                height: 60%;
+                background-color: $bgcolor_expo;
                 padding: 30px 30px;
+
             }
         }
 
-        .contenedor_imagen_3{
-            grid-area: a8;
-            object-fit: cover;
-            object-position: center center;
-            width: 100%;
-            height: 100%;
-
-            img{
-                width: 100%;
-                height: 100%;
-            }
-            
-        }
-
-        .exposiciones_colectivas{
-            grid-area: a5;
-            width: 100%;
-            height: 100%;
-            background-color: #ffffff;
-            padding: 40px 0px 40px 60px;
-        }
-
-        .distinciones{
-            grid-area: a6;
-            width: 100%;
-            height: 100%;
-            background-color: #ffffff;
-            padding: 40px 40px;
-        }
-
-        .contenedor_imagen_4{
+        .contenedor_imagen_3 {
             grid-area: a7;
-            object-fit: cover;
-            object-position: center center;
             width: 100%;
             height: 100%;
 
-            img{
+            img {
                 width: 100%;
                 height: 100%;
+                object-fit: cover;
             }
         }
 
-        .publicaciones{
-            grid-area: a9;
+        .exposiciones_colectivas {
+            grid-area: a5;
+            background-color: $bgcolor_expo;
+            padding: 30px 30px;
+        }
+
+        .distinciones {
+            grid-area: a6;
+            background-color: $bgcolor_expo;
+            height: 60%;
+            padding: 30px 30px;
+        }
+
+        .contenedor_imagen_4 {
+            grid-area: a8;
             width: 100%;
             height: 100%;
-            background-color: #ffffff;
-            padding: 40px 40px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
         }
+
+        .publicaciones {
+            grid-area: a9;
+            background-color: $bgcolor_expo;
+            padding: 30px 30px;
+        }
+
+
+
+
+
+
+
     }
 }
+
 
 /**************************seccion contacto*************************/
 
@@ -507,8 +503,8 @@
     width: 100%;
     /* height: 820px; */
     height: 100%;
-    
-    & a{
+
+    & a {
         text-decoration: none;
         color: #000;
         font-weight: 300;
@@ -663,7 +659,7 @@
     height: 100%;
     background-color: #e0e0e0;
 
-    & a{
+    & a {
         text-decoration: none;
         color: #000;
         font-weight: 300;
@@ -856,7 +852,7 @@
         height: auto;
         background-color: rgb(0, 0, 0);
         position: fixed;
-        z-index: 999;      
+        z-index: 999;
     }
 
     .main_index {
@@ -1004,7 +1000,7 @@
                 grid-area: a5;
                 text-align: center;
 
-                h2{
+                h2 {
                     font-size: 25px;
                 }
 
@@ -1508,7 +1504,7 @@
                 right: 130px;
                 height: 100px;
                 z-index: 999;
-               
+
 
                 .btn {
                     border-top-right-radius: 40px;
@@ -1564,7 +1560,7 @@
             grid-template-areas: "a1"
                 "a2"
                 "a3";
-            grid-gap:20px;
+            grid-gap: 20px;
 
             .titulo_about {
                 grid-area: a1;
@@ -1603,6 +1599,85 @@
                 }
             }
 
+        }
+    }
+
+    /*******EXPOSICIONES Y RECONOCIMIENTOS**********/
+
+    .main_exposiciones {
+        width: 100%;
+        height: 100%;
+
+        .titulo_exposiciones {
+            width: 100%;
+            height: 300px;
+
+            h2 {
+                width: 100%;
+                height: 100%;
+                font-size: 20px;
+                letter-spacing: 5px;
+                font-weight: 900;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+        }
+
+        .contenedor_exposiciones {
+            width: 100%;
+            padding: 10px 10px;
+            grid-template-columns: 100%;
+            grid-template-rows: auto;
+            grid-template-areas: "a1"
+                "a2"
+                "a3"
+                "a4"
+                "a5"
+                "a7"
+                "a6"
+                "a8"
+                "a9";
+
+            grid-gap: 10px;
+
+            & h5 {
+                font-size: 20px;
+            }
+
+            & h6{
+                font-size: 14px;
+            }
+
+            & ol li{
+                font-size: 13px;
+            }
+
+            .formacion_artistica {
+                padding: 10px 10px;
+            }
+
+            .exposiciones {
+                background-image: none;
+
+                .exposiciones_container {
+                    width: 100%;
+                    height: 100%;
+                    padding: 10px 10px;
+                }
+            }
+
+            .exposiciones_colectivas {
+                padding: 10px 10px;
+            }
+
+            .distinciones {
+                padding: 10px 10px;
+            }
+
+            .publicaciones {
+                padding: 10px 10px;
+            }
         }
     }
 
@@ -1713,7 +1788,7 @@
     .main_index {
         width: 100%;
         height: 100%;
-        padding: 110px 0px 80px 0px ;
+        padding: 110px 0px 80px 0px;
 
 
         .contenedor_main_responsive {
@@ -1766,7 +1841,7 @@
                 grid-area: a2;
                 text-align: center;
 
-                h2{
+                h2 {
                     font-size: 25px;
                 }
 
@@ -1786,7 +1861,7 @@
                 justify-content: center;
                 align-items: center;
 
-                h2{
+                h2 {
                     font-size: 25px;
                 }
 
@@ -1805,8 +1880,8 @@
                 flex-wrap: wrap;
                 justify-content: center;
                 align-items: center;
-                
-                h2{
+
+                h2 {
                     font-size: 25px;
                 }
 
@@ -1846,7 +1921,7 @@
                 text-align: center;
                 padding-top: 30px;
 
-                h2{
+                h2 {
                     font-size: 25px;
                 }
 
@@ -2453,6 +2528,86 @@
         }
     }
 
+    /******EXPOSICIONES YRECONOCIMIENTO***********/
+
+    .main_exposiciones {
+        width: 100%;
+        height: 100%;
+
+        .titulo_exposiciones {
+            width: 100%;
+            height: 300px;
+
+            h2 {
+                width: 100%;
+                height: 100%;
+                font-size: 20px;
+                letter-spacing: 5px;
+                font-weight: 900;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+        }
+
+        .contenedor_exposiciones {
+            width: 100%;
+            padding: 10px 10px;
+            grid-template-columns: 100%;
+            grid-template-rows: auto;
+            grid-template-areas: "a1"
+                "a2"
+                "a3"
+                "a4"
+                "a5"
+                "a7"
+                "a6"
+                "a8"
+                "a9";
+
+            grid-gap: 10px;
+
+            & h5 {
+                font-size: 20px;
+            }
+
+            & h6{
+                font-size: 14px;
+            }
+
+            & ol li{
+                font-size: 13px;
+            }
+
+            .formacion_artistica {
+                padding: 10px 10px;
+            }
+
+            .exposiciones {
+                background-image: none;
+
+                .exposiciones_container {
+                    width: 100%;
+                    height: 100%;
+                    padding: 10px 10px;
+                }
+            }
+
+            .exposiciones_colectivas {
+                padding: 10px 10px;
+            }
+
+            .distinciones {
+                padding: 10px 10px;
+            }
+
+            .publicaciones {
+                padding: 10px 10px;
+            }
+        }
+
+    }
+
     /******************contacto*************/
 
     #main_xl {
@@ -2609,7 +2764,7 @@
                 margin: 0px;
                 padding: 0px 20px;
 
-                h2{
+                h2 {
                     font-size: 30px;
                 }
 
@@ -2630,13 +2785,13 @@
                 margin: 0px;
                 padding: 0px;
 
-                h2{
+                h2 {
                     font-size: 30px;
                 }
 
-                .ul_contenedor_footer{
-                    
-                    li a{
+                .ul_contenedor_footer {
+
+                    li a {
                         font-size: 14px;
                     }
                 }
@@ -2651,8 +2806,8 @@
                 align-items: center;
                 margin: 0px;
                 padding: 0px;
-                
-                h2{
+
+                h2 {
                     font-size: 30px;
                 }
 
@@ -2720,8 +2875,6 @@
 
 
     /**************main galeria************/
-
-
 
     .main_galeria {
         width: 100%;
@@ -3236,7 +3389,6 @@
 
     }
 
-
     /**************seccion about***********/
 
     .main_second {
@@ -3299,7 +3451,6 @@
             }
         }
     }
-
 
     /******************contacto*************/
 
@@ -3391,6 +3542,60 @@
             }
 
 
+        }
+    }
+
+    /*********EXPOSICIONES Y RECONOCIMIENTOS******/
+
+    .main_exposiciones {
+        width: 100%;
+        height: 100%;
+
+        .titulo_exposiciones {
+            width: 100%;
+            height: 300px;
+
+            h2 {
+                font-size: 30px;
+                letter-spacing: 10px;
+            }
+        }
+
+        .contenedor_exposiciones {
+            width: 100%;
+            padding: 20px 20px;
+
+            & h5 {
+                font-size: 20px;
+            }
+
+            & h6{
+                font-size: 15px;
+            }
+
+            & ol li{
+                font-size: 14px;
+            }
+
+            .formacion_artistica {
+                padding: 20px 20px;
+            }
+
+            .exposiciones {
+                padding: 20px 20px;
+            }
+
+            .exposiciones_colectivas {
+                padding: 20px 20px;
+            }
+
+            .distinciones {
+                padding: 20px 20px;
+            }
+
+            .publicaciones {
+                padding: 20px 20px;
+            }
         }
     }
 }
@@ -3885,7 +4090,7 @@
                     background-size: cover;
                 }
             }
-            
+
             .btn--offcanvas {
                 width: 100%;
                 text-align: center;
@@ -4023,7 +4228,7 @@
                 height: 100%;
                 grid-area: a2;
                 padding: 0px 20px;
-            
+
                 & p {
                     font-size: 14px;
                     margin: 0px 0px;
@@ -4050,6 +4255,9 @@
         }
     }
 
+
+    /*****FOOTER****/
+
     .footer_main {
         width: 100%;
         /* height: 90vh; */
@@ -4061,15 +4269,15 @@
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: auto;
             grid-template-areas: "a1 a2 a2"
-                                 "a3 a5 a4"
-                                 "a6 a6 a6";
+                "a3 a5 a4"
+                "a6 a6 a6";
             padding-top: 20px;
 
             .contenedor_1 {
-                
+
                 padding-right: 30px;
 
-                h2{
+                h2 {
                     font-size: 30px;
                 }
 
@@ -4082,7 +4290,7 @@
                 padding-bottom: 40px;
                 padding-top: 0px;
 
-                h2{
+                h2 {
                     font-size: 30px;
                 }
 
@@ -4095,11 +4303,11 @@
             }
 
             .contenedor_3 {
-                
+
                 padding-right: 20px;
                 justify-content: flex-start;
 
-                h2{
+                h2 {
                     font-size: 30px;
                 }
 
@@ -4108,18 +4316,61 @@
                 }
             }
 
-            .contenedor_5{
+            .contenedor_5 {
 
                 padding-bottom: 0px;
 
-                h2{
+                h2 {
                     font-size: 30px;
                 }
             }
 
-            .contenedor_copy{
+            .contenedor_copy {
                 font-size: 14px;
             }
+        }
+    }
+
+    /***EXPOSICIONES Y RECONOCIMIENTOS****/
+
+    .main_exposiciones {
+        width: 100%;
+        height: 100%;
+
+        .titulo_exposiciones {
+            width: 100%;
+
+            h2 {
+                letter-spacing: 20px;
+            }
+        }
+
+        .contenedor_exposiciones {
+            width: 100%;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: auto;
+            grid-template-areas: "a1 a2"
+                "a4 a8"
+                "a3 a5"
+                "a3 a5"
+                "a6 a5"
+                "a7 a5"
+                "a9 a0";
+            padding: 30px 30px;
+
+            & h5 {
+                font-size: 20px;
+            }
+
+            & h6{
+                font-size: 15px;
+            }
+
+            & ol li{
+                font-size: 13px;
+            }
+
+
         }
     }
 
@@ -4139,7 +4390,7 @@
     .main_second {
         width: 100%;
         height: 100%;
-        
+
 
         .about_contain {
             width: 100%;
@@ -4150,7 +4401,7 @@
             .text_about {
                 padding: 0px 30px;
 
-                p{
+                p {
                     font-size: 15px;
                 }
             }
@@ -4207,6 +4458,29 @@
             }
         }
     }
+
+    /**exposiciones y  reconocimientos**/
+
+    .main_exposiciones{
+        width: 100%;
+        height: 100%;
+
+        .contenedor_exposiciones{
+            width: 100%;
+
+            & h5 {
+                font-size: 24px;
+            }
+
+            & h6{
+                font-size: 17px;
+            }
+
+            & ol li{
+                font-size: 15px;
+            }
+        }
+    }
 }
 
 
@@ -4236,40 +4510,40 @@
             width: 100%;
             /* height: 80vh; */
             padding-top: 30px;
-            
-            .contenedor_1{
 
-                h2{
+            .contenedor_1 {
+
+                h2 {
                     font-size: 35px;
                 }
 
-                p{
+                p {
                     font-size: 16px;
                 }
             }
 
-            .contenedor_2{
+            .contenedor_2 {
 
-                h2{
+                h2 {
                     font-size: 35px;
                 }
 
-                .ul_contenedor_footer{
+                .ul_contenedor_footer {
 
-                    li a{
+                    li a {
                         font-size: 16px;
                     }
                 }
             }
 
-            .contenedor_3{
-                
-                p{
+            .contenedor_3 {
+
+                p {
                     font-size: 16px;
                 }
             }
 
-            .contenedor_copy{
+            .contenedor_copy {
                 font-size: 16px;
             }
         }
@@ -4290,9 +4564,9 @@
             grid-template-rows: auto;
             grid-gap: 20px;
 
-            .text_about{
+            .text_about {
 
-                p{
+                p {
                     font-size: 16px;
                 }
             }
@@ -4403,8 +4677,6 @@
         }
 
     }
-
-
 }
 
 
@@ -4565,8 +4837,8 @@
             grid-template-rows: auto;
             grid-template-columns: repeat(3, 1fr);
             grid-template-areas: "a1 a3 a3"
-                                 "a2 a4 a6"
-                                 "a7 a7 a7";
+                "a2 a4 a6"
+                "a7 a7 a7";
 
             .logo_footer {
                 grid-area: a1;
@@ -4579,7 +4851,7 @@
                 width: 100%;
                 height: 100%;
 
-                h2{
+                h2 {
                     font-size: 30px;
                 }
 
@@ -4739,7 +5011,7 @@
                 text-align: justify;
                 margin: 0px 0px;
 
-                p{
+                p {
                     font-size: 16px;
                 }
 
@@ -4767,8 +5039,65 @@
         }
     }
 
+    /*EXPOSICIONES Y RECONOCIMIENTOS*/
+
+    .main_exposiciones {
+        width: 100%;
+        height: 100%;
+
+        .contenedor_exposiciones {
+            width: 100%;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: auto;
+            grid-template-areas: "a1 a2 a2 a3"
+                                 "a1 a2 a2 a3"
+                                 "a4 a4 a4 a5"
+                                 "a4 a4 a4 a5"
+                                 "a4 a4 a4 a5"
+                                 "a6 a7 a7 a5"
+                                 "a9 a9 a8 a8";
+
+            padding: 50px 50px;
+            grid-gap: 20px;
+            
+            & ol li{
+                font-size: 16px;
+            }
+
+            .formacion_artistica{
+                padding: 20px 20px;
+            }
+
+            .exposiciones_colectivas{
+                padding: 20px 20px;
+            }
+
+            .distinciones{
+                padding: 20px 20px;
+            }
+
+            .publicaciones{
+                padding: 20px 20px;
+            }
+
+            .exposiciones {
+                background-image: url(../img/exposiciones/cuadro5.jpg);
+                background-size: cover;
+                background-position: center center;
+                padding: 0px 0px;
+                grid-area: a4;
+
+                .exposiciones_container {
+                    width: 40%;
+                    height: 40%;
+                    background-color: #fff;
+                    padding: 20px 20px;
+                }
+            }
+        }
 
 
+    }
 }
 
 @media screen and (min-width:1300px) {
@@ -4784,9 +5113,36 @@
             height: auto;
         }
     }
+
+    /**EXPOSICIONES Y RECONOCIMIENTOS***/
+
+    .main_exposiciones{
+        width: 100%;
+        height: 100%;
+
+        .contenedor_exposiciones{
+            width: 100% ;
+            grid-template-columns: auto;
+            grid-template-rows: auto;
+            grid-template-areas: "a1 a2 a3"
+                                 "a4 a4 a5"
+                                 "a4 a4 a5"
+                                 "a6 a7 a5"
+                                 "a8 a9 a0";
+
+            .exposiciones{
+
+                .exposiciones_container{
+                    width: 50%;
+                    height: 50%;
+                }
+            }
+        }
+    }
+
 }
 
-@media screen and (min-width: 1550px){
+@media screen and (min-width: 1550px) {
 
     .main_index {
         width: 100%;
@@ -4802,7 +5158,7 @@
     }
 }
 
-@media screen and (min-width:1800px){
+@media screen and (min-width:1800px) {
 
     .main_index {
         width: 100%;
@@ -4814,6 +5170,34 @@
             width: 100%;
             height: auto;
             padding-top: 50px;
+        }
+    }
+
+    /*exposiciones y reconocimientos*/
+
+    .main_exposiciones{
+        width: 100%;
+        height: 100%;
+
+        .titulo_exposiciones{
+                
+            h2{
+                font-size: 40px;
+            }
+        }
+
+        .contenedor_exposiciones{
+            width: 100%;
+
+            .exposiciones{
+
+
+                .exposiciones_container{
+                    width: 40%;
+                    height: 65%;
+                }
+            }
+           
         }
     }
 }
