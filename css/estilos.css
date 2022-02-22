@@ -68,89 +68,55 @@
 /**********************GALERIA************************/
 .main_galeria {
   width: 100%;
-  padding: 15px 15px;
-  /*  .main_gallery h2 {
-        font-size: 30px;
-        font-weight: 900;
-    }
-
-    .main_gallery h3 {
-        color: #fff;
-        text-decoration: none;
-        padding-top: 10px;
-        font-size: 20px;
-        font-weight: 500;
-    }
-
-    .main_gallery a {
-        padding-top: 10px;
-        cursor: pointer;
-    }
-
-    .main_gallery a button {
-        width: 150px;
-        height: 30px;
-        font-weight: 500;
-        background-color: #fff;
-        border: none;
-        border-radius: 10px;
-        cursor: pointer;
-    }
-
-    .main_gallery a button:hover {
-        background-color: cadetblue;
-        transition: all 0.2s ease;
-        color: #fff;
-    } */ }
-  .main_galeria .galeria_carousel {
-    display: none; }
+  height: 100%; }
   .main_galeria .main_gallery {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-auto-rows: 600px;
-    grid-gap: 15px; }
-    .main_galeria .main_gallery .img--class {
-      width: 100%;
-      height: 100%;
-      object-fit: cover; }
-    .main_galeria .main_gallery .img_containers:nth-child(3) {
-      grid-column-start: span 2; }
-    .main_galeria .main_gallery .img_containers:nth-child(2) {
-      grid-column-start: span 2; }
-    .main_galeria .main_gallery .img_containers:nth-child(4) {
-      grid-column-start: span 3; }
-    .main_galeria .main_gallery .img_containers:nth-child(5) {
-      grid-column-start: span 2; }
-    .main_galeria .main_gallery .img_containers:nth-child(7) {
-      grid-column-start: span 2;
-      grid-row-start: span 2; }
-    .main_galeria .main_gallery .img_containers:nth-child(8) {
-      grid-column-start: span 2; }
-    .main_galeria .main_gallery .img_containers:nth-child(10) {
-      grid-column-start: span 2; }
-    .main_galeria .main_gallery .img_containers:nth-child(12) {
-      grid-column-start: span 2; }
-    .main_galeria .main_gallery .img_containers:nth-child(13) {
-      grid-column-start: span 2; }
-    .main_galeria .main_gallery .img_containers:nth-child(14) {
-      grid-column-start: span 2; }
-    .main_galeria .main_gallery .img_containers:nth-child(16) {
-      grid-column-start: span 2; }
-    .main_galeria .main_gallery .img_containers:nth-child(18) {
-      grid-column-start: span 4; }
-    .main_galeria .main_gallery .img_containers:nth-child(20) {
-      grid-row-start: span 2;
-      grid-column-start: span 2; }
-    .main_galeria .main_gallery .img_containers:nth-child(24) {
-      grid-column-start: span 2; }
-    .main_galeria .main_gallery .img_containers:nth-child(26) {
-      grid-column-start: span 2; }
-    .main_galeria .main_gallery .img_containers:nth-child(29) {
-      grid-column-start: span 3; }
-    .main_galeria .main_gallery .img_containers:nth-child(36) {
-      grid-column-start: span 3; }
-    .main_galeria .main_gallery .img_containers:nth-child(32) {
-      grid-column-start: span 3; }
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 40px 40px; }
+    .main_galeria .main_gallery .img_containers {
+      padding: 15px 15px;
+      margin: 20px 20px;
+      border: 2px solid rgba(0, 0, 0, 0.867);
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: space-evenly;
+      align-items: center; }
+      .main_galeria .main_gallery .img_containers #boton_galeria {
+        width: 50%;
+        height: 40px;
+        border: 2px solid #000;
+        background: none;
+        font-size: 14px; }
+        .main_galeria .main_gallery .img_containers #boton_galeria:hover {
+          border-radius: 10px;
+          transition: all 0.3s ease;
+          background-color: #000;
+          color: #fff; }
+      .main_galeria .main_gallery .img_containers .textos_img {
+        width: 100%;
+        height: 100%;
+        padding-top: 20px;
+        display: none; }
+        .main_galeria .main_gallery .img_containers .textos_img img {
+          width: 60px;
+          height: 60px;
+          cursor: pointer;
+          align-self: center; }
+          .main_galeria .main_gallery .img_containers .textos_img img:hover {
+            transition: all 0.2s ease;
+            opacity: 50%; }
+        .main_galeria .main_gallery .img_containers .textos_img h3 {
+          font-size: 15px;
+          font-weight: 600; }
+      .main_galeria .main_gallery .img_containers img {
+        padding: 10px 10px;
+        width: auto;
+        height: 350px; }
 
 /**************SECCION ABOUT********************/
 .main_about {
@@ -678,14 +644,12 @@
   /**************main galeria************/
   .main_galeria {
     width: 100%;
-    padding-top: 80px;
-    /*  height: 3250px; */ }
+    padding-top: 80px; }
     .main_galeria .main_gallery {
       display: none; }
     .main_galeria .galeria_carousel {
       width: 100%;
-      /* height: 100%; */
-      padding-top: 20px;
+      padding: 40px 20px;
       display: block; }
       .main_galeria .galeria_carousel .img_1 #item1 {
         background-image: url(../img/img_galeria/img_v1.jpg);
@@ -1271,16 +1235,16 @@
     .main_galeria .galeria_carousel {
       width: 100%;
       /* height: 100%; */
-      padding-top: 20px;
+      padding: 40px 20px;
       display: block; }
       .main_galeria .galeria_carousel .img_1 #item1 {
         background-image: url(../img/img_galeria/img_v1.jpg);
-        height: 300px;
+        height: 400px;
         background-position: center center;
         background-size: cover; }
       .main_galeria .galeria_carousel .img_1 #item2 {
         background-image: url(../img/img_cards/fichas.jpg);
-        height: 300px;
+        height: 400px;
         background-position: center center;
         background-size: cover; }
       .main_galeria .galeria_carousel .img_2 {
@@ -1299,12 +1263,12 @@
         margin-top: 20px; }
         .main_galeria .galeria_carousel .img_3 #item5 {
           background-image: url(../img/img_galeria/img_v12.jpg);
-          height: 300px;
+          height: 400px;
           background-position: center center;
           background-size: cover; }
         .main_galeria .galeria_carousel .img_3 #item6 {
           background-image: url(../img/img_cards/fichas.jpg);
-          height: 300px;
+          height: 400px;
           background-position: center center;
           background-size: cover; }
       .main_galeria .galeria_carousel .img_4 {
@@ -1323,12 +1287,12 @@
         margin-top: 20px; }
         .main_galeria .galeria_carousel .img_5 #item9 {
           background-image: url(../img/img_galeria/img_v11.jpg);
-          height: 300px;
+          height: 400px;
           background-position: center center;
           background-size: cover; }
         .main_galeria .galeria_carousel .img_5 #item10 {
           background-image: url(../img/img_cards/fichas.jpg);
-          height: 300px;
+          height: 400px;
           background-position: center center;
           background-size: cover; }
       .main_galeria .galeria_carousel .img_6 {
@@ -1347,12 +1311,12 @@
         margin-top: 20px; }
         .main_galeria .galeria_carousel .img_7 #item13 {
           background-image: url(../img/img_galeria/img_v12.jpg);
-          height: 300px;
+          height: 400px;
           background-position: center center;
           background-size: cover; }
         .main_galeria .galeria_carousel .img_7 #item14 {
           background-image: url(../img/img_cards/fichas.jpg);
-          height: 300px;
+          height: 400px;
           background-position: center center;
           background-size: cover; }
       .main_galeria .galeria_carousel .img_8 {
@@ -1371,12 +1335,12 @@
         margin-top: 20px; }
         .main_galeria .galeria_carousel .img_9 #item17 {
           background-image: url(../img/img_galeria/img_v13.jpg);
-          height: 300px;
+          height: 400px;
           background-position: center center;
           background-size: cover; }
         .main_galeria .galeria_carousel .img_9 #item18 {
           background-image: url(../img/img_cards/fichas.jpg);
-          height: 300px;
+          height: 400px;
           background-position: center center;
           background-size: cover; }
       .main_galeria .galeria_carousel .img_10 {
@@ -1395,12 +1359,12 @@
         margin-top: 20px; }
         .main_galeria .galeria_carousel .img_11 #item21 {
           background-image: url(../img/img_galeria/img_v14.jpg);
-          height: 300px;
+          height: 400px;
           background-position: center center;
           background-size: cover; }
         .main_galeria .galeria_carousel .img_11 #item22 {
           background-image: url(../img/img_cards/fichas.jpg);
-          height: 300px;
+          height: 400px;
           background-position: center center;
           background-size: cover; }
       .main_galeria .galeria_carousel .img_12 {
@@ -1419,12 +1383,12 @@
         margin-top: 20px; }
         .main_galeria .galeria_carousel .img_13 #item25 {
           background-image: url(../img/img_galeria/img_v15.jpg);
-          height: 300px;
+          height: 400px;
           background-position: center center;
           background-size: cover; }
         .main_galeria .galeria_carousel .img_13 #item26 {
           background-image: url(../img/img_cards/fichas.jpg);
-          height: 300px;
+          height: 400px;
           background-position: center center;
           background-size: cover; }
       .main_galeria .galeria_carousel .img_14 {
@@ -1443,12 +1407,12 @@
         margin-top: 20px; }
         .main_galeria .galeria_carousel .img_15 #item29 {
           background-image: url(../img/img_galeria/img_v16.jpg);
-          height: 300px;
+          height: 400px;
           background-position: center center;
           background-size: cover; }
         .main_galeria .galeria_carousel .img_15 #item30 {
           background-image: url(../img/img_cards/fichas.jpg);
-          height: 300px;
+          height: 400px;
           background-position: center center;
           background-size: cover; }
       .main_galeria .galeria_carousel .img_16 {
@@ -1467,12 +1431,12 @@
         margin-top: 20px; }
         .main_galeria .galeria_carousel .img_17 #item33 {
           background-image: url(../img/img_galeria/img_v17.jpg);
-          height: 300px;
+          height: 400px;
           background-position: center center;
           background-size: cover; }
         .main_galeria .galeria_carousel .img_17 #item34 {
           background-image: url(../img/img_cards/fichas.jpg);
-          height: 300px;
+          height: 400px;
           background-position: center center;
           background-size: cover; }
       .main_galeria .galeria_carousel .img_18 {
@@ -1491,12 +1455,12 @@
         margin-top: 20px; }
         .main_galeria .galeria_carousel .img_19 #item37 {
           background-image: url(../img/img_galeria/img_v18.jpg);
-          height: 300px;
+          height: 400px;
           background-position: center center;
           background-size: cover; }
         .main_galeria .galeria_carousel .img_19 #item38 {
           background-image: url(../img/img_cards/fichas.jpg);
-          height: 300px;
+          height: 400px;
           background-position: center center;
           background-size: cover; }
       .main_galeria .galeria_carousel .img_20 {
@@ -1515,12 +1479,12 @@
         margin-top: 20px; }
         .main_galeria .galeria_carousel .img_21 #item41 {
           background-image: url(../img/img_galeria/img_v19.jpg);
-          height: 300px;
+          height: 400px;
           background-position: center center;
           background-size: cover; }
         .main_galeria .galeria_carousel .img_21 #item42 {
           background-image: url(../img/img_cards/fichas.jpg);
-          height: 300px;
+          height: 400px;
           background-position: center center;
           background-size: cover; }
       .main_galeria .galeria_carousel .img_22 {
@@ -1539,12 +1503,12 @@
         margin-top: 20px; }
         .main_galeria .galeria_carousel .img_23 #item45 {
           background-image: url(../img/img_galeria/img_v20.jpg);
-          height: 300px;
+          height: 400px;
           background-position: center center;
           background-size: cover; }
         .main_galeria .galeria_carousel .img_23 #item46 {
           background-image: url(../img/img_cards/fichas.jpg);
-          height: 300px;
+          height: 400px;
           background-position: center center;
           background-size: cover; }
       .main_galeria .galeria_carousel .img_24 {
@@ -1859,312 +1823,311 @@
         margin: 0px;
         padding: 15px 0px 0px 0px;
         font-size: 14px; }
-  /**************main galeria************/
+  /**************main galeria***$alturah_480****/
   .main_galeria {
     width: 100%; }
     .main_galeria .main_gallery {
-      display: none; }
+      display: non 450px; }
     .main_galeria .galeria_carousel {
       width: 100%;
-      /* height: 100%; */
-      padding-top: 20px;
+      padding: 40px 30px;
       display: block; }
       .main_galeria .galeria_carousel .img_1 #item1 {
         background-image: url(../img/img_galeria/img_v1.jpg);
-        height: 300px;
+        height: 550px;
         background-position: center center;
         background-size: cover; }
       .main_galeria .galeria_carousel .img_1 #item2 {
         background-image: url(../img/img_cards/fichas.jpg);
-        height: 300px;
+        height: 550px;
         background-position: center center;
         background-size: cover; }
       .main_galeria .galeria_carousel .img_2 {
         margin-top: 20px; }
         .main_galeria .galeria_carousel .img_2 #item3 {
           background-image: url(../img/img_galeria/horizontales/cecilia_1.jpg);
-          height: 300px;
+          height: 450px;
           background-position: center center;
           background-size: cover; }
         .main_galeria .galeria_carousel .img_2 #item4 {
           background-image: url(../img/img_cards/fichas.jpg);
-          height: 300px;
+          height: 450px;
           background-position: center center;
           background-size: cover; }
       .main_galeria .galeria_carousel .img_3 {
         margin-top: 20px; }
         .main_galeria .galeria_carousel .img_3 #item5 {
           background-image: url(../img/img_galeria/img_v12.jpg);
-          height: 300px;
+          height: 550px;
           background-position: center center;
           background-size: cover; }
         .main_galeria .galeria_carousel .img_3 #item6 {
           background-image: url(../img/img_cards/fichas.jpg);
-          height: 300px;
+          height: 550px;
           background-position: center center;
           background-size: cover; }
       .main_galeria .galeria_carousel .img_4 {
         margin-top: 20px; }
         .main_galeria .galeria_carousel .img_4 #item7 {
           background-image: url(../img/img_galeria/horizontales/cecilia_10.jpg);
-          height: 300px;
+          height: 450px;
           background-position: center center;
           background-size: cover; }
         .main_galeria .galeria_carousel .img_4 #item8 {
           background-image: url(../img/img_cards/fichas.jpg);
-          height: 300px;
+          height: 450px;
           background-position: center center;
           background-size: cover; }
       .main_galeria .galeria_carousel .img_5 {
         margin-top: 20px; }
         .main_galeria .galeria_carousel .img_5 #item9 {
           background-image: url(../img/img_galeria/img_v11.jpg);
-          height: 300px;
+          height: 550px;
           background-position: center center;
           background-size: cover; }
         .main_galeria .galeria_carousel .img_5 #item10 {
           background-image: url(../img/img_cards/fichas.jpg);
-          height: 300px;
+          height: 550px;
           background-position: center center;
           background-size: cover; }
       .main_galeria .galeria_carousel .img_6 {
         margin-top: 20px; }
         .main_galeria .galeria_carousel .img_6 #item11 {
           background-image: url(../img/img_galeria/horizontales/cecilia_11.jpg);
-          height: 300px;
+          height: 450px;
           background-position: center center;
           background-size: cover; }
         .main_galeria .galeria_carousel .img_6 #item12 {
           background-image: url(../img/img_cards/fichas.jpg);
-          height: 300px;
+          height: 450px;
           background-position: center center;
           background-size: cover; }
       .main_galeria .galeria_carousel .img_7 {
         margin-top: 20px; }
         .main_galeria .galeria_carousel .img_7 #item13 {
           background-image: url(../img/img_galeria/img_v12.jpg);
-          height: 300px;
+          height: 550px;
           background-position: center center;
           background-size: cover; }
         .main_galeria .galeria_carousel .img_7 #item14 {
           background-image: url(../img/img_cards/fichas.jpg);
-          height: 300px;
+          height: 550px;
           background-position: center center;
           background-size: cover; }
       .main_galeria .galeria_carousel .img_8 {
         margin-top: 20px; }
         .main_galeria .galeria_carousel .img_8 #item15 {
           background-image: url(../img/img_galeria/horizontales/cecilia_2.jpg);
-          height: 300px;
+          height: 450px;
           background-position: center center;
           background-size: cover; }
         .main_galeria .galeria_carousel .img_8 #item16 {
           background-image: url(../img/img_cards/fichas.jpg);
-          height: 300px;
+          height: 450px;
           background-position: center center;
           background-size: cover; }
       .main_galeria .galeria_carousel .img_9 {
         margin-top: 20px; }
         .main_galeria .galeria_carousel .img_9 #item17 {
           background-image: url(../img/img_galeria/img_v13.jpg);
-          height: 300px;
+          height: 550px;
           background-position: center center;
           background-size: cover; }
         .main_galeria .galeria_carousel .img_9 #item18 {
           background-image: url(../img/img_cards/fichas.jpg);
-          height: 300px;
+          height: 550px;
           background-position: center center;
           background-size: cover; }
       .main_galeria .galeria_carousel .img_10 {
         margin-top: 20px; }
         .main_galeria .galeria_carousel .img_10 #item19 {
           background-image: url(../img/img_galeria/horizontales/cecilia_3.jpg);
-          height: 300px;
+          height: 450px;
           background-position: center center;
           background-size: cover; }
         .main_galeria .galeria_carousel .img_10 #item20 {
           background-image: url(../img/img_cards/fichas.jpg);
-          height: 300px;
+          height: 450px;
           background-position: center center;
           background-size: cover; }
       .main_galeria .galeria_carousel .img_11 {
         margin-top: 20px; }
         .main_galeria .galeria_carousel .img_11 #item21 {
           background-image: url(../img/img_galeria/img_v14.jpg);
-          height: 300px;
+          height: 550px;
           background-position: center center;
           background-size: cover; }
         .main_galeria .galeria_carousel .img_11 #item22 {
           background-image: url(../img/img_cards/fichas.jpg);
-          height: 300px;
+          height: 550px;
           background-position: center center;
           background-size: cover; }
       .main_galeria .galeria_carousel .img_12 {
         margin-top: 20px; }
         .main_galeria .galeria_carousel .img_12 #item23 {
           background-image: url(../img/img_galeria/horizontales/cecilia_4.jpg);
-          height: 300px;
+          height: 450px;
           background-position: center center;
           background-size: cover; }
         .main_galeria .galeria_carousel .img_12 #item24 {
           background-image: url(../img/img_cards/fichas.jpg);
-          height: 300px;
+          height: 450px;
           background-position: center center;
           background-size: cover; }
       .main_galeria .galeria_carousel .img_13 {
         margin-top: 20px; }
         .main_galeria .galeria_carousel .img_13 #item25 {
           background-image: url(../img/img_galeria/img_v15.jpg);
-          height: 300px;
+          height: 550px;
           background-position: center center;
           background-size: cover; }
         .main_galeria .galeria_carousel .img_13 #item26 {
           background-image: url(../img/img_cards/fichas.jpg);
-          height: 300px;
+          height: 550px;
           background-position: center center;
           background-size: cover; }
       .main_galeria .galeria_carousel .img_14 {
         margin-top: 20px; }
         .main_galeria .galeria_carousel .img_14 #item27 {
           background-image: url(../img/img_galeria/horizontales/cecilia_5.jpg);
-          height: 300px;
+          height: 450px;
           background-position: center center;
           background-size: cover; }
         .main_galeria .galeria_carousel .img_14 #item28 {
           background-image: url(../img/img_cards/fichas.jpg);
-          height: 300px;
+          height: 450px;
           background-position: center center;
           background-size: cover; }
       .main_galeria .galeria_carousel .img_15 {
         margin-top: 20px; }
         .main_galeria .galeria_carousel .img_15 #item29 {
           background-image: url(../img/img_galeria/img_v16.jpg);
-          height: 300px;
+          height: 550px;
           background-position: center center;
           background-size: cover; }
         .main_galeria .galeria_carousel .img_15 #item30 {
           background-image: url(../img/img_cards/fichas.jpg);
-          height: 300px;
+          height: 550px;
           background-position: center center;
           background-size: cover; }
       .main_galeria .galeria_carousel .img_16 {
         margin-top: 20px; }
         .main_galeria .galeria_carousel .img_16 #item31 {
           background-image: url(../img/img_galeria/horizontales/cecilia_6.jpg);
-          height: 300px;
+          height: 450px;
           background-position: center center;
           background-size: cover; }
         .main_galeria .galeria_carousel .img_16 #item32 {
           background-image: url(../img/img_cards/fichas.jpg);
-          height: 300px;
+          height: 450px;
           background-position: center center;
           background-size: cover; }
       .main_galeria .galeria_carousel .img_17 {
         margin-top: 20px; }
         .main_galeria .galeria_carousel .img_17 #item33 {
           background-image: url(../img/img_galeria/img_v17.jpg);
-          height: 300px;
+          height: 550px;
           background-position: center center;
           background-size: cover; }
         .main_galeria .galeria_carousel .img_17 #item34 {
           background-image: url(../img/img_cards/fichas.jpg);
-          height: 300px;
+          height: 550px;
           background-position: center center;
           background-size: cover; }
       .main_galeria .galeria_carousel .img_18 {
         margin-top: 20px; }
         .main_galeria .galeria_carousel .img_18 #item35 {
           background-image: url(../img/img_galeria/horizontales/cecilia_7.jpg);
-          height: 300px;
+          height: 450px;
           background-position: center center;
           background-size: cover; }
         .main_galeria .galeria_carousel .img_18 #item36 {
           background-image: url(../img/img_cards/fichas.jpg);
-          height: 300px;
+          height: 450px;
           background-position: center center;
           background-size: cover; }
       .main_galeria .galeria_carousel .img_19 {
         margin-top: 20px; }
         .main_galeria .galeria_carousel .img_19 #item37 {
           background-image: url(../img/img_galeria/img_v18.jpg);
-          height: 300px;
+          height: 550px;
           background-position: center center;
           background-size: cover; }
         .main_galeria .galeria_carousel .img_19 #item38 {
           background-image: url(../img/img_cards/fichas.jpg);
-          height: 300px;
+          height: 550px;
           background-position: center center;
           background-size: cover; }
       .main_galeria .galeria_carousel .img_20 {
         margin-top: 20px; }
         .main_galeria .galeria_carousel .img_20 #item39 {
           background-image: url(../img/img_galeria/horizontales/cecilia_8.jpg);
-          height: 300px;
+          height: 450px;
           background-position: center center;
           background-size: cover; }
         .main_galeria .galeria_carousel .img_20 #item40 {
           background-image: url(../img/img_cards/fichas.jpg);
-          height: 300px;
+          height: 450px;
           background-position: center center;
           background-size: cover; }
       .main_galeria .galeria_carousel .img_21 {
         margin-top: 20px; }
         .main_galeria .galeria_carousel .img_21 #item41 {
           background-image: url(../img/img_galeria/img_v19.jpg);
-          height: 300px;
+          height: 550px;
           background-position: center center;
           background-size: cover; }
         .main_galeria .galeria_carousel .img_21 #item42 {
           background-image: url(../img/img_cards/fichas.jpg);
-          height: 300px;
+          height: 550px;
           background-position: center center;
           background-size: cover; }
       .main_galeria .galeria_carousel .img_22 {
         margin-top: 20px; }
         .main_galeria .galeria_carousel .img_22 #item43 {
           background-image: url(../img/img_galeria/horizontales/cecilia_9.jpg);
-          height: 300px;
+          height: 450px;
           background-position: center center;
           background-size: cover; }
         .main_galeria .galeria_carousel .img_22 #item44 {
           background-image: url(../img/img_cards/fichas.jpg);
-          height: 300px;
+          height: 450px;
           background-position: center center;
           background-size: cover; }
       .main_galeria .galeria_carousel .img_23 {
         margin-top: 20px; }
         .main_galeria .galeria_carousel .img_23 #item45 {
           background-image: url(../img/img_galeria/img_v20.jpg);
-          height: 300px;
+          height: 550px;
           background-position: center center;
           background-size: cover; }
         .main_galeria .galeria_carousel .img_23 #item46 {
           background-image: url(../img/img_cards/fichas.jpg);
-          height: 300px;
+          height: 550px;
           background-position: center center;
           background-size: cover; }
       .main_galeria .galeria_carousel .img_24 {
         margin-top: 20px; }
         .main_galeria .galeria_carousel .img_24 #item47 {
           background-image: url(../img/img_galeria/horizontales/cecilia_10.jpg);
-          height: 300px;
+          height: 450px;
           background-position: center center;
           background-size: cover; }
         .main_galeria .galeria_carousel .img_24 #item48 {
           background-image: url(../img/img_cards/fichas.jpg);
-          height: 300px;
+          height: 450px;
           background-position: center center;
           background-size: cover; }
       .main_galeria .galeria_carousel .img_25 {
         margin-top: 20px; }
         .main_galeria .galeria_carousel .img_25 #item49 {
           background-image: url(../img/img_galeria/horizontales/cecilia_11.jpg);
-          height: 300px;
+          height: 450px;
           background-position: center center;
           background-size: cover; }
         .main_galeria .galeria_carousel .img_25 #item50 {
           background-image: url(../img/img_cards/fichas.jpg);
-          height: 300px;
+          height: 450px;
           background-position: center center;
           background-size: cover; }
       .main_galeria .galeria_carousel .btn--offcanvas {
@@ -2344,369 +2307,21 @@
         display: block; }
   /***galeria**/
   .main_galeria {
-    width: 100%; }
-    .main_galeria .galeria_carousel {
-      width: 100%;
-      /* height: 100%; */
-      padding-top: 20px;
-      display: none; }
-      .main_galeria .galeria_carousel .img_1 #item1 {
-        background-image: url(../img/img_galeria/img_v1.jpg);
-        height: 400px;
-        background-position: center center;
-        background-size: cover; }
-      .main_galeria .galeria_carousel .img_1 #item2 {
-        background-image: url(../img/img_cards/fichas.jpg);
-        height: 400px;
-        background-position: center center;
-        background-size: cover; }
-      .main_galeria .galeria_carousel .img_2 {
-        margin-top: 20px; }
-        .main_galeria .galeria_carousel .img_2 #item3 {
-          background-image: url(../img/img_galeria/horizontales/cecilia_1.jpg);
-          height: 400px;
-          background-position: center center;
-          background-size: cover; }
-        .main_galeria .galeria_carousel .img_2 #item4 {
-          background-image: url(../img/img_cards/fichas.jpg);
-          height: 300px;
-          background-position: center center;
-          background-size: cover; }
-      .main_galeria .galeria_carousel .img_3 {
-        margin-top: 20px; }
-        .main_galeria .galeria_carousel .img_3 #item5 {
-          background-image: url(../img/img_galeria/img_v12.jpg);
-          height: 300px;
-          background-position: center center;
-          background-size: cover; }
-        .main_galeria .galeria_carousel .img_3 #item6 {
-          background-image: url(../img/img_cards/fichas.jpg);
-          height: 300px;
-          background-position: center center;
-          background-size: cover; }
-      .main_galeria .galeria_carousel .img_4 {
-        margin-top: 20px; }
-        .main_galeria .galeria_carousel .img_4 #item7 {
-          background-image: url(../img/img_galeria/horizontales/cecilia_10.jpg);
-          height: 300px;
-          background-position: center center;
-          background-size: cover; }
-        .main_galeria .galeria_carousel .img_4 #item8 {
-          background-image: url(../img/img_cards/fichas.jpg);
-          height: 300px;
-          background-position: center center;
-          background-size: cover; }
-      .main_galeria .galeria_carousel .img_5 {
-        margin-top: 20px; }
-        .main_galeria .galeria_carousel .img_5 #item9 {
-          background-image: url(../img/img_galeria/img_v11.jpg);
-          height: 300px;
-          background-position: center center;
-          background-size: cover; }
-        .main_galeria .galeria_carousel .img_5 #item10 {
-          background-image: url(../img/img_cards/fichas.jpg);
-          height: 300px;
-          background-position: center center;
-          background-size: cover; }
-      .main_galeria .galeria_carousel .img_6 {
-        margin-top: 20px; }
-        .main_galeria .galeria_carousel .img_6 #item11 {
-          background-image: url(../img/img_galeria/horizontales/cecilia_11.jpg);
-          height: 300px;
-          background-position: center center;
-          background-size: cover; }
-        .main_galeria .galeria_carousel .img_6 #item12 {
-          background-image: url(../img/img_cards/fichas.jpg);
-          height: 300px;
-          background-position: center center;
-          background-size: cover; }
-      .main_galeria .galeria_carousel .img_7 {
-        margin-top: 20px; }
-        .main_galeria .galeria_carousel .img_7 #item13 {
-          background-image: url(../img/img_galeria/img_v12.jpg);
-          height: 300px;
-          background-position: center center;
-          background-size: cover; }
-        .main_galeria .galeria_carousel .img_7 #item14 {
-          background-image: url(../img/img_cards/fichas.jpg);
-          height: 300px;
-          background-position: center center;
-          background-size: cover; }
-      .main_galeria .galeria_carousel .img_8 {
-        margin-top: 20px; }
-        .main_galeria .galeria_carousel .img_8 #item15 {
-          background-image: url(../img/img_galeria/horizontales/cecilia_2.jpg);
-          height: 300px;
-          background-position: center center;
-          background-size: cover; }
-        .main_galeria .galeria_carousel .img_8 #item16 {
-          background-image: url(../img/img_cards/fichas.jpg);
-          height: 300px;
-          background-position: center center;
-          background-size: cover; }
-      .main_galeria .galeria_carousel .img_9 {
-        margin-top: 20px; }
-        .main_galeria .galeria_carousel .img_9 #item17 {
-          background-image: url(../img/img_galeria/img_v13.jpg);
-          height: 300px;
-          background-position: center center;
-          background-size: cover; }
-        .main_galeria .galeria_carousel .img_9 #item18 {
-          background-image: url(../img/img_cards/fichas.jpg);
-          height: 300px;
-          background-position: center center;
-          background-size: cover; }
-      .main_galeria .galeria_carousel .img_10 {
-        margin-top: 20px; }
-        .main_galeria .galeria_carousel .img_10 #item19 {
-          background-image: url(../img/img_galeria/horizontales/cecilia_3.jpg);
-          height: 300px;
-          background-position: center center;
-          background-size: cover; }
-        .main_galeria .galeria_carousel .img_10 #item20 {
-          background-image: url(../img/img_cards/fichas.jpg);
-          height: 300px;
-          background-position: center center;
-          background-size: cover; }
-      .main_galeria .galeria_carousel .img_11 {
-        margin-top: 20px; }
-        .main_galeria .galeria_carousel .img_11 #item21 {
-          background-image: url(../img/img_galeria/img_v14.jpg);
-          height: 300px;
-          background-position: center center;
-          background-size: cover; }
-        .main_galeria .galeria_carousel .img_11 #item22 {
-          background-image: url(../img/img_cards/fichas.jpg);
-          height: 300px;
-          background-position: center center;
-          background-size: cover; }
-      .main_galeria .galeria_carousel .img_12 {
-        margin-top: 20px; }
-        .main_galeria .galeria_carousel .img_12 #item23 {
-          background-image: url(../img/img_galeria/horizontales/cecilia_4.jpg);
-          height: 300px;
-          background-position: center center;
-          background-size: cover; }
-        .main_galeria .galeria_carousel .img_12 #item24 {
-          background-image: url(../img/img_cards/fichas.jpg);
-          height: 300px;
-          background-position: center center;
-          background-size: cover; }
-      .main_galeria .galeria_carousel .img_13 {
-        margin-top: 20px; }
-        .main_galeria .galeria_carousel .img_13 #item25 {
-          background-image: url(../img/img_galeria/img_v15.jpg);
-          height: 300px;
-          background-position: center center;
-          background-size: cover; }
-        .main_galeria .galeria_carousel .img_13 #item26 {
-          background-image: url(../img/img_cards/fichas.jpg);
-          height: 300px;
-          background-position: center center;
-          background-size: cover; }
-      .main_galeria .galeria_carousel .img_14 {
-        margin-top: 20px; }
-        .main_galeria .galeria_carousel .img_14 #item27 {
-          background-image: url(../img/img_galeria/horizontales/cecilia_5.jpg);
-          height: 300px;
-          background-position: center center;
-          background-size: cover; }
-        .main_galeria .galeria_carousel .img_14 #item28 {
-          background-image: url(../img/img_cards/fichas.jpg);
-          height: 300px;
-          background-position: center center;
-          background-size: cover; }
-      .main_galeria .galeria_carousel .img_15 {
-        margin-top: 20px; }
-        .main_galeria .galeria_carousel .img_15 #item29 {
-          background-image: url(../img/img_galeria/img_v16.jpg);
-          height: 300px;
-          background-position: center center;
-          background-size: cover; }
-        .main_galeria .galeria_carousel .img_15 #item30 {
-          background-image: url(../img/img_cards/fichas.jpg);
-          height: 300px;
-          background-position: center center;
-          background-size: cover; }
-      .main_galeria .galeria_carousel .img_16 {
-        margin-top: 20px; }
-        .main_galeria .galeria_carousel .img_16 #item31 {
-          background-image: url(../img/img_galeria/horizontales/cecilia_6.jpg);
-          height: 300px;
-          background-position: center center;
-          background-size: cover; }
-        .main_galeria .galeria_carousel .img_16 #item32 {
-          background-image: url(../img/img_cards/fichas.jpg);
-          height: 300px;
-          background-position: center center;
-          background-size: cover; }
-      .main_galeria .galeria_carousel .img_17 {
-        margin-top: 20px; }
-        .main_galeria .galeria_carousel .img_17 #item33 {
-          background-image: url(../img/img_galeria/img_v17.jpg);
-          height: 300px;
-          background-position: center center;
-          background-size: cover; }
-        .main_galeria .galeria_carousel .img_17 #item34 {
-          background-image: url(../img/img_cards/fichas.jpg);
-          height: 300px;
-          background-position: center center;
-          background-size: cover; }
-      .main_galeria .galeria_carousel .img_18 {
-        margin-top: 20px; }
-        .main_galeria .galeria_carousel .img_18 #item35 {
-          background-image: url(../img/img_galeria/horizontales/cecilia_7.jpg);
-          height: 300px;
-          background-position: center center;
-          background-size: cover; }
-        .main_galeria .galeria_carousel .img_18 #item36 {
-          background-image: url(../img/img_cards/fichas.jpg);
-          height: 300px;
-          background-position: center center;
-          background-size: cover; }
-      .main_galeria .galeria_carousel .img_19 {
-        margin-top: 20px; }
-        .main_galeria .galeria_carousel .img_19 #item37 {
-          background-image: url(../img/img_galeria/img_v18.jpg);
-          height: 300px;
-          background-position: center center;
-          background-size: cover; }
-        .main_galeria .galeria_carousel .img_19 #item38 {
-          background-image: url(../img/img_cards/fichas.jpg);
-          height: 300px;
-          background-position: center center;
-          background-size: cover; }
-      .main_galeria .galeria_carousel .img_20 {
-        margin-top: 20px; }
-        .main_galeria .galeria_carousel .img_20 #item39 {
-          background-image: url(../img/img_galeria/horizontales/cecilia_8.jpg);
-          height: 300px;
-          background-position: center center;
-          background-size: cover; }
-        .main_galeria .galeria_carousel .img_20 #item40 {
-          background-image: url(../img/img_cards/fichas.jpg);
-          height: 300px;
-          background-position: center center;
-          background-size: cover; }
-      .main_galeria .galeria_carousel .img_21 {
-        margin-top: 20px; }
-        .main_galeria .galeria_carousel .img_21 #item41 {
-          background-image: url(../img/img_galeria/img_v19.jpg);
-          height: 300px;
-          background-position: center center;
-          background-size: cover; }
-        .main_galeria .galeria_carousel .img_21 #item42 {
-          background-image: url(../img/img_cards/fichas.jpg);
-          height: 300px;
-          background-position: center center;
-          background-size: cover; }
-      .main_galeria .galeria_carousel .img_22 {
-        margin-top: 20px; }
-        .main_galeria .galeria_carousel .img_22 #item43 {
-          background-image: url(../img/img_galeria/horizontales/cecilia_9.jpg);
-          height: 300px;
-          background-position: center center;
-          background-size: cover; }
-        .main_galeria .galeria_carousel .img_22 #item44 {
-          background-image: url(../img/img_cards/fichas.jpg);
-          height: 300px;
-          background-position: center center;
-          background-size: cover; }
-      .main_galeria .galeria_carousel .img_23 {
-        margin-top: 20px; }
-        .main_galeria .galeria_carousel .img_23 #item45 {
-          background-image: url(../img/img_galeria/img_v20.jpg);
-          height: 300px;
-          background-position: center center;
-          background-size: cover; }
-        .main_galeria .galeria_carousel .img_23 #item46 {
-          background-image: url(../img/img_cards/fichas.jpg);
-          height: 300px;
-          background-position: center center;
-          background-size: cover; }
-      .main_galeria .galeria_carousel .img_24 {
-        margin-top: 20px; }
-        .main_galeria .galeria_carousel .img_24 #item47 {
-          background-image: url(../img/img_galeria/horizontales/cecilia_10.jpg);
-          height: 300px;
-          background-position: center center;
-          background-size: cover; }
-        .main_galeria .galeria_carousel .img_24 #item48 {
-          background-image: url(../img/img_cards/fichas.jpg);
-          height: 300px;
-          background-position: center center;
-          background-size: cover; }
-      .main_galeria .galeria_carousel .img_25 {
-        margin-top: 20px; }
-        .main_galeria .galeria_carousel .img_25 #item49 {
-          background-image: url(../img/img_galeria/horizontales/cecilia_11.jpg);
-          height: 300px;
-          background-position: center center;
-          background-size: cover; }
-        .main_galeria .galeria_carousel .img_25 #item50 {
-          background-image: url(../img/img_cards/fichas.jpg);
-          height: 300px;
-          background-position: center center;
-          background-size: cover; }
-      .main_galeria .galeria_carousel .btn--offcanvas {
-        width: 100%;
-        text-align: center;
-        margin-top: 5px;
-        position: fixed;
-        bottom: 10px;
-        right: 270px;
-        height: 100px;
-        z-index: 999; }
-        .main_galeria .galeria_carousel .btn--offcanvas .btn {
-          border-top-right-radius: 40px;
-          border-bottom-right-radius: 40px;
-          height: 70px;
-          border: none; }
-          .main_galeria .galeria_carousel .btn--offcanvas .btn:hover {
-            transition: all 0.3s ease;
-            background-color: black;
-            color: #fff; }
-        .main_galeria .galeria_carousel .btn--offcanvas .offcanvas-body {
-          padding-right: 30px; }
-          .main_galeria .galeria_carousel .btn--offcanvas .offcanvas-body a img {
-            width: 300px;
-            height: auto;
-            padding-top: 10px; }
-          .main_galeria .galeria_carousel .btn--offcanvas .offcanvas-body a:hover {
-            transition: all 0.3s ease;
-            opacity: 60%; }
+    width: 100%;
+    height: 100%; }
     .main_galeria .main_gallery {
       display: block;
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      grid-auto-rows: 400px;
-      grid-gap: 15px; }
-      .main_galeria .main_gallery .img--class {
-        width: 100%;
-        height: 100%;
-        object-fit: cover; }
-      .main_galeria .main_gallery .img_containers:nth-child(1) {
-        grid-column-start: span 2; }
-      .main_galeria .main_gallery .img_containers:nth-child(2) {
-        grid-column-start: span 2; }
-      .main_galeria .main_gallery .img_containers:nth-child(3) {
-        grid-column-start: span 4; }
-      .main_galeria .main_gallery .img_containers:nth-child(4) {
-        grid-column-start: span 2; }
-      .main_galeria .main_gallery .img_containers:nth-child(6) {
-        grid-column-start: span 2; }
-      .main_galeria .main_gallery .img_containers:nth-child(9) {
-        grid-column-start: span 2; }
-      .main_galeria .main_gallery .img_containers:nth-child(11) {
-        grid-column-start: span 2; }
-      .main_galeria .main_gallery .img_containers:nth-child(25) {
-        grid-column-start: span 2; }
-      .main_galeria .main_gallery .img_containers:nth-child(35) {
-        grid-column-start: span 2; }
-      .main_galeria .main_gallery .img_containers:nth-child(36) {
-        grid-column-start: span 2; }
-      .main_galeria .main_gallery .img_containers:nth-child(37) {
-        grid-column-start: span 2; }
+      width: 100%;
+      padding: 30px 80px 40px 80px; }
+      .main_galeria .main_gallery .img_containers {
+        margin-bottom: 50px; }
+        .main_galeria .main_gallery .img_containers #boton_galeria {
+          margin: 20px 20px; }
+        .main_galeria .main_gallery .img_containers img {
+          width: 400px;
+          height: auto; }
+    .main_galeria .galeria_carousel {
+      display: none; }
   /****sobremi***/
   .main_second {
     width: 100%;
@@ -2803,6 +2418,14 @@
   .main_index {
     width: 100%;
     margin-bottom: 60px; }
+  /*galeria*/
+  .main_galeria {
+    width: 100%;
+    height: 100%; }
+    .main_galeria .main_gallery {
+      display: block; }
+    .main_galeria .galeria_carousel {
+      display: none; }
   /*sobremi*/
   .main_second {
     width: 100%;
@@ -2824,6 +2447,25 @@
         .main_second .about_contain .img_about .cuadro2 {
           width: 45%;
           height: auto; }
+  /*GALERIA DE IMAGENES*/
+  .main_galeria {
+    width: 100%;
+    height: 100%; }
+    .main_galeria .main_gallery {
+      width: 100%;
+      padding: 40px 60px;
+      margin: 0px; }
+      .main_galeria .main_gallery .img_containers {
+        padding: 20px 20px;
+        margin: 40px 60px; }
+        .main_galeria .main_gallery .img_containers img {
+          width: 400px;
+          height: auto; }
+        .main_galeria .main_gallery .img_containers #boton_galeria {
+          margin: 20px 20px; }
+        .main_galeria .main_gallery .img_containers .textos_img {
+          padding: 30px 100px; }
+  /*FOOTER*/
   .footer_main {
     width: 100%;
     /* height: 85vh; */ }
@@ -2879,12 +2521,9 @@
   /*sobremi*/
   .main_second {
     width: 100%;
-    height: 100%;
-    /* height: 1600px; */
-    /*  height: 100%; */ }
+    height: 100%; }
     .main_second .about_contain {
       width: 100%;
-      /* height: 100%; */
       grid-template-columns: auto;
       grid-template-rows: auto;
       grid-gap: 20px; }
@@ -2896,53 +2535,21 @@
         padding-bottom: 20px;
         margin: 0px 0px; }
   /*****galeria****/
-  .main_gallery {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-auto-rows: 600px;
-    grid-gap: 15px; }
-    .main_gallery .img--class {
+  .main_galeria {
+    width: 100%;
+    height: 100%; }
+    .main_galeria .main_gallery {
       width: 100%;
-      height: 100%;
-      object-fit: cover; }
-    .main_gallery .img_containers:nth-child(3) {
-      grid-column-start: span 2; }
-    .main_gallery .img_containers:nth-child(2) {
-      grid-column-start: span 2; }
-    .main_gallery .img_containers:nth-child(4) {
-      grid-column-start: span 3; }
-    .main_gallery .img_containers:nth-child(5) {
-      grid-column-start: span 2; }
-    .main_gallery .img_containers:nth-child(7) {
-      grid-column-start: span 2;
-      grid-row-start: span 2; }
-    .main_gallery .img_containers:nth-child(8) {
-      grid-column-start: span 2; }
-    .main_gallery .img_containers:nth-child(10) {
-      grid-column-start: span 2; }
-    .main_gallery .img_containers:nth-child(12) {
-      grid-column-start: span 2; }
-    .main_gallery .img_containers:nth-child(13) {
-      grid-column-start: span 2; }
-    .main_gallery .img_containers:nth-child(14) {
-      grid-column-start: span 2; }
-    .main_gallery .img_containers:nth-child(16) {
-      grid-column-start: span 2; }
-    .main_gallery .img_containers:nth-child(18) {
-      grid-column-start: span 4; }
-    .main_gallery .img_containers:nth-child(20) {
-      grid-row-start: span 2;
-      grid-column-start: span 2; }
-    .main_gallery .img_containers:nth-child(24) {
-      grid-column-start: span 2; }
-    .main_gallery .img_containers:nth-child(26) {
-      grid-column-start: span 2; }
-    .main_gallery .img_containers:nth-child(29) {
-      grid-column-start: span 3; }
-    .main_gallery .img_containers:nth-child(36) {
-      grid-column-start: span 3; }
-    .main_gallery .img_containers:nth-child(32) {
-      grid-column-start: span 3; } }
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 30px 0px; }
+      .main_galeria .main_gallery .img_containers {
+        width: 45%;
+        height: auto;
+        margin: 0px 0px 30px 0px; }
+        .main_galeria .main_gallery .img_containers .textos_img {
+          padding: 20px 20px; } }
 
 @media screen and (min-width: 1200px) {
   .main_index {
@@ -2961,64 +2568,166 @@
   .galeria_carousel {
     display: none; }
   .main_galeria {
-    width: 100%; }
+    width: 100%;
+    height: 100%;
+    /* .main_gallery {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-auto-rows: 600px;
+            grid-gap: 15px;
+
+            .img--class {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            .img_containers:nth-child(1) {
+                grid-column-start: span 2;
+            }
+
+            .img_containers:nth-child(2) {
+                grid-column-start: span 3;
+            }
+
+            .img_containers:nth-child(3) {
+                grid-column-start: span 2;
+            }
+
+            .img_containers:nth-child(4) {
+                grid-column-start: span 3;
+            }
+
+            .img_containers:nth-child(5) {
+                grid-column-start: span 3;
+            }
+
+            .img_containers:nth-child(7) {
+                grid-column-start: span 2;
+                grid-row-start: span 2;
+            }
+
+            .img_containers:nth-child(8) {
+
+                grid-column-start: span 3;
+            }
+
+            .img_containers:nth-child(9) {
+                grid-column-start: span 3;
+            }
+
+            .img_containers:nth-child(10) {
+
+                grid-column-start: span 3;
+            }
+
+            .img_containers:nth-child(12) {
+                grid-column-start: span 2;
+            }
+
+            .img_containers:nth-child(13) {
+
+                grid-column-start: span 3;
+            }
+
+            .img_containers:nth-child(14) {
+
+                grid-column-start: span 2;
+            }
+
+            .img_containers:nth-child(16) {
+
+                grid-column-start: span 2;
+            }
+
+            .img_containers:nth-child(18) {
+                grid-column-start: span 4;
+            }
+
+            .img_containers:nth-child(20) {
+                grid-row-start: span 1;
+                grid-column-start: span 2;
+            }
+
+            .img_containers:nth-child(23) {
+                grid-column-start: span 2;
+            }
+
+            .img_containers:nth-child(24) {
+                grid-column-start: span 3;
+            }
+
+            .img_containers:nth-child(26) {
+                grid-column-start: span 2;
+            }
+
+            .img_containers:nth-child(29) {
+                grid-column-start: span 3;
+            }
+
+            .img_containers:nth-child(31) {
+                grid-column-start: span 2;
+            }
+
+            .img_containers:nth-child(34) {
+                grid-column-start: span 2;
+            }
+
+            .img_containers:nth-child(36) {
+                grid-column-start: span 3;
+            }
+
+            .img_containers:nth-child(32) {
+                grid-column-start: span 3;
+            }
+
+        }*/ }
     .main_galeria .main_gallery {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      grid-auto-rows: 600px;
-      grid-gap: 15px; }
-      .main_galeria .main_gallery .img--class {
-        width: 100%;
-        height: 100%;
-        object-fit: cover; }
-      .main_galeria .main_gallery .img_containers:nth-child(1) {
-        grid-column-start: span 2; }
-      .main_galeria .main_gallery .img_containers:nth-child(2) {
-        grid-column-start: span 3; }
-      .main_galeria .main_gallery .img_containers:nth-child(3) {
-        grid-column-start: span 2; }
-      .main_galeria .main_gallery .img_containers:nth-child(4) {
-        grid-column-start: span 3; }
-      .main_galeria .main_gallery .img_containers:nth-child(5) {
-        grid-column-start: span 3; }
-      .main_galeria .main_gallery .img_containers:nth-child(7) {
-        grid-column-start: span 2;
-        grid-row-start: span 2; }
-      .main_galeria .main_gallery .img_containers:nth-child(8) {
-        grid-column-start: span 3; }
-      .main_galeria .main_gallery .img_containers:nth-child(9) {
-        grid-column-start: span 3; }
-      .main_galeria .main_gallery .img_containers:nth-child(10) {
-        grid-column-start: span 3; }
-      .main_galeria .main_gallery .img_containers:nth-child(12) {
-        grid-column-start: span 2; }
-      .main_galeria .main_gallery .img_containers:nth-child(13) {
-        grid-column-start: span 3; }
-      .main_galeria .main_gallery .img_containers:nth-child(14) {
-        grid-column-start: span 2; }
-      .main_galeria .main_gallery .img_containers:nth-child(16) {
-        grid-column-start: span 2; }
-      .main_galeria .main_gallery .img_containers:nth-child(18) {
-        grid-column-start: span 4; }
-      .main_galeria .main_gallery .img_containers:nth-child(20) {
-        grid-row-start: span 1;
-        grid-column-start: span 2; }
-      .main_galeria .main_gallery .img_containers:nth-child(23) {
-        grid-column-start: span 2; }
-      .main_galeria .main_gallery .img_containers:nth-child(24) {
-        grid-column-start: span 3; }
-      .main_galeria .main_gallery .img_containers:nth-child(26) {
-        grid-column-start: span 2; }
-      .main_galeria .main_gallery .img_containers:nth-child(29) {
-        grid-column-start: span 3; }
-      .main_galeria .main_gallery .img_containers:nth-child(31) {
-        grid-column-start: span 2; }
-      .main_galeria .main_gallery .img_containers:nth-child(34) {
-        grid-column-start: span 2; }
-      .main_galeria .main_gallery .img_containers:nth-child(36) {
-        grid-column-start: span 3; }
-      .main_galeria .main_gallery .img_containers:nth-child(32) {
-        grid-column-start: span 3; }
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      align-items: center;
+      padding: 40px 20px; }
+      .main_galeria .main_gallery .img_containers {
+        padding: 15px 15px;
+        margin: 20px 20px;
+        border: 2px solid rgba(0, 0, 0, 0.867);
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: center; }
+        .main_galeria .main_gallery .img_containers img {
+          width: 400px;
+          height: auto; }
+        .main_galeria .main_gallery .img_containers #boton_galeria {
+          width: 50%;
+          height: 40px;
+          border: 2px solid #000;
+          background: none;
+          font-size: 14px; }
+          .main_galeria .main_gallery .img_containers #boton_galeria:hover {
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            background-color: #000;
+            color: #fff; }
+        .main_galeria .main_gallery .img_containers .textos_img {
+          width: 100%;
+          padding: 20px 10px;
+          display: none; }
+          .main_galeria .main_gallery .img_containers .textos_img img {
+            width: 60px;
+            height: 60px;
+            cursor: pointer;
+            align-self: center; }
+            .main_galeria .main_gallery .img_containers .textos_img img:hover {
+              transition: all 0.2s ease;
+              opacity: 50%; }
+          .main_galeria .main_gallery .img_containers .textos_img h3 {
+            font-size: 15px;
+            font-weight: 600; }
   /**footer**/
   .footer_main {
     width: 100%;
@@ -3181,6 +2890,14 @@
     .main_index .contenedor_main_responsive {
       width: 100%;
       height: auto; }
+  /*galeria*/
+  .main_galeria {
+    width: 100%;
+    height: 100%; }
+    .main_galeria .main_gallery {
+      width: 100%; }
+      .main_galeria .main_gallery .img_containers {
+        width: 30%; }
   /**EXPOSICIONES Y RECONOCIMIENTOS***/
   .main_exposiciones {
     width: 100%;

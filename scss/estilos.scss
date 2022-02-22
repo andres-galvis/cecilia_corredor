@@ -103,142 +103,81 @@
 
 .main_galeria {
     width: 100%;
-    padding: 15px 15px;
+    height: 100%;
+    
+    .main_gallery{
 
-    .galeria_carousel {
-        display: none;
-    }
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 40px 40px;
 
-    /*  .main_gallery h2 {
-        font-size: 30px;
-        font-weight: 900;
-    }
+        .img_containers{
 
-    .main_gallery h3 {
-        color: #fff;
-        text-decoration: none;
-        padding-top: 10px;
-        font-size: 20px;
-        font-weight: 500;
-    }
+            padding: 15px 15px;
+            margin: 20px 20px;
+            border: 2px solid rgba(0, 0, 0, 0.867);
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: space-evenly;
+            align-items: center;
 
-    .main_gallery a {
-        padding-top: 10px;
-        cursor: pointer;
-    }
+            
+            #boton_galeria{
+                width: 50%;
+                height: 40px;
+                border: 2px solid #000;
+                background: none;
+                font-size: 14px;
 
-    .main_gallery a button {
-        width: 150px;
-        height: 30px;
-        font-weight: 500;
-        background-color: #fff;
-        border: none;
-        border-radius: 10px;
-        cursor: pointer;
-    }
+                &:hover{
+                    
+                    border-radius: 10px;
+                    transition: all 0.3s ease;
+                    background-color: #000;
+                    color: #fff;
+                }
 
-    .main_gallery a button:hover {
-        background-color: cadetblue;
-        transition: all 0.2s ease;
-        color: #fff;
-    } */
+            }               
+            .textos_img{
 
-    .main_gallery {
+                width: 100%;
+                height: 100%;
+                padding-top: 20px;
+                display: none;
 
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        grid-auto-rows: 600px;
-        grid-gap: 15px;
+                img{
+                    width: 60px;
+                    height: 60px;
+                    cursor: pointer;
+                    align-self: center;
+    
+                    &:hover{
+                        transition: all 0.2s ease;
+                        opacity: 50%;
+                    }
+                }
 
-        .img--class {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+                h3{
+                    font-size: 15px;
+                    font-weight: 600;
+                }
+            }
+            
+            img{
+                padding: 10px 10px;
+                width: auto;
+                height: 350px;
+            }
+            
         }
 
-
-        .img_containers:nth-child(3) {
-            grid-column-start: span 2;
-        }
-
-        .img_containers:nth-child(2) {
-            grid-column-start: span 2;
-        }
-
-        .img_containers:nth-child(4) {
-            grid-column-start: span 3;
-        }
-
-        .img_containers:nth-child(5) {
-            grid-column-start: span 2;
-        }
-
-        .img_containers:nth-child(7) {
-
-            grid-column-start: span 2;
-            grid-row-start: span 2;
-        }
-
-        .img_containers:nth-child(8) {
-
-            grid-column-start: span 2;
-        }
-
-        .img_containers:nth-child(10) {
-
-            grid-column-start: span 2;
-        }
-
-        .img_containers:nth-child(12) {
-            grid-column-start: span 2;
-        }
-
-        .img_containers:nth-child(13) {
-
-            grid-column-start: span 2;
-        }
-
-        .img_containers:nth-child(14) {
-
-            grid-column-start: span 2;
-        }
-
-        .img_containers:nth-child(16) {
-
-            grid-column-start: span 2;
-        }
-
-        .img_containers:nth-child(18) {
-            grid-column-start: span 4;
-        }
-
-        .img_containers:nth-child(20) {
-            grid-row-start: span 2;
-            grid-column-start: span 2;
-        }
-
-        .img_containers:nth-child(24) {
-            grid-column-start: span 2;
-        }
-
-        .img_containers:nth-child(26) {
-            grid-column-start: span 2;
-        }
-
-        .img_containers:nth-child(29) {
-            grid-column-start: span 3;
-        }
-
-        .img_containers:nth-child(36) {
-            grid-column-start: span 3;
-        }
-
-        .img_containers:nth-child(32) {
-            grid-column-start: span 3;
-        }
-
-    }
-
+        
+    } 
 }
 
 /**************SECCION ABOUT********************/
@@ -1031,7 +970,6 @@
     .main_galeria {
         width: 100%;
         padding-top: 80px;
-        /*  height: 3250px; */
 
         .main_gallery {
             display: none;
@@ -1039,8 +977,7 @@
 
         .galeria_carousel {
             width: 100%;
-            /* height: 100%; */
-            padding-top: 20px;
+            padding: 40px 20px;
             display: block;
 
             .img_1 {
@@ -1960,21 +1897,21 @@
         .galeria_carousel {
             width: 100%;
             /* height: 100%; */
-            padding-top: 20px;
+            padding: 40px 20px;
             display: block;
 
             .img_1 {
 
                 #item1 {
                     background-image: url(../img/img_galeria/img_v1.jpg);
-                    height: 300px;
+                    height: 400px;
                     background-position: center center;
                     background-size: cover;
                 }
 
                 #item2 {
                     background-image: url(../img/img_cards/fichas.jpg);
-                    height: 300px;
+                    height: 400px;
                     background-position: center center;
                     background-size: cover;
                 }
@@ -2003,14 +1940,14 @@
 
                 #item5 {
                     background-image: url(../img/img_galeria/img_v12.jpg);
-                    height: 300px;
+                    height: 400px;
                     background-position: center center;
                     background-size: cover;
                 }
 
                 #item6 {
                     background-image: url(../img/img_cards/fichas.jpg);
-                    height: 300px;
+                    height: 400px;
                     background-position: center center;
                     background-size: cover;
                 }
@@ -2039,14 +1976,14 @@
 
                 #item9 {
                     background-image: url(../img/img_galeria/img_v11.jpg);
-                    height: 300px;
+                    height: 400px;
                     background-position: center center;
                     background-size: cover;
                 }
 
                 #item10 {
                     background-image: url(../img/img_cards/fichas.jpg);
-                    height: 300px;
+                    height: 400px;
                     background-position: center center;
                     background-size: cover;
                 }
@@ -2075,14 +2012,14 @@
 
                 #item13 {
                     background-image: url(../img/img_galeria/img_v12.jpg);
-                    height: 300px;
+                    height: 400px;
                     background-position: center center;
                     background-size: cover;
                 }
 
                 #item14 {
                     background-image: url(../img/img_cards/fichas.jpg);
-                    height: 300px;
+                    height: 400px;
                     background-position: center center;
                     background-size: cover;
                 }
@@ -2112,14 +2049,14 @@
 
                 #item17 {
                     background-image: url(../img/img_galeria/img_v13.jpg);
-                    height: 300px;
+                    height: 400px;
                     background-position: center center;
                     background-size: cover;
                 }
 
                 #item18 {
                     background-image: url(../img/img_cards/fichas.jpg);
-                    height: 300px;
+                    height: 400px;
                     background-position: center center;
                     background-size: cover;
                 }
@@ -2148,14 +2085,14 @@
 
                 #item21 {
                     background-image: url(../img/img_galeria/img_v14.jpg);
-                    height: 300px;
+                    height: 400px;
                     background-position: center center;
                     background-size: cover;
                 }
 
                 #item22 {
                     background-image: url(../img/img_cards/fichas.jpg);
-                    height: 300px;
+                    height: 400px;
                     background-position: center center;
                     background-size: cover;
                 }
@@ -2184,14 +2121,14 @@
 
                 #item25 {
                     background-image: url(../img/img_galeria/img_v15.jpg);
-                    height: 300px;
+                    height: 400px;
                     background-position: center center;
                     background-size: cover;
                 }
 
                 #item26 {
                     background-image: url(../img/img_cards/fichas.jpg);
-                    height: 300px;
+                    height: 400px;
                     background-position: center center;
                     background-size: cover;
                 }
@@ -2220,14 +2157,14 @@
 
                 #item29 {
                     background-image: url(../img/img_galeria/img_v16.jpg);
-                    height: 300px;
+                    height: 400px;
                     background-position: center center;
                     background-size: cover;
                 }
 
                 #item30 {
                     background-image: url(../img/img_cards/fichas.jpg);
-                    height: 300px;
+                    height: 400px;
                     background-position: center center;
                     background-size: cover;
                 }
@@ -2256,14 +2193,14 @@
 
                 #item33 {
                     background-image: url(../img/img_galeria/img_v17.jpg);
-                    height: 300px;
+                    height: 400px;
                     background-position: center center;
                     background-size: cover;
                 }
 
                 #item34 {
                     background-image: url(../img/img_cards/fichas.jpg);
-                    height: 300px;
+                    height: 400px;
                     background-position: center center;
                     background-size: cover;
                 }
@@ -2292,14 +2229,14 @@
 
                 #item37 {
                     background-image: url(../img/img_galeria/img_v18.jpg);
-                    height: 300px;
+                    height: 400px;
                     background-position: center center;
                     background-size: cover;
                 }
 
                 #item38 {
                     background-image: url(../img/img_cards/fichas.jpg);
-                    height: 300px;
+                    height: 400px;
                     background-position: center center;
                     background-size: cover;
                 }
@@ -2328,14 +2265,14 @@
 
                 #item41 {
                     background-image: url(../img/img_galeria/img_v19.jpg);
-                    height: 300px;
+                    height: 400px;
                     background-position: center center;
                     background-size: cover;
                 }
 
                 #item42 {
                     background-image: url(../img/img_cards/fichas.jpg);
-                    height: 300px;
+                    height: 400px;
                     background-position: center center;
                     background-size: cover;
                 }
@@ -2364,14 +2301,14 @@
 
                 #item45 {
                     background-image: url(../img/img_galeria/img_v20.jpg);
-                    height: 300px;
+                    height: 400px;
                     background-position: center center;
                     background-size: cover;
                 }
 
                 #item46 {
                     background-image: url(../img/img_cards/fichas.jpg);
-                    height: 300px;
+                    height: 400px;
                     background-position: center center;
                     background-size: cover;
                 }
@@ -2874,33 +2811,31 @@
     }
 
 
-    /**************main galeria************/
+    /**************main galeria***$alturah_480****/
 
     .main_galeria {
         width: 100%;
 
         .main_gallery {
-            display: none;
-        }
+            display: non$alturah_480}
 
         .galeria_carousel {
             width: 100%;
-            /* height: 100%; */
-            padding-top: 20px;
+            padding: 40px 30px;
             display: block;
 
             .img_1 {
 
                 #item1 {
                     background-image: url(../img/img_galeria/img_v1.jpg);
-                    height: 300px;
+                    height: $alturav_480;
                     background-position: center center;
                     background-size: cover;
                 }
 
                 #item2 {
                     background-image: url(../img/img_cards/fichas.jpg);
-                    height: 300px;
+                    height: $alturav_480;
                     background-position: center center;
                     background-size: cover;
                 }
@@ -2911,14 +2846,14 @@
 
                 #item3 {
                     background-image: url(../img/img_galeria/horizontales/cecilia_1.jpg);
-                    height: 300px;
+                    height: $alturah_480;
                     background-position: center center;
                     background-size: cover;
                 }
 
                 #item4 {
                     background-image: url(../img/img_cards/fichas.jpg);
-                    height: 300px;
+                    height: $alturah_480;
                     background-position: center center;
                     background-size: cover;
                 }
@@ -2929,14 +2864,14 @@
 
                 #item5 {
                     background-image: url(../img/img_galeria/img_v12.jpg);
-                    height: 300px;
+                    height: $alturav_480;
                     background-position: center center;
                     background-size: cover;
                 }
 
                 #item6 {
                     background-image: url(../img/img_cards/fichas.jpg);
-                    height: 300px;
+                    height: $alturav_480;
                     background-position: center center;
                     background-size: cover;
                 }
@@ -2947,14 +2882,14 @@
 
                 #item7 {
                     background-image: url(../img/img_galeria/horizontales/cecilia_10.jpg);
-                    height: 300px;
+                    height: $alturah_480;
                     background-position: center center;
                     background-size: cover;
                 }
 
                 #item8 {
                     background-image: url(../img/img_cards/fichas.jpg);
-                    height: 300px;
+                    height: $alturah_480;
                     background-position: center center;
                     background-size: cover;
                 }
@@ -2965,14 +2900,14 @@
 
                 #item9 {
                     background-image: url(../img/img_galeria/img_v11.jpg);
-                    height: 300px;
+                    height: $alturav_480;
                     background-position: center center;
                     background-size: cover;
                 }
 
                 #item10 {
                     background-image: url(../img/img_cards/fichas.jpg);
-                    height: 300px;
+                    height: $alturav_480;
                     background-position: center center;
                     background-size: cover;
                 }
@@ -2983,14 +2918,14 @@
 
                 #item11 {
                     background-image: url(../img/img_galeria/horizontales/cecilia_11.jpg);
-                    height: 300px;
+                    height: $alturah_480;
                     background-position: center center;
                     background-size: cover;
                 }
 
                 #item12 {
                     background-image: url(../img/img_cards/fichas.jpg);
-                    height: 300px;
+                    height: $alturah_480;
                     background-position: center center;
                     background-size: cover;
                 }
@@ -3001,14 +2936,14 @@
 
                 #item13 {
                     background-image: url(../img/img_galeria/img_v12.jpg);
-                    height: 300px;
+                    height: $alturav_480;
                     background-position: center center;
                     background-size: cover;
                 }
 
                 #item14 {
                     background-image: url(../img/img_cards/fichas.jpg);
-                    height: 300px;
+                    height: $alturav_480;
                     background-position: center center;
                     background-size: cover;
                 }
@@ -3020,14 +2955,14 @@
 
                 #item15 {
                     background-image: url(../img/img_galeria/horizontales/cecilia_2.jpg);
-                    height: 300px;
+                    height: $alturah_480;
                     background-position: center center;
                     background-size: cover;
                 }
 
                 #item16 {
                     background-image: url(../img/img_cards/fichas.jpg);
-                    height: 300px;
+                    height: $alturah_480;
                     background-position: center center;
                     background-size: cover;
                 }
@@ -3038,14 +2973,14 @@
 
                 #item17 {
                     background-image: url(../img/img_galeria/img_v13.jpg);
-                    height: 300px;
+                    height: $alturav_480;
                     background-position: center center;
                     background-size: cover;
                 }
 
                 #item18 {
                     background-image: url(../img/img_cards/fichas.jpg);
-                    height: 300px;
+                    height: $alturav_480;
                     background-position: center center;
                     background-size: cover;
                 }
@@ -3056,14 +2991,14 @@
 
                 #item19 {
                     background-image: url(../img/img_galeria/horizontales/cecilia_3.jpg);
-                    height: 300px;
+                    height: $alturah_480;
                     background-position: center center;
                     background-size: cover;
                 }
 
                 #item20 {
                     background-image: url(../img/img_cards/fichas.jpg);
-                    height: 300px;
+                    height: $alturah_480;
                     background-position: center center;
                     background-size: cover;
                 }
@@ -3074,14 +3009,14 @@
 
                 #item21 {
                     background-image: url(../img/img_galeria/img_v14.jpg);
-                    height: 300px;
+                    height: $alturav_480;
                     background-position: center center;
                     background-size: cover;
                 }
 
                 #item22 {
                     background-image: url(../img/img_cards/fichas.jpg);
-                    height: 300px;
+                    height: $alturav_480;
                     background-position: center center;
                     background-size: cover;
                 }
@@ -3092,14 +3027,14 @@
 
                 #item23 {
                     background-image: url(../img/img_galeria/horizontales/cecilia_4.jpg);
-                    height: 300px;
+                    height: $alturah_480;
                     background-position: center center;
                     background-size: cover;
                 }
 
                 #item24 {
                     background-image: url(../img/img_cards/fichas.jpg);
-                    height: 300px;
+                    height: $alturah_480;
                     background-position: center center;
                     background-size: cover;
                 }
@@ -3110,14 +3045,14 @@
 
                 #item25 {
                     background-image: url(../img/img_galeria/img_v15.jpg);
-                    height: 300px;
+                    height: $alturav_480;
                     background-position: center center;
                     background-size: cover;
                 }
 
                 #item26 {
                     background-image: url(../img/img_cards/fichas.jpg);
-                    height: 300px;
+                    height: $alturav_480;
                     background-position: center center;
                     background-size: cover;
                 }
@@ -3128,14 +3063,14 @@
 
                 #item27 {
                     background-image: url(../img/img_galeria/horizontales/cecilia_5.jpg);
-                    height: 300px;
+                    height: $alturah_480;
                     background-position: center center;
                     background-size: cover;
                 }
 
                 #item28 {
                     background-image: url(../img/img_cards/fichas.jpg);
-                    height: 300px;
+                    height: $alturah_480;
                     background-position: center center;
                     background-size: cover;
                 }
@@ -3146,14 +3081,14 @@
 
                 #item29 {
                     background-image: url(../img/img_galeria/img_v16.jpg);
-                    height: 300px;
+                    height: $alturav_480;
                     background-position: center center;
                     background-size: cover;
                 }
 
                 #item30 {
                     background-image: url(../img/img_cards/fichas.jpg);
-                    height: 300px;
+                    height: $alturav_480;
                     background-position: center center;
                     background-size: cover;
                 }
@@ -3164,14 +3099,14 @@
 
                 #item31 {
                     background-image: url(../img/img_galeria/horizontales/cecilia_6.jpg);
-                    height: 300px;
+                    height: $alturah_480;
                     background-position: center center;
                     background-size: cover;
                 }
 
                 #item32 {
                     background-image: url(../img/img_cards/fichas.jpg);
-                    height: 300px;
+                    height: $alturah_480;
                     background-position: center center;
                     background-size: cover;
                 }
@@ -3182,14 +3117,14 @@
 
                 #item33 {
                     background-image: url(../img/img_galeria/img_v17.jpg);
-                    height: 300px;
+                    height: $alturav_480;
                     background-position: center center;
                     background-size: cover;
                 }
 
                 #item34 {
                     background-image: url(../img/img_cards/fichas.jpg);
-                    height: 300px;
+                    height: $alturav_480;
                     background-position: center center;
                     background-size: cover;
                 }
@@ -3200,14 +3135,14 @@
 
                 #item35 {
                     background-image: url(../img/img_galeria/horizontales/cecilia_7.jpg);
-                    height: 300px;
+                    height: $alturah_480;
                     background-position: center center;
                     background-size: cover;
                 }
 
                 #item36 {
                     background-image: url(../img/img_cards/fichas.jpg);
-                    height: 300px;
+                    height: $alturah_480;
                     background-position: center center;
                     background-size: cover;
                 }
@@ -3218,14 +3153,14 @@
 
                 #item37 {
                     background-image: url(../img/img_galeria/img_v18.jpg);
-                    height: 300px;
+                    height: $alturav_480;
                     background-position: center center;
                     background-size: cover;
                 }
 
                 #item38 {
                     background-image: url(../img/img_cards/fichas.jpg);
-                    height: 300px;
+                    height: $alturav_480;
                     background-position: center center;
                     background-size: cover;
                 }
@@ -3236,14 +3171,14 @@
 
                 #item39 {
                     background-image: url(../img/img_galeria/horizontales/cecilia_8.jpg);
-                    height: 300px;
+                    height: $alturah_480;
                     background-position: center center;
                     background-size: cover;
                 }
 
                 #item40 {
                     background-image: url(../img/img_cards/fichas.jpg);
-                    height: 300px;
+                    height: $alturah_480;
                     background-position: center center;
                     background-size: cover;
                 }
@@ -3254,14 +3189,14 @@
 
                 #item41 {
                     background-image: url(../img/img_galeria/img_v19.jpg);
-                    height: 300px;
+                    height: $alturav_480;
                     background-position: center center;
                     background-size: cover;
                 }
 
                 #item42 {
                     background-image: url(../img/img_cards/fichas.jpg);
-                    height: 300px;
+                    height: $alturav_480;
                     background-position: center center;
                     background-size: cover;
                 }
@@ -3272,14 +3207,14 @@
 
                 #item43 {
                     background-image: url(../img/img_galeria/horizontales/cecilia_9.jpg);
-                    height: 300px;
+                    height: $alturah_480;
                     background-position: center center;
                     background-size: cover;
                 }
 
                 #item44 {
                     background-image: url(../img/img_cards/fichas.jpg);
-                    height: 300px;
+                    height: $alturah_480;
                     background-position: center center;
                     background-size: cover;
                 }
@@ -3290,14 +3225,14 @@
 
                 #item45 {
                     background-image: url(../img/img_galeria/img_v20.jpg);
-                    height: 300px;
+                    height: $alturav_480;
                     background-position: center center;
                     background-size: cover;
                 }
 
                 #item46 {
                     background-image: url(../img/img_cards/fichas.jpg);
-                    height: 300px;
+                    height: $alturav_480;
                     background-position: center center;
                     background-size: cover;
                 }
@@ -3308,14 +3243,14 @@
 
                 #item47 {
                     background-image: url(../img/img_galeria/horizontales/cecilia_10.jpg);
-                    height: 300px;
+                    height: $alturah_480;
                     background-position: center center;
                     background-size: cover;
                 }
 
                 #item48 {
                     background-image: url(../img/img_cards/fichas.jpg);
-                    height: 300px;
+                    height: $alturah_480;
                     background-position: center center;
                     background-size: cover;
                 }
@@ -3326,14 +3261,14 @@
 
                 #item49 {
                     background-image: url(../img/img_galeria/horizontales/cecilia_11.jpg);
-                    height: 300px;
+                    height: $alturah_480;
                     background-position: center center;
                     background-size: cover;
                 }
 
                 #item50 {
                     background-image: url(../img/img_cards/fichas.jpg);
-                    height: 300px;
+                    height: $alturah_480;
                     background-position: center center;
                     background-size: cover;
                 }
@@ -3634,568 +3569,32 @@
 
     .main_galeria {
         width: 100%;
+        height: 100%;
 
-        .galeria_carousel {
-            width: 100%;
-            /* height: 100%; */
-            padding-top: 20px;
-            display: none;
-
-            .img_1 {
-
-                #item1 {
-                    background-image: url(../img/img_galeria/img_v1.jpg);
-                    height: 400px;
-                    background-position: center center;
-                    background-size: cover;
-                }
-
-                #item2 {
-                    background-image: url(../img/img_cards/fichas.jpg);
-                    height: 400px;
-                    background-position: center center;
-                    background-size: cover;
-                }
-            }
-
-            .img_2 {
-                margin-top: 20px;
-
-                #item3 {
-                    background-image: url(../img/img_galeria/horizontales/cecilia_1.jpg);
-                    height: 400px;
-                    background-position: center center;
-                    background-size: cover;
-                }
-
-                #item4 {
-                    background-image: url(../img/img_cards/fichas.jpg);
-                    height: 300px;
-                    background-position: center center;
-                    background-size: cover;
-                }
-            }
-
-            .img_3 {
-                margin-top: 20px;
-
-                #item5 {
-                    background-image: url(../img/img_galeria/img_v12.jpg);
-                    height: 300px;
-                    background-position: center center;
-                    background-size: cover;
-                }
-
-                #item6 {
-                    background-image: url(../img/img_cards/fichas.jpg);
-                    height: 300px;
-                    background-position: center center;
-                    background-size: cover;
-                }
-            }
-
-            .img_4 {
-                margin-top: 20px;
-
-                #item7 {
-                    background-image: url(../img/img_galeria/horizontales/cecilia_10.jpg);
-                    height: 300px;
-                    background-position: center center;
-                    background-size: cover;
-                }
-
-                #item8 {
-                    background-image: url(../img/img_cards/fichas.jpg);
-                    height: 300px;
-                    background-position: center center;
-                    background-size: cover;
-                }
-            }
-
-            .img_5 {
-                margin-top: 20px;
-
-                #item9 {
-                    background-image: url(../img/img_galeria/img_v11.jpg);
-                    height: 300px;
-                    background-position: center center;
-                    background-size: cover;
-                }
-
-                #item10 {
-                    background-image: url(../img/img_cards/fichas.jpg);
-                    height: 300px;
-                    background-position: center center;
-                    background-size: cover;
-                }
-            }
-
-            .img_6 {
-                margin-top: 20px;
-
-                #item11 {
-                    background-image: url(../img/img_galeria/horizontales/cecilia_11.jpg);
-                    height: 300px;
-                    background-position: center center;
-                    background-size: cover;
-                }
-
-                #item12 {
-                    background-image: url(../img/img_cards/fichas.jpg);
-                    height: 300px;
-                    background-position: center center;
-                    background-size: cover;
-                }
-            }
-
-            .img_7 {
-                margin-top: 20px;
-
-                #item13 {
-                    background-image: url(../img/img_galeria/img_v12.jpg);
-                    height: 300px;
-                    background-position: center center;
-                    background-size: cover;
-                }
-
-                #item14 {
-                    background-image: url(../img/img_cards/fichas.jpg);
-                    height: 300px;
-                    background-position: center center;
-                    background-size: cover;
-                }
-
-            }
-
-            .img_8 {
-                margin-top: 20px;
-
-                #item15 {
-                    background-image: url(../img/img_galeria/horizontales/cecilia_2.jpg);
-                    height: 300px;
-                    background-position: center center;
-                    background-size: cover;
-                }
-
-                #item16 {
-                    background-image: url(../img/img_cards/fichas.jpg);
-                    height: 300px;
-                    background-position: center center;
-                    background-size: cover;
-                }
-            }
-
-            .img_9 {
-                margin-top: 20px;
-
-                #item17 {
-                    background-image: url(../img/img_galeria/img_v13.jpg);
-                    height: 300px;
-                    background-position: center center;
-                    background-size: cover;
-                }
-
-                #item18 {
-                    background-image: url(../img/img_cards/fichas.jpg);
-                    height: 300px;
-                    background-position: center center;
-                    background-size: cover;
-                }
-            }
-
-            .img_10 {
-                margin-top: 20px;
-
-                #item19 {
-                    background-image: url(../img/img_galeria/horizontales/cecilia_3.jpg);
-                    height: 300px;
-                    background-position: center center;
-                    background-size: cover;
-                }
-
-                #item20 {
-                    background-image: url(../img/img_cards/fichas.jpg);
-                    height: 300px;
-                    background-position: center center;
-                    background-size: cover;
-                }
-            }
-
-            .img_11 {
-                margin-top: 20px;
-
-                #item21 {
-                    background-image: url(../img/img_galeria/img_v14.jpg);
-                    height: 300px;
-                    background-position: center center;
-                    background-size: cover;
-                }
-
-                #item22 {
-                    background-image: url(../img/img_cards/fichas.jpg);
-                    height: 300px;
-                    background-position: center center;
-                    background-size: cover;
-                }
-            }
-
-            .img_12 {
-                margin-top: 20px;
-
-                #item23 {
-                    background-image: url(../img/img_galeria/horizontales/cecilia_4.jpg);
-                    height: 300px;
-                    background-position: center center;
-                    background-size: cover;
-                }
-
-                #item24 {
-                    background-image: url(../img/img_cards/fichas.jpg);
-                    height: 300px;
-                    background-position: center center;
-                    background-size: cover;
-                }
-            }
-
-            .img_13 {
-                margin-top: 20px;
-
-                #item25 {
-                    background-image: url(../img/img_galeria/img_v15.jpg);
-                    height: 300px;
-                    background-position: center center;
-                    background-size: cover;
-                }
-
-                #item26 {
-                    background-image: url(../img/img_cards/fichas.jpg);
-                    height: 300px;
-                    background-position: center center;
-                    background-size: cover;
-                }
-            }
-
-            .img_14 {
-                margin-top: 20px;
-
-                #item27 {
-                    background-image: url(../img/img_galeria/horizontales/cecilia_5.jpg);
-                    height: 300px;
-                    background-position: center center;
-                    background-size: cover;
-                }
-
-                #item28 {
-                    background-image: url(../img/img_cards/fichas.jpg);
-                    height: 300px;
-                    background-position: center center;
-                    background-size: cover;
-                }
-            }
-
-            .img_15 {
-                margin-top: 20px;
-
-                #item29 {
-                    background-image: url(../img/img_galeria/img_v16.jpg);
-                    height: 300px;
-                    background-position: center center;
-                    background-size: cover;
-                }
-
-                #item30 {
-                    background-image: url(../img/img_cards/fichas.jpg);
-                    height: 300px;
-                    background-position: center center;
-                    background-size: cover;
-                }
-            }
-
-            .img_16 {
-                margin-top: 20px;
-
-                #item31 {
-                    background-image: url(../img/img_galeria/horizontales/cecilia_6.jpg);
-                    height: 300px;
-                    background-position: center center;
-                    background-size: cover;
-                }
-
-                #item32 {
-                    background-image: url(../img/img_cards/fichas.jpg);
-                    height: 300px;
-                    background-position: center center;
-                    background-size: cover;
-                }
-            }
-
-            .img_17 {
-                margin-top: 20px;
-
-                #item33 {
-                    background-image: url(../img/img_galeria/img_v17.jpg);
-                    height: 300px;
-                    background-position: center center;
-                    background-size: cover;
-                }
-
-                #item34 {
-                    background-image: url(../img/img_cards/fichas.jpg);
-                    height: 300px;
-                    background-position: center center;
-                    background-size: cover;
-                }
-            }
-
-            .img_18 {
-                margin-top: 20px;
-
-                #item35 {
-                    background-image: url(../img/img_galeria/horizontales/cecilia_7.jpg);
-                    height: 300px;
-                    background-position: center center;
-                    background-size: cover;
-                }
-
-                #item36 {
-                    background-image: url(../img/img_cards/fichas.jpg);
-                    height: 300px;
-                    background-position: center center;
-                    background-size: cover;
-                }
-            }
-
-            .img_19 {
-                margin-top: 20px;
-
-                #item37 {
-                    background-image: url(../img/img_galeria/img_v18.jpg);
-                    height: 300px;
-                    background-position: center center;
-                    background-size: cover;
-                }
-
-                #item38 {
-                    background-image: url(../img/img_cards/fichas.jpg);
-                    height: 300px;
-                    background-position: center center;
-                    background-size: cover;
-                }
-            }
-
-            .img_20 {
-                margin-top: 20px;
-
-                #item39 {
-                    background-image: url(../img/img_galeria/horizontales/cecilia_8.jpg);
-                    height: 300px;
-                    background-position: center center;
-                    background-size: cover;
-                }
-
-                #item40 {
-                    background-image: url(../img/img_cards/fichas.jpg);
-                    height: 300px;
-                    background-position: center center;
-                    background-size: cover;
-                }
-            }
-
-            .img_21 {
-                margin-top: 20px;
-
-                #item41 {
-                    background-image: url(../img/img_galeria/img_v19.jpg);
-                    height: 300px;
-                    background-position: center center;
-                    background-size: cover;
-                }
-
-                #item42 {
-                    background-image: url(../img/img_cards/fichas.jpg);
-                    height: 300px;
-                    background-position: center center;
-                    background-size: cover;
-                }
-            }
-
-            .img_22 {
-                margin-top: 20px;
-
-                #item43 {
-                    background-image: url(../img/img_galeria/horizontales/cecilia_9.jpg);
-                    height: 300px;
-                    background-position: center center;
-                    background-size: cover;
-                }
-
-                #item44 {
-                    background-image: url(../img/img_cards/fichas.jpg);
-                    height: 300px;
-                    background-position: center center;
-                    background-size: cover;
-                }
-            }
-
-            .img_23 {
-                margin-top: 20px;
-
-                #item45 {
-                    background-image: url(../img/img_galeria/img_v20.jpg);
-                    height: 300px;
-                    background-position: center center;
-                    background-size: cover;
-                }
-
-                #item46 {
-                    background-image: url(../img/img_cards/fichas.jpg);
-                    height: 300px;
-                    background-position: center center;
-                    background-size: cover;
-                }
-            }
-
-            .img_24 {
-                margin-top: 20px;
-
-                #item47 {
-                    background-image: url(../img/img_galeria/horizontales/cecilia_10.jpg);
-                    height: 300px;
-                    background-position: center center;
-                    background-size: cover;
-                }
-
-                #item48 {
-                    background-image: url(../img/img_cards/fichas.jpg);
-                    height: 300px;
-                    background-position: center center;
-                    background-size: cover;
-                }
-            }
-
-            .img_25 {
-                margin-top: 20px;
-
-                #item49 {
-                    background-image: url(../img/img_galeria/horizontales/cecilia_11.jpg);
-                    height: 300px;
-                    background-position: center center;
-                    background-size: cover;
-                }
-
-                #item50 {
-                    background-image: url(../img/img_cards/fichas.jpg);
-                    height: 300px;
-                    background-position: center center;
-                    background-size: cover;
-                }
-            }
-
-            .btn--offcanvas {
-                width: 100%;
-                text-align: center;
-                margin-top: 5px;
-                position: fixed;
-                bottom: 10px;
-                right: 270px;
-                height: 100px;
-                z-index: 999;
-
-                .btn {
-                    border-top-right-radius: 40px;
-                    border-bottom-right-radius: 40px;
-                    height: 70px;
-                    border: none;
-
-                    &:hover {
-                        transition: all 0.3s ease;
-                        background-color: rgb(0, 0, 0);
-                        color: #fff;
-                    }
-
-                }
-
-
-                .offcanvas-body {
-                    padding-right: 30px;
-
-                    & a img {
-                        width: 300px;
-                        height: auto;
-                        padding-top: 10px;
-                    }
-
-                    a:hover {
-                        transition: all 0.3s ease;
-                        opacity: 60%;
-                    }
-                }
-            }
-        }
-
-        .main_gallery {
+        .main_gallery{
             display: block;
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            grid-auto-rows: 400px;
-            grid-gap: 15px;
+            width: 100%;
+            padding: 30px 80px 40px 80px;
 
-            .img--class {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
+            .img_containers{
+
+                margin-bottom: 50px;
+
+                #boton_galeria{
+                    margin: 20px 20px;
+                }
+
+                img{
+                    width: 400px;
+                    height: auto;
+                }
             }
-
-            .img_containers:nth-child(1) {
-                grid-column-start: span 2;
-            }
-
-            .img_containers:nth-child(2) {
-                grid-column-start: span 2;
-            }
-
-            .img_containers:nth-child(3) {
-                grid-column-start: span 4;
-            }
-
-            .img_containers:nth-child(4) {
-                grid-column-start: span 2;
-            }
-
-            .img_containers:nth-child(6) {
-                grid-column-start: span 2;
-            }
-
-            .img_containers:nth-child(9) {
-
-                grid-column-start: span 2;
-            }
-
-            .img_containers:nth-child(11) {
-                grid-column-start: span 2;
-            }
-
-            .img_containers:nth-child(25) {
-                grid-column-start: span 2;
-            }
-
-            .img_containers:nth-child(35) {
-                grid-column-start: span 2;
-            }
-
-            .img_containers:nth-child(36) {
-                grid-column-start: span 2;
-            }
-
-            .img_containers:nth-child(37) {
-                grid-column-start: span 2;
-            }
-
-
-
-
+            
         }
 
+        .galeria_carousel{
+            display: none;
+        }
 
     }
 
@@ -4385,6 +3784,21 @@
         margin-bottom: 60px;
     }
 
+    /*galeria*/
+
+    .main_galeria{
+        width: 100%;
+        height: 100%;
+
+        .main_gallery{
+            display: block;
+        }
+
+        .galeria_carousel{
+            display: none;
+        }
+    }
+
     /*sobremi*/
 
     .main_second {
@@ -4422,6 +3836,37 @@
         }
     }
 
+    /*GALERIA DE IMAGENES*/
+
+    .main_galeria{
+        width: 100%;
+        height: 100%;
+
+        .main_gallery{
+            width: 100%;
+            padding: 40px 60px;
+            margin: 0px;
+
+            .img_containers{
+                padding: 20px 20px;
+                margin: 40px 60px;
+
+                img{
+                    width: 400px;
+                    height: auto;
+                }
+
+                #boton_galeria{
+                    margin: 20px 20px;
+                }
+
+                .textos_img{
+                    padding: 30px 100px;
+                }
+            }
+        }
+    }
+    /*FOOTER*/
 
     .footer_main {
         width: 100%;
@@ -4554,12 +3999,9 @@
     .main_second {
         width: 100%;
         height: 100%;
-        /* height: 1600px; */
-        /*  height: 100%; */
 
         .about_contain {
             width: 100%;
-            /* height: 100%; */
             grid-template-columns: auto;
             grid-template-rows: auto;
             grid-gap: 20px;
@@ -4582,100 +4024,27 @@
 
     /*****galeria****/
 
-    .main_gallery {
+    .main_galeria{
+        width: 100%;
+        height: 100%;
 
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        grid-auto-rows: 600px;
-        grid-gap: 15px;
-
-        .img--class {
+        .main_gallery{
             width: 100%;
-            height: 100%;
-            object-fit: cover;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding: 30px 0px;
+            
+            .img_containers{
+                width: 45%;
+                height: auto;
+                margin: 0px 0px 30px 0px;
+
+                .textos_img{
+                    padding: 20px 20px;
+                }
+            }
         }
-
-
-        .img_containers:nth-child(3) {
-            grid-column-start: span 2;
-        }
-
-        .img_containers:nth-child(2) {
-            grid-column-start: span 2;
-        }
-
-        .img_containers:nth-child(4) {
-            grid-column-start: span 3;
-        }
-
-        .img_containers:nth-child(5) {
-            grid-column-start: span 2;
-        }
-
-        .img_containers:nth-child(7) {
-
-            grid-column-start: span 2;
-            grid-row-start: span 2;
-        }
-
-        .img_containers:nth-child(8) {
-
-            grid-column-start: span 2;
-        }
-
-        .img_containers:nth-child(10) {
-
-            grid-column-start: span 2;
-        }
-
-        .img_containers:nth-child(12) {
-            grid-column-start: span 2;
-        }
-
-        .img_containers:nth-child(13) {
-
-            grid-column-start: span 2;
-        }
-
-        .img_containers:nth-child(14) {
-
-            grid-column-start: span 2;
-        }
-
-        .img_containers:nth-child(16) {
-
-            grid-column-start: span 2;
-        }
-
-        .img_containers:nth-child(18) {
-            grid-column-start: span 4;
-        }
-
-        .img_containers:nth-child(20) {
-            grid-row-start: span 2;
-            grid-column-start: span 2;
-        }
-
-        .img_containers:nth-child(24) {
-            grid-column-start: span 2;
-        }
-
-        .img_containers:nth-child(26) {
-            grid-column-start: span 2;
-        }
-
-        .img_containers:nth-child(29) {
-            grid-column-start: span 3;
-        }
-
-        .img_containers:nth-child(36) {
-            grid-column-start: span 3;
-        }
-
-        .img_containers:nth-child(32) {
-            grid-column-start: span 3;
-        }
-
     }
 }
 
@@ -4708,10 +4077,83 @@
     }
 
     .main_galeria {
-
         width: 100%;
+        height: 100%;
+        
+        .main_gallery{
 
-        .main_gallery {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 40px 20px;
+
+            .img_containers{
+                
+                padding: 15px 15px;
+                margin: 20px 20px;
+                border: 2px solid rgba(0, 0, 0, 0.867);
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                justify-content: space-evenly;
+                align-items: center;
+
+                img{
+                    width: 400px;
+                    height: auto;
+                }
+
+                #boton_galeria{
+                    width: 50%;
+                    height: 40px;
+                    border: 2px solid #000;
+                    background: none;
+                    font-size: 14px;
+
+                    &:hover{
+                        
+                        border-radius: 10px;
+                        transition: all 0.3s ease;
+                        background-color: #000;
+                        color: #fff;
+                    }
+
+                }               
+                .textos_img{
+
+                    width: 100%;
+                    padding: 20px 10px;
+                    display: none;
+
+                    img{
+                        width: 60px;
+                        height: 60px;
+                        cursor: pointer;
+                        align-self: center;
+        
+                        &:hover{
+                            transition: all 0.2s ease;
+                            opacity: 50%;
+                        }
+                    }
+
+                    h3{
+                        font-size: 15px;
+                        font-weight: 600;
+                    }
+                }
+            
+                
+            }
+
+            
+        } 
+
+
+       /* .main_gallery {
             display: grid;
             grid-template-columns: repeat(5, 1fr);
             grid-auto-rows: 600px;
@@ -4822,10 +4264,11 @@
                 grid-column-start: span 3;
             }
 
-        }
+        }*/
     }
 
-    /**footer**/
+   
+ /**footer**/
 
     .footer_main {
         width: 100%;
@@ -5111,6 +4554,21 @@
         .contenedor_main_responsive {
             width: 100%;
             height: auto;
+        }
+    }
+
+    /*galeria*/
+
+    .main_galeria{
+        width: 100%;
+        height: 100%;
+
+        .main_gallery{
+            width: 100%;
+
+            .img_containers{
+                width: 30%;
+            }
         }
     }
 
