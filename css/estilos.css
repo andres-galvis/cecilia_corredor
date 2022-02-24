@@ -80,12 +80,12 @@
     .main_galeria .main_gallery .img_containers {
       padding: 15px 15px;
       margin: 20px 20px;
-      border: 2px solid rgba(0, 0, 0, 0.867);
       display: flex;
       flex-direction: column;
       flex-wrap: nowrap;
       justify-content: space-evenly;
-      align-items: center; }
+      align-items: center;
+      background-color: #dddd; }
       .main_galeria .main_gallery .img_containers #boton_galeria {
         width: 50%;
         height: 40px;
@@ -1043,6 +1043,8 @@
         font-size: 14px; }
       .main_exposiciones .contenedor_exposiciones ol li {
         font-size: 13px; }
+      .main_exposiciones .contenedor_exposiciones .imagen_relleno {
+        display: none; }
       .main_exposiciones .contenedor_exposiciones .formacion_artistica {
         padding: 10px 10px; }
       .main_exposiciones .contenedor_exposiciones .exposiciones {
@@ -2314,7 +2316,9 @@
       width: 100%;
       padding: 30px 80px 40px 80px; }
       .main_galeria .main_gallery .img_containers {
-        margin-bottom: 50px; }
+        margin-bottom: 50px;
+        background-color: #dddd;
+        padding: 20px 20px; }
         .main_galeria .main_gallery .img_containers #boton_galeria {
           margin: 20px 20px; }
         .main_galeria .main_gallery .img_containers img {
@@ -2456,10 +2460,12 @@
       padding: 40px 60px;
       margin: 0px; }
       .main_galeria .main_gallery .img_containers {
+        width: auto;
+        height: auto;
         padding: 20px 20px;
         margin: 40px 60px; }
         .main_galeria .main_gallery .img_containers img {
-          width: 400px;
+          width: 70%;
           height: auto; }
         .main_galeria .main_gallery .img_containers #boton_galeria {
           margin: 20px 20px; }
@@ -2547,9 +2553,14 @@
       .main_galeria .main_gallery .img_containers {
         width: 45%;
         height: auto;
-        margin: 0px 0px 30px 0px; }
+        margin: 0px 0px 30px 0px;
+        background-color: #dddd;
+        padding: 30px 30px; }
         .main_galeria .main_gallery .img_containers .textos_img {
-          padding: 20px 20px; } }
+          padding: 20px 20px; }
+      .main_galeria .main_gallery .img_horizontales {
+        width: 450px;
+        height: auto; } }
 
 @media screen and (min-width: 1200px) {
   .main_index {
@@ -2691,16 +2702,18 @@
       align-items: center;
       padding: 40px 20px; }
       .main_galeria .main_gallery .img_containers {
+        height: auto;
+        width: 300px;
         padding: 15px 15px;
         margin: 20px 20px;
-        border: 2px solid rgba(0, 0, 0, 0.867);
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
         justify-content: space-evenly;
-        align-items: center; }
+        align-items: center;
+        background-color: #dddd; }
         .main_galeria .main_gallery .img_containers img {
-          width: 400px;
+          width: 280px;
           height: auto; }
         .main_galeria .main_gallery .img_containers #boton_galeria {
           width: 50%;
@@ -2728,6 +2741,12 @@
           .main_galeria .main_gallery .img_containers .textos_img h3 {
             font-size: 15px;
             font-weight: 600; }
+      .main_galeria .main_gallery .img_horizontales {
+        width: 45%;
+        height: auto; }
+        .main_galeria .main_gallery .img_horizontales .horizontales {
+          width: 400px;
+          height: auto; }
   /**footer**/
   .footer_main {
     width: 100%;
@@ -2897,7 +2916,10 @@
     .main_galeria .main_gallery {
       width: 100%; }
       .main_galeria .main_gallery .img_containers {
-        width: 30%; }
+        width: 30%;
+        padding: 30px 30px; }
+        .main_galeria .main_gallery .img_containers .img--class {
+          padding: 20px 40px; }
   /**EXPOSICIONES Y RECONOCIMIENTOS***/
   .main_exposiciones {
     width: 100%;
@@ -2931,7 +2953,7 @@
     .main_index .contenedor_main_responsive {
       width: 100%;
       height: auto;
-      padding-top: 50px; }
+      padding-top: 200px; }
   /*exposiciones y reconocimientos*/
   .main_exposiciones {
     width: 100%;
@@ -2939,7 +2961,16 @@
     .main_exposiciones .titulo_exposiciones h2 {
       font-size: 40px; }
     .main_exposiciones .contenedor_exposiciones {
-      width: 100%; }
-      .main_exposiciones .contenedor_exposiciones .exposiciones .exposiciones_container {
-        width: 40%;
-        height: 65%; } }
+      width: 100%;
+      grid-template-columns: auto;
+      grid-template-rows: auto;
+      grid-template-areas: "a1 a2 a3" "a4 a10 a5" "a4 a10 a5" "a4 a10 a5" "a6 a7 a5" "a8 a9 a0"; }
+      .main_exposiciones .contenedor_exposiciones .exposiciones {
+        background-image: none; }
+        .main_exposiciones .contenedor_exposiciones .exposiciones .exposiciones_container {
+          width: 40%;
+          height: 65%; }
+      .main_exposiciones .contenedor_exposiciones .imagen_relleno {
+        grid-area: a10;
+        background-image: url(../img/exposiciones/cuadro5.jpg);
+        background-size: cover; } }

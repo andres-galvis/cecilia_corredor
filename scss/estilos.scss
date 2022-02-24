@@ -119,13 +119,12 @@
 
             padding: 15px 15px;
             margin: 20px 20px;
-            border: 2px solid rgba(0, 0, 0, 0.867);
             display: flex;
             flex-direction: column;
             flex-wrap: nowrap;
             justify-content: space-evenly;
             align-items: center;
-
+            background-color: #dddd;
             
             #boton_galeria{
                 width: 50%;
@@ -1588,6 +1587,10 @@
 
             & ol li{
                 font-size: 13px;
+            }
+
+            .imagen_relleno{
+                display: none;
             }
 
             .formacion_artistica {
@@ -3579,6 +3582,8 @@
             .img_containers{
 
                 margin-bottom: 50px;
+                background-color: #dddd;
+                padding: 20px 20px;
 
                 #boton_galeria{
                     margin: 20px 20px;
@@ -3848,11 +3853,13 @@
             margin: 0px;
 
             .img_containers{
+                width: auto;
+                height: auto;
                 padding: 20px 20px;
                 margin: 40px 60px;
 
                 img{
-                    width: 400px;
+                    width: 70%;
                     height: auto;
                 }
 
@@ -4034,20 +4041,27 @@
             flex-direction: row;
             flex-wrap: wrap;
             padding: 30px 0px;
-            
+
             .img_containers{
                 width: 45%;
                 height: auto;
                 margin: 0px 0px 30px 0px;
+                background-color: #dddd;
+                padding: 30px 30px;
 
                 .textos_img{
                     padding: 20px 20px;
                 }
             }
+
+            .img_horizontales{
+                width: 450px;
+                height: auto;
+                
+            }
         }
     }
 }
-
 
 @media screen and (min-width:1200px) {
 
@@ -4092,17 +4106,19 @@
 
             .img_containers{
                 
+                height: auto;
+                width: 300px;
                 padding: 15px 15px;
                 margin: 20px 20px;
-                border: 2px solid rgba(0, 0, 0, 0.867);
                 display: flex;
                 flex-direction: column;
                 flex-wrap: nowrap;
                 justify-content: space-evenly;
                 align-items: center;
+                background-color: #dddd;
 
                 img{
-                    width: 400px;
+                    width: 280px;
                     height: auto;
                 }
 
@@ -4146,6 +4162,18 @@
                     }
                 }
             
+                
+            }
+
+            .img_horizontales{
+                width: 45% ;
+                height:  auto;
+
+                .horizontales{
+                    width: 400px;
+                    height: auto;
+                }
+           
                 
             }
 
@@ -4568,6 +4596,11 @@
 
             .img_containers{
                 width: 30%;
+                padding: 30px 30px;
+
+                .img--class{
+                    padding: 20px 40px;
+                }
             }
         }
     }
@@ -4627,7 +4660,7 @@
         .contenedor_main_responsive {
             width: 100%;
             height: auto;
-            padding-top: 50px;
+            padding-top: 200px;
         }
     }
 
@@ -4645,17 +4678,30 @@
         }
 
         .contenedor_exposiciones{
-            width: 100%;
+            
+            width: 100% ;
+            grid-template-columns: auto;
+            grid-template-rows: auto;
+            grid-template-areas: "a1 a2 a3"
+                                 "a4 a10 a5"
+                                 "a4 a10 a5"
+                                 "a4 a10 a5"
+                                 "a6 a7 a5"
+                                 "a8 a9 a0";
 
             .exposiciones{
-
-
+                background-image: none;
                 .exposiciones_container{
                     width: 40%;
                     height: 65%;
                 }
             }
-           
+
+            .imagen_relleno{
+                grid-area: a10;
+                background-image: url(../img/exposiciones/cuadro5.jpg);
+                background-size: cover;
+            }
         }
     }
 }
