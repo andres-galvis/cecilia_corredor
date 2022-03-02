@@ -1,5 +1,7 @@
 /*@media screen and (min-width: 599px) {
 
+    
+
     .header_main {
         height: auto;
     }
@@ -1113,3 +1115,524 @@
     
 
 }*/
+
+/* <section class="main_gallery">
+            <!--1-->
+
+            <div class="img_containers img_horizontales">
+
+                <img src="../img/img_galeria/horizontales/cecilia_10.jpg" class="horizontales img--class" alt="">
+                <!--4-->
+                <button id="boton_galeria" onclick="mostrar4();">Detalles</button>
+
+                <div class="textos_img" id="div--img4">
+                    <h3>Nombre:</h3>
+                    <h3>Técnica:</h3>
+                    <h3>Medidas:</h3>
+                    <img src="../img/img_galeria/close.png" onclick="ocultar4();" id="close" alt="">
+                </div>
+            </div>
+
+            <div class="img_containers img_horizontales">
+
+                <img src="../img/img_galeria/horizontales/cecilia_2.jpg" class="horizontales img--class" alt="">
+                <!--5-->
+                <button id="boton_galeria" onclick="mostrar5();">Detalles</button>
+
+                <div class="textos_img" id="div--img5">
+                    <h3>Nombre:</h3>
+                    <h3>Técnica:</h3>
+                    <h3>Medidas:</h3>
+                    <img src="../img/img_galeria/close.png" onclick="ocultar5();" id="close" alt="">
+                </div>
+            </div>
+
+            <div class="img_containers img_horizontales">
+
+                <img src="../img/img_galeria/horizontales/cecilia_3.jpg" class="horizontales img--class" alt="">
+                <!--8-->
+                <button id="boton_galeria" onclick="mostrar8();">Detalles</button>
+
+                <div class="textos_img" id="div--img8">
+                    <h3>Nombre:</h3>
+                    <h3>Técnica:</h3>
+                    <h3>Medidas:</h3>
+                    <img src="../img/img_galeria/close.png" onclick="ocultar8();" id="close" alt="">
+                </div>
+            </div>
+
+            <div class="img_containers img_horizontales">
+
+                <img src="../img/img_galeria/horizontales/cecilia_4.jpg" class="horizontales img--class" alt="">
+                <!--10-->
+                <button id="boton_galeria" onclick="mostrar10();">Detalles</button>
+
+                <div class="textos_img" id="div--img10">
+                    <h3>Nombre:</h3>
+                    <h3>Técnica:</h3>
+                    <h3>Medidas:</h3>
+                    <img src="../img/img_galeria/close.png" onclick="ocultar10();" id="close" alt="">
+                </div>
+            </div>
+
+            <div class="img_containers img_horizontales">
+
+                <img src="../img/img_galeria/horizontales/cecilia_5.jpg" class="horizontales img--class" alt="">
+                <!--12-->
+                <button id="boton_galeria" onclick="mostrar12();">Detalles</button>
+
+                <div class="textos_img" id="div--img12">
+                    <h3>Nombre:</h3>
+                    <h3>Técnica:</h3>
+                    <h3>Medidas:</h3>
+                    <img src="../img/img_galeria/close.png" onclick="ocultar12();" id="close" alt="">
+                </div>
+            </div>
+
+            <div class="img_containers img_horizontales">
+
+                <img src="../img/img_galeria/horizontales/cecilia_6.jpg" class="horizontales img--class" alt="">
+                <!--14-->
+                <button id="boton_galeria" onclick="mostrar14();">Detalles</button>
+
+                <div class="textos_img" id="div--img14">
+                    <h3>Nombre:</h3>
+                    <h3>Técnica:</h3>
+                    <h3>Medidas:</h3>
+                    <img src="../img/img_galeria/close.png" onclick="ocultar14();" id="close" alt="">
+                </div>
+            </div>
+
+            <div class="img_containers img_horizontales">
+
+                <img src="../img/img_galeria/horizontales/cecilia_7.jpg" class="horizontales img--class" alt="">
+                <!--16-->
+                <button id="boton_galeria" onclick="mostrar16();">Detalles</button>
+
+                <div class="textos_img" id="div--img16">
+                    <h3>Nombre:</h3>
+                    <h3>Técnica:</h3>
+                    <h3>Medidas:</h3>
+                    <img src="../img/img_galeria/close.png" onclick="ocultar16();" id="close" alt="">
+                </div>
+            </div>
+
+            <div class="img_containers img_horizontales">
+
+                <img src="../img/img_galeria/horizontales/cecilia_8.jpg" class="horizontales img--class" alt="">
+                <!--18-->
+                <button id="boton_galeria" onclick="mostrar18();">Detalles</button>
+
+                <div class="textos_img" id="div--img18">
+                    <h3>Nombre:</h3>
+                    <h3>Técnica:</h3>
+                    <h3>Medidas:</h3>
+                    <img src="../img/img_galeria/close.png" onclick="ocultar18();" id="close" alt="">
+                </div>
+            </div>
+
+            <div class="img_containers img_horizontales">
+
+                <img src="../img/img_galeria/horizontales/cecilia_9.jpg" class="img--class" alt="">
+                <!--20-->
+                <button id="boton_galeria" onclick="mostrar20();">Detalles</button>
+
+                <div class="textos_img" id="div--img20">
+                    <h3>Nombre:</h3>
+                    <h3>Técnica:</h3>
+                    <h3>Medidas:</h3>
+                    <img src="../img/img_galeria/close.png" onclick="ocultar20();" id="close" alt="">
+                </div>
+            </div>
+
+            <div class="img_containers img_horizontales">
+
+                <img src="../img/img_galeria/horizontales/cecilia_11.jpg" class="horizontales img--class" alt="">
+                <!--24-->
+                <button id="boton_galeria" onclick="mostrar24();">Detalles</button>
+
+                <div class="textos_img" id="div--img24">
+                    <h3>Nombre:</h3>
+                    <h3>Técnica:</h3>
+                    <h3>Medidas:</h3>
+                    <img src="../img/img_galeria/close.png" onclick="ocultar24();" id="close" alt="">
+                </div>
+            </div>
+
+            <div class="img_containers">
+                <img src="../img/img_galeria/img_v1.jpg" class="img--class" alt="">
+                <button id="boton_galeria" onclick="mostrar1();">Detalles</button>
+
+                <div class="textos_img" id="div--img1">
+                    <h3>Nombre:</h3>
+                    <h3>Técnica:</h3>
+                    <h3>Medidas:</h3>
+                    <img src="../img/img_galeria/close.png" onclick="ocultar1();" id="close" alt="">
+                </div>
+
+            </div>
+
+            <div class="img_containers">
+                <img src="../img/img_galeria/img_v10.jpg" class="img--class" alt="">
+                <!--3-->
+                <button id="boton_galeria" onclick="mostrar3();">Detalles</button>
+
+                <div class="textos_img" id="div--img3">
+                    <h3>Nombre:</h3>
+                    <h3>Técnica:</h3>
+                    <h3>Medidas:</h3>
+                    <img src="../img/img_galeria/close.png" onclick="ocultar3();" id="close" alt="">
+                </div>
+            </div>
+
+            <div class="img_containers">
+
+                <img src="../img/img_galeria/img_v11.jpg" class="img--class" alt="">
+                <!--6-->
+                <button id="boton_galeria" onclick="mostrar6();">Detalles</button>
+
+                <div class="textos_img" id="div--img6">
+                    <h3>Nombre:</h3>
+                    <h3>Técnica:</h3>
+                    <h3>Medidas:</h3>
+                    <img src="../img/img_galeria/close.png" onclick="ocultar6();" id="close" alt="">
+                </div>
+            </div>
+
+            <div class="img_containers">
+
+                <img src="../img/img_galeria/img_v12.jpg" class="img--class" alt="">
+                <!--7-->
+                <button id="boton_galeria" onclick="mostrar7();">Detalles</button>
+
+                <div class="textos_img" id="div--img7">
+                    <h3>Nombre:</h3>
+                    <h3>Técnica:</h3>
+                    <h3>Medidas:</h3>
+                    <img src="../img/img_galeria/close.png" onclick="ocultar7();" id="close" alt="">
+                </div>
+            </div>
+
+
+            <div class="img_containers">
+
+                <img src="../img/img_galeria/img_v13.jpg" class="img--class" alt="">
+                <!--9-->
+                <button id="boton_galeria" onclick="mostrar9();">Detalles</button>
+
+                <div class="textos_img" id="div--img9">
+                    <h3>Nombre:</h3>
+                    <h3>Técnica:</h3>
+                    <h3>Medidas:</h3>
+                    <img src="../img/img_galeria/close.png" onclick="ocultar9();" id="close" alt="">
+                </div>
+            </div>
+
+
+            <div class="img_containers">
+
+                <img src="../img/img_galeria/img_v14.jpg" class="img--class" alt="">
+
+                <button id="boton_galeria" onclick="mostrar11();">Detalles</button>
+
+                <div class="textos_img" id="div--img11">
+                    <h3>Nombre:</h3>
+                    <h3>Técnica:</h3>
+                    <h3>Medidas:</h3>
+                    <img src="../img/img_galeria/close.png" onclick="ocultar11();" id="close" alt="">
+                </div>
+            </div>
+
+
+
+            <div class="img_containers">
+
+                <img src="../img/img_galeria/img_v15.jpg" class="img--class" alt="">
+                <!--13-->
+                <button id="boton_galeria" onclick="mostrar13();">Detalles</button>
+
+                <div class="textos_img" id="div--img13">
+                    <h3>Nombre:</h3>
+                    <h3>Técnica:</h3>
+                    <h3>Medidas:</h3>
+                    <img src="../img/img_galeria/close.png" onclick="ocultar13();" id="close" alt="">
+                </div>
+            </div>
+
+
+
+            <div class="img_containers">
+
+                <img src="../img/img_galeria/img_v16.jpg" class="img--class" alt="">
+                <!--15-->
+                <button id="boton_galeria" onclick="mostrar15();">Detalles</button>
+
+                <div class="textos_img" id="div--img15">
+                    <h3>Nombre:</h3>
+                    <h3>Técnica:</h3>
+                    <h3>Medidas:</h3>
+                    <img src="../img/img_galeria/close.png" onclick="ocultar15();" id="close" alt="">
+                </div>
+            </div>
+
+
+
+            <div class="img_containers">
+
+                <img src="../img/img_galeria/img_v17.jpg" class="img--class" alt="">
+                <!--17-->
+                <button id="boton_galeria" onclick="mostrar17();">Detalles</button>
+
+                <div class="textos_img" id="div--img17">
+                    <h3>Nombre:</h3>
+                    <h3>Técnica:</h3>
+                    <h3>Medidas:</h3>
+                    <img src="../img/img_galeria/close.png" onclick="ocultar17();" id="close" alt="">
+                </div>
+            </div>
+
+
+
+            <div class="img_containers">
+
+                <img src="../img/img_galeria/img_v18.jpg" class="img--class" alt="">
+                <!--19-->
+                <button id="boton_galeria" onclick="mostrar19();">Detalles</button>
+
+                <div class="textos_img" id="div--img19">
+                    <h3>Nombre:</h3>
+                    <h3>Técnica:</h3>
+                    <h3>Medidas:</h3>
+                    <img src="../img/img_galeria/close.png" onclick="ocultar19();" id="close" alt="">
+                </div>
+            </div>
+
+
+
+            <div class="img_containers">
+
+                <img src="../img/img_galeria/img_v19.jpg" class="img--class" alt="">
+                <!--21-->
+                <button id="boton_galeria" onclick="mostrar21();">Detalles</button>
+
+                <div class="textos_img" id="div--img21">
+                    <h3>Nombre:</h3>
+                    <h3>Técnica:</h3>
+                    <h3>Medidas:</h3>
+                    <img src="../img/img_galeria/close.png" onclick="ocultar21();" id="close" alt="">
+                </div>
+            </div>
+
+            <div class="img_containers">
+
+                <img src="../img/img_galeria/img_v26.jpg" class="img--class" alt="">
+                <!--22-->
+                <button id="boton_galeria" onclick="mostrar22();">Detalles</button>
+
+                <div class="textos_img" id="div--img22">
+                    <h3>Nombre:</h3>
+                    <h3>Técnica:</h3>
+                    <h3>Medidas:</h3>
+                    <img src="../img/img_galeria/close.png" onclick="ocultar22();" id="close" alt="">
+                </div>
+            </div>
+
+            <div class="img_containers">
+
+                <img src="../img/img_galeria/img_v2.jpg" class="img--class" alt="">
+                <!--23-->
+                <button id="boton_galeria" onclick="mostrar23();">Detalles</button>
+
+                <div class="textos_img" id="div--img23">
+                    <h3>Nombre:</h3>
+                    <h3>Técnica:</h3>
+                    <h3>Medidas:</h3>
+                    <img src="../img/img_galeria/close.png" onclick="ocultar23();" id="close" alt="">
+                </div>
+            </div>
+
+
+
+            <div class="img_containers">
+
+                <img src="../img/img_galeria/img_v20.jpg" class="img--class" alt="">
+                <!--25-->
+                <button id="boton_galeria" onclick="mostrar25();">Detalles</button>
+
+                <div class="textos_img" id="div--img25">
+                    <h3>Nombre:</h3>
+                    <h3>Técnica:</h3>
+                    <h3>Medidas:</h3>
+                    <img src="../img/img_galeria/close.png" onclick="ocultar25();" id="close" alt="">
+                </div>
+            </div>
+
+            <div class="img_containers">
+
+                <img src="../img/img_galeria/img_v21.jpg" class="img--class" alt="">
+                <!--26-->
+                <button id="boton_galeria" onclick="mostrar26();">Detalles</button>
+
+                <div class="textos_img" id="div--img26">
+                    <h3>Nombre:</h3>
+                    <h3>Técnica:</h3>
+                    <h3>Medidas:</h3>
+                    <img src="../img/img_galeria/close.png" onclick="ocultar26();" id="close" alt="">
+                </div>
+            </div>
+
+            <div class="img_containers">
+
+                <img src="../img/img_galeria/img_v22.jpg" class="img--class" alt="">
+                <!--27-->
+                <button id="boton_galeria" onclick="mostrar27();">Detalles</button>
+
+                <div class="textos_img" id="div--img27">
+                    <h3>Nombre:</h3>
+                    <h3>Técnica:</h3>
+                    <h3>Medidas:</h3>
+                    <img src="../img/img_galeria/close.png" onclick="ocultar27();" id="close" alt="">
+                </div>
+            </div>
+
+            <div class="img_containers">
+
+                <img src="../img/img_galeria/img_v23.jpg" class="img--class" alt="">
+                <!--28-->
+                <button id="boton_galeria" onclick="mostrar28();">Detalles</button>
+
+                <div class="textos_img" id="div--img28">
+                    <h3>Nombre:</h3>
+                    <h3>Técnica:</h3>
+                    <h3>Medidas:</h3>
+                    <img src="../img/img_galeria/close.png" onclick="ocultar28();" id="close" alt="">
+                </div>
+            </div>
+
+            <div class="img_containers">
+
+                <img src="../img/img_galeria/img_v24.jpg" class="img--class" alt="">
+                <!--29-->
+                <button id="boton_galeria" onclick="mostrar29();">Detalles</button>
+
+                <div class="textos_img" id="div--img29">
+                    <h3>Nombre:</h3>
+                    <h3>Técnica:</h3>
+                    <h3>Medidas:</h3>
+                    <img src="../img/img_galeria/close.png" onclick="ocultar29();" id="close" alt="">
+                </div>
+            </div>
+
+            <div class="img_containers">
+
+                <img src="../img/img_galeria/img_v25.jpg" class="img--class" alt="">
+                <!--30-->
+                <button id="boton_galeria" onclick="mostrar30();">Detalles</button>
+
+                <div class="textos_img" id="div--img30">
+                    <h3>Nombre:</h3>
+                    <h3>Técnica:</h3>
+                    <h3>Medidas:</h3>
+                    <img src="../img/img_galeria/close.png" onclick="ocultar30();" id="close" alt="">
+                </div>
+            </div>
+
+            <div class="img_containers">
+
+                <img src="../img/img_galeria/img_v26.jpg" class="img--class" alt="">
+                <!--31-->
+                <button id="boton_galeria" onclick="mostrar31();">Detalles</button>
+
+                <div class="textos_img" id="div--img31">
+                    <h3>Nombre:</h3>
+                    <h3>Técnica:</h3>
+                    <h3>Medidas:</h3>
+                    <img src="../img/img_galeria/close.png" onclick="ocultar31();" id="close" alt="">
+                </div>
+            </div>
+
+            <div class="img_containers">
+
+                <img src="../img/img_galeria/img_v27.jpg" class="img--class" alt="">
+                <!--32-->
+                <button id="boton_galeria" onclick="mostrar32();">Detalles</button>
+
+                <div class="textos_img" id="div--img32">
+                    <h3>Nombre:</h3>
+                    <h3>Técnica:</h3>
+                    <h3>Medidas:</h3>
+                    <img src="../img/img_galeria/close.png" onclick="ocultar32();" id="close" alt="">
+                </div>
+            </div>
+
+            <div class="img_containers">
+
+                <img src="../img/img_galeria/img_v28.jpg" class="img--class" alt="">
+                <!--33-->
+                <button id="boton_galeria" onclick="mostrar33();">Detalles</button>
+
+                <div class="textos_img" id="div--img33">
+                    <h3>Nombre:</h3>
+                    <h3>Técnica:</h3>
+                    <h3>Medidas:</h3>
+                    <img src="../img/img_galeria/close.png" onclick="ocultar33();" id="close" alt="">
+                </div>
+            </div>
+
+            <div class="img_containers">
+
+                <img src="../img/img_galeria/img_v29.jpg" class="img--class" alt="">
+                <!--34-->
+                <button id="boton_galeria" onclick="mostrar34();">Detalles</button>
+
+                <div class="textos_img" id="div--img34">
+                    <h3>Nombre:</h3>
+                    <h3>Técnica:</h3>
+                    <h3>Medidas:</h3>
+                    <img src="../img/img_galeria/close.png" onclick="ocultar34();" id="close" alt="">
+                </div>
+            </div>
+
+            <div class="img_containers">
+
+                <img src="../img/img_galeria/img_v30.jpg" class="img--class" alt="">
+                <!--35-->
+                <button id="boton_galeria" onclick="mostrar35();">Detalles</button>
+
+                <div class="textos_img" id="div--img35">
+                    <h3>Nombre:</h3>
+                    <h3>Técnica:</h3>
+                    <h3>Medidas:</h3>
+                    <img src="../img/img_galeria/close.png" onclick="ocultar35();" id="close" alt="">
+                </div>
+            </div>
+
+            <div class="img_containers">
+
+                <img src="../img/img_galeria/img_v31.jpg" class="img--class" alt="">
+                <!--36-->
+                <button id="boton_galeria" onclick="mostrar36();">Detalles</button>
+
+                <div class="textos_img" id="div--img36">
+                    <h3>Nombre:</h3>
+                    <h3>Técnica:</h3>
+                    <h3>Medidas:</h3>
+                    <img src="../img/img_galeria/close.png" onclick="ocultar36();" id="close" alt="">
+                </div>
+            </div>
+
+            <!--  <div class="img_containers">
+
+                <img src="../img/img_galeria/img_v32.jpg" class="img--class" alt="">
+                <!--37--
+                <button id="boton_galeria" onclick="mostrar37();">Detalles</button>
+                
+                <div class="textos_img" id="div--img37">
+                    <h3>Nombre:</h3>
+                    <h3>Técnica:</h3>
+                    <h3>Medidas:</h3>
+                    <img src="../img/img_galeria/close.png" onclick="ocultar37();" id="close" alt="">
+                </div>
+            </div> -->
+
+        </section> */

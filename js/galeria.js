@@ -1,33 +1,10 @@
-
-/* function hover_imagenes(){
-
-    document.getElementById("imagen_1").onclick=opacidad_imagenes;
-
-}
-
-function opacidad_imagenes(){
-
-    var x=document.getElementById("imagen_1").style;
-    x.backgroundImage="none";
-} */
-
 function offcanvas_img(){
 
     swal('Clic en la X para continuar');
 }
 
-
-/* document.getElementById("ver_img1").onclick = () => {
-    document.getElementById("div--img1").style.display = "block";
-}
-
-document.getElementById("ver_img1").onclick = () => {
-    document.getElementById("div--img1").style.display = "none";
-}
- */
-
 //img1
-function mostrar1 (){
+/* function mostrar1 (){
     document.getElementById('div--img1').style.display = 'block';
 }
 
@@ -380,7 +357,7 @@ function mostrar36(){
 
 function ocultar36(){
     document.getElementById('div--img36').style.display = 'none'
-}
+} */
 
 /* //img37
 
