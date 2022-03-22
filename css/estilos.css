@@ -75,13 +75,69 @@
       height: 450px;
       margin-bottom: 30px;
       padding: 30px 30px;
-      background-color: #c1c1c1; }
+      background-color: #c1c1c1;
+      cursor: pointer; }
       .main_galeria .main_gallery .modal_container img {
         width: 100%;
         height: 100%;
         object-fit: contain; }
   .main_galeria .galeria_carousel {
     display: none; }
+  .main_galeria #contenedor--principal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); }
+    .main_galeria #contenedor--principal #contenedor--interno {
+      width: auto;
+      height: 600px;
+      border: none;
+      padding: 2px;
+      display: flex;
+      justify-content: center;
+      position: relative;
+      padding: 20px 20px; }
+      .main_galeria #contenedor--principal #contenedor--interno #btn-cierra {
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 30px;
+        cursor: pointer;
+        background: none;
+        color: #ffff;
+        border: none;
+        padding: 40px 40px; }
+      .main_galeria #contenedor--principal #contenedor--interno #btn-retrocede {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        font-size: 30px;
+        cursor: pointer;
+        background: none;
+        color: #ffff;
+        border: none;
+        padding: 0px 20px; }
+      .main_galeria #contenedor--principal #contenedor--interno #btn-adelanta {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        font-size: 30px;
+        cursor: pointer;
+        background: none;
+        color: #ffff;
+        border: none;
+        padding: 0px 20px; }
+      .main_galeria #contenedor--principal #contenedor--interno .boton_galeria {
+        cursor: pointer;
+        background: transparent;
+        border: none;
+        color: #f3f3f3; }
 
 /**************SECCION ABOUT********************/
 .main_about {
