@@ -21,7 +21,7 @@
     <meta name="description" content="Cecilia Corredor es una pintora Boyacense, inspirada en el paisaje de su tierra, es una admiradora de la naturaleza
     y propugna siempre por su conservación.">
     <meta name="author" content="Andres Galvis">
-
+    
 
 </head>
 
@@ -52,225 +52,104 @@
 
     <main class="main_galeria">
 
-        <section class="main_gallery" id="galeria">
+        <section class="main_gallery" id="cards_general">
 
-            <div class="modal_container" id="img--1">
+             <!-- <div class="modal_container">
                 <img src="../img/img_galeria/1.jpg" alt="">
-            </div>
 
-            <div class="modal_container" id="img--2">
-                <img src="../img/img_galeria/2.jpg" alt="">
-            </div>
+                <h3>Nombre: un nombre</h3>
+                <h3>Tamaño: 234x480</h3>
+                <h3>Técnica: oleo sobre lienzo</h3>
+            </div> -->
 
-            <div class="modal_container" id="img--3">
-                <img src="../img/img_galeria/3.jpg" alt="">
-            </div>
+        </section>
 
-            <div class="modal_container" id="img--4">
-                <img src="../img/img_galeria/4.jpg" alt="">
-            </div>
+        <section class="btn--offcanvas">
 
-            <div class="modal_container" id="img--5">
-                <img src="../img/img_galeria/5.jpg" alt="">
-            </div>
+            <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Galería</button>
 
-            <div class="modal_container" id="img--6">
-                <img src="../img/img_galeria/6.jpg" alt="">
-            </div>
-
-            <div class="modal_container" id="img--7">
-                <img src="../img/img_galeria/7.jpg" alt="">
-            </div>
-
-            <div class="modal_container" id="img--8">
-                <img src="../img/img_galeria/8.jpg" alt="">
-            </div>
-
-            <div class="modal_container" id="img--9">
-                <img src="../img/img_galeria/9.jpg" alt="">
-            </div>
-
-            <div class="modal_container" id="img--10">
-                <img src="../img/img_galeria/10.jpg" alt="">
-            </div>
-
-            <div class="modal_container" id="img--11">
-                <img src="../img/img_galeria/11.jpg" alt="">
-            </div>
-
-            <div class="modal_container" id="img--12">
-                <img src="../img/img_galeria/12.jpg" alt="">
-            </div>
-
-            <div class="modal_container" id="img--13">
-                <img src="../img/img_galeria/13.jpg" alt="">
-            </div>
-
-            <div class="modal_container" id="img--14">
-                <img src="../img/img_galeria/14.jpg" alt="">
-            </div>
-
-            <div class="modal_container" id="img--15">
-                <img src="../img/img_galeria/15.jpg" alt="">
-            </div>
-
-            <div class="modal_container" id="img--16">
-                <img src="../img/img_galeria/16.jpg" alt="">
-            </div>
-
-            <div class="modal_container" id="img--17">
-                <img src="../img/img_galeria/17.jpg" alt="">
-            </div>
-
-            <div class="modal_container" id="img--18">
-                <img src="../img/img_galeria/18.jpg" alt="">
-            </div>
-
-            <div class="modal_container" id="img--19">
-                <img src="../img/img_galeria/19.jpg" alt="">
-            </div>
-
-            <div class="modal_container" id="img--20">
-                <img src="../img/img_galeria/20.jpg" alt="">
-            </div>
-
-            <div class="modal_container" id="img--21">
-                <img src="../img/img_galeria/21.jpg" alt="">
-            </div>
-
-            <div class="modal_container" id="img--22">
-                <img src="../img/img_galeria/22.jpg" alt="">
-            </div>
-
-            <div class="modal_container" id="img--23">
-                <img src="../img/img_galeria/23.jpg" alt="">
-            </div>
-
-            <div class="modal_container" id="img--24">
-                <img src="../img/img_galeria/24.jpg" alt="">
-            </div>
-
-            <div class="modal_container" id="img--25">
-                <img src="../img/img_galeria/25.jpg" alt="">
-            </div>
-
-            <div class="modal_container" id="img--26">
-                <img src="../img/img_galeria/26.jpg" alt="">
-            </div>
-
-            <div class="modal_container" id="img--27">
-                <img src="../img/img_galeria/27.jpg" alt="">
-            </div>
-
-            <div class="modal_container" id="img--28">
-                <img src="../img/img_galeria/28.jpg" alt="">
-            </div>
-
-            <div class="modal_container" id="img--29">
-                <img src="../img/img_galeria/29.jpg" alt="">
-            </div>
-
-            <div class="modal_container" id="img--30">
-                <img src="../img/img_galeria/30.jpg" alt="">
-            </div>
-
-            <div class="modal_container" id="img--31">
-                <img src="../img/img_galeria/31.jpg" alt="">
-            </div>
-
-            <div class="modal_container" id="img--32">
-                <img src="../img/img_galeria/32.jpg" alt="">
-            </div>
-
-            <section class="btn--offcanvas">
-
-                <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Galería</button>
-    
-                <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
-                    id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Galería de imágenes</h5>
-                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                            aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <a href="#img--1" onclick="offcanvas_img()"><img src="../img/img_galeria/1.jpg" alt=""></a>
-    
-                        <a href="#img--2" onclick="offcanvas_img()"><img src="../img/img_galeria/2.jpg" alt=""></a>
-    
-                        <a href="#img--3" onclick="offcanvas_img()"><img src="../img/img_galeria/3.jpg" alt=""></a>
-    
-                        <a href="#img--4" onclick="offcanvas_img()"><img src="../img/img_galeria/4.jpg" alt=""></a>
-    
-                        <a href="#img--5" onclick="offcanvas_img()"><img src="../img/img_galeria/5.jpg" alt=""></a>
-    
-                        <a href="#img--6" onclick="offcanvas_img()"><img src="../img/img_galeria/6.jpg" alt=""></a>
-    
-                        <a href="#img--7" onclick="offcanvas_img()"><img src="../img/img_galeria/7.jpg" alt=""></a>
-    
-                        <a href="#img--8" onclick="offcanvas_img()"><img src="../img/img_galeria/8.jpg" alt=""></a>
-    
-                        <a href="#img--9" onclick="offcanvas_img()"><img src="../img/img_galeria/9.jpg" alt=""></a>
-    
-                        <a href="#img--10" onclick="offcanvas_img()"><img src="../img/img_galeria/10.jpg" alt=""></a>
-    
-                        <a href="#img--11" onclick="offcanvas_img()"><img src="../img/img_galeria/11.jpg" alt=""></a>
-    
-                        <a href="#img--12" onclick="offcanvas_img()"><img src="../img/img_galeria/12.jpg" alt=""></a>
-    
-                        <a href="#img--13" onclick="offcanvas_img()"><img src="../img/img_galeria/13.jpg" alt=""></a>
-    
-                        <a href="#img--14" onclick="offcanvas_img()"><img src="../img/img_galeria/14.jpg" alt=""></a>
-    
-                        <a href="#img--15" onclick="offcanvas_img()"><img src="../img/img_galeria/15.jpg" alt=""></a>
-    
-                        <a href="#img--16" onclick="offcanvas_img()"><img src="../img/img_galeria/16.jpg" alt=""></a>
-    
-                        <a href="#img--17" onclick="offcanvas_img()"><img src="../img/img_galeria/17.jpg" alt=""></a>
-    
-                        <a href="#img--18" onclick="offcanvas_img()"><img src="../img/img_galeria/18.jpg" alt=""></a>
-    
-                        <a href="#img--19" onclick="offcanvas_img()"><img src="../img/img_galeria/19.jpg" alt=""></a>
-    
-                        <a href="#img--20" onclick="offcanvas_img()"><img src="../img/img_galeria/20.jpg" alt=""></a>
-    
-                        <a href="#img--21" onclick="offcanvas_img()"><img src="../img/img_galeria/21.jpg" alt=""></a>
-    
-                        <a href="#img--22" onclick="offcanvas_img()"><img src="../img/img_galeria/22.jpg" alt=""></a>
-    
-                        <a href="#img--23" onclick="offcanvas_img()"><img src="../img/img_galeria/23.jpg" alt=""></a>
-    
-                        <a href="#img--24" onclick="offcanvas_img()"><img src="../img/img_galeria/24.jpg" alt=""></a>
-    
-                        <a href="#img--25" onclick="offcanvas_img()"><img src="../img/img_galeria/25.jpg" alt=""></a>
-
-                        <a href="#img--26" onclick="offcanvas_img()"><img src="../img/img_galeria/26.jpg" alt=""></a>
-
-                        <a href="#img--27" onclick="offcanvas_img()"><img src="../img/img_galeria/27.jpg" alt=""></a>
-
-                        <a href="#img--28" onclick="offcanvas_img()"><img src="../img/img_galeria/28.jpg" alt=""></a>
-
-                        <a href="#img--29" onclick="offcanvas_img()"><img src="../img/img_galeria/29.jpg" alt=""></a>
-
-                        <a href="#img--30" onclick="offcanvas_img()"><img src="../img/img_galeria/30.jpg" alt=""></a>
-
-                        <a href="#img--31" onclick="offcanvas_img()"><img src="../img/img_galeria/31.jpg" alt=""></a>
-
-                        <a href="#img--32" onclick="offcanvas_img()"><img src="../img/img_galeria/32.jpg" alt=""></a>
-    
-    
-                    </div>
+            <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+                id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Galería de imágenes</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
                 </div>
-            </section>
+                <div class="offcanvas-body">
+                    <a href="#img--1" onclick="offcanvas_img()"><img src="../img/img_galeria/1.jpg" alt=""></a>
+
+                    <a href="#img--2" onclick="offcanvas_img()"><img src="../img/img_galeria/2.jpg" alt=""></a>
+
+                    <a href="#img--3" onclick="offcanvas_img()"><img src="../img/img_galeria/3.jpg" alt=""></a>
+
+                    <a href="#img--4" onclick="offcanvas_img()"><img src="../img/img_galeria/4.jpg" alt=""></a>
+
+                    <a href="#img--5" onclick="offcanvas_img()"><img src="../img/img_galeria/5.jpg" alt=""></a>
+
+                    <a href="#img--6" onclick="offcanvas_img()"><img src="../img/img_galeria/6.jpg" alt=""></a>
+
+                    <a href="#img--7" onclick="offcanvas_img()"><img src="../img/img_galeria/7.jpg" alt=""></a>
+
+                    <a href="#img--8" onclick="offcanvas_img()"><img src="../img/img_galeria/8.jpg" alt=""></a>
+
+                    <a href="#img--9" onclick="offcanvas_img()"><img src="../img/img_galeria/9.jpg" alt=""></a>
+
+                    <a href="#img--10" onclick="offcanvas_img()"><img src="../img/img_galeria/10.jpg" alt=""></a>
+
+                    <a href="#img--11" onclick="offcanvas_img()"><img src="../img/img_galeria/11.jpg" alt=""></a>
+
+                    <a href="#img--12" onclick="offcanvas_img()"><img src="../img/img_galeria/12.jpg" alt=""></a>
+
+                    <a href="#img--13" onclick="offcanvas_img()"><img src="../img/img_galeria/13.jpg" alt=""></a>
+
+                    <a href="#img--14" onclick="offcanvas_img()"><img src="../img/img_galeria/14.jpg" alt=""></a>
+
+                    <a href="#img--15" onclick="offcanvas_img()"><img src="../img/img_galeria/15.jpg" alt=""></a>
+
+                    <a href="#img--16" onclick="offcanvas_img()"><img src="../img/img_galeria/16.jpg" alt=""></a>
+
+                    <a href="#img--17" onclick="offcanvas_img()"><img src="../img/img_galeria/17.jpg" alt=""></a>
+
+                    <a href="#img--18" onclick="offcanvas_img()"><img src="../img/img_galeria/18.jpg" alt=""></a>
+
+                    <a href="#img--19" onclick="offcanvas_img()"><img src="../img/img_galeria/19.jpg" alt=""></a>
+
+                    <a href="#img--20" onclick="offcanvas_img()"><img src="../img/img_galeria/20.jpg" alt=""></a>
+
+                    <a href="#img--21" onclick="offcanvas_img()"><img src="../img/img_galeria/21.jpg" alt=""></a>
+
+                    <a href="#img--22" onclick="offcanvas_img()"><img src="../img/img_galeria/22.jpg" alt=""></a>
+
+                    <a href="#img--23" onclick="offcanvas_img()"><img src="../img/img_galeria/23.jpg" alt=""></a>
+
+                    <a href="#img--24" onclick="offcanvas_img()"><img src="../img/img_galeria/24.jpg" alt=""></a>
+
+                    <a href="#img--25" onclick="offcanvas_img()"><img src="../img/img_galeria/25.jpg" alt=""></a>
+
+                    <a href="#img--26" onclick="offcanvas_img()"><img src="../img/img_galeria/26.jpg" alt=""></a>
+
+                    <a href="#img--27" onclick="offcanvas_img()"><img src="../img/img_galeria/27.jpg" alt=""></a>
+
+                    <a href="#img--28" onclick="offcanvas_img()"><img src="../img/img_galeria/28.jpg" alt=""></a>
+
+                    <a href="#img--29" onclick="offcanvas_img()"><img src="../img/img_galeria/29.jpg" alt=""></a>
+
+                    <a href="#img--30" onclick="offcanvas_img()"><img src="../img/img_galeria/30.jpg" alt=""></a>
+
+                    <a href="#img--31" onclick="offcanvas_img()"><img src="../img/img_galeria/31.jpg" alt=""></a>
+
+                    <a href="#img--32" onclick="offcanvas_img()"><img src="../img/img_galeria/32.jpg" alt=""></a>
+
+
+                </div>
+            </div>
         </section>
 
         <section id="contenedor--principal">
             <div id="contenedor--interno">
                 <img id="img-activa" src="../img/img_galeria/1.jpg" alt="galeria de imagenes">    
                 <button id="btn-cierra" type="button">X</button>
-            <!--     <button id="btn-retrocede" type="button">&lt;</button>
-                <button id="btn-adelanta" type="button">&gt;</button> -->
             </div>
         </section>
 
@@ -349,13 +228,13 @@
         </div>
     </footer>
 
+    <script src="../js/cards.js"></script>
     <script src="../js/galeria.js"></script>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
-
     <script src="../js/ligboximg.js"></script>
+    
 </body>
 
 </html>

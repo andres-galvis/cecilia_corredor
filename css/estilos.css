@@ -61,26 +61,35 @@
 /**********************GALERIA************************/
 .main_galeria {
   width: 100%;
-  height: 100%;
   padding-top: 100px; }
   .main_galeria .main_gallery {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center; }
+    width: 100%; }
     .main_galeria .main_gallery .modal_container {
-      width: 400px;
-      height: 450px;
-      margin-bottom: 30px;
-      padding: 30px 30px;
-      background-color: #c1c1c1;
-      cursor: pointer; }
+      width: 30%;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+      border-radius: 20px;
+      background: none;
+      border: 2px solid #000;
+      cursor: auto; }
       .main_galeria .main_gallery .modal_container img {
+        width: auto;
+        height: 45%;
+        object-fit: cover;
+        border-radius: 10px;
+        cursor: pointer;
+        margin-bottom: 30px; }
+        .main_galeria .main_gallery .modal_container img:hover {
+          transform: scale(120%);
+          transition: all 0.3s ease; }
+      .main_galeria .main_gallery .modal_container h3 {
         width: 100%;
-        height: 100%;
-        object-fit: contain; }
+        font-size: 18px;
+        text-align: center;
+        font-weight: 300;
+        font-variant: italic; }
   .main_galeria .galeria_carousel {
     display: none; }
   .main_galeria #contenedor--principal {
@@ -684,35 +693,39 @@
         height: auto; }
         .main_galeria .main_gallery .modal_container img {
           width: 100%;
-          height: 100%;
-          object-fit: cover; }
-      .main_galeria .main_gallery .btn--offcanvas {
-        width: 100%;
-        text-align: center;
-        margin-top: 5px;
-        position: fixed;
-        bottom: 10px;
-        right: 130px;
-        height: 100px;
-        z-index: 999; }
-        .main_galeria .main_gallery .btn--offcanvas .btn {
-          border-top-right-radius: 40px;
-          border-bottom-right-radius: 40px;
-          height: 50px;
-          border: none; }
-          .main_galeria .main_gallery .btn--offcanvas .btn:hover {
-            transition: all 0.3s ease;
-            background-color: black;
-            color: #fff; }
-        .main_galeria .main_gallery .btn--offcanvas .offcanvas-body {
-          padding-right: 30px; }
-          .main_galeria .main_gallery .btn--offcanvas .offcanvas-body a img {
-            width: 100px;
-            height: 100px;
-            padding-top: 5px; }
-          .main_galeria .main_gallery .btn--offcanvas .offcanvas-body a:hover {
-            transition: all 0.3s ease;
-            opacity: 60%; }
+          object-fit: cover;
+          margin-bottom: 20px; }
+        .main_galeria .main_gallery .modal_container h3 {
+          font-size: 14px;
+          text-align: center;
+          font-weight: 300; }
+    .main_galeria .btn--offcanvas {
+      width: 100%;
+      text-align: center;
+      margin-top: 5px;
+      position: fixed;
+      bottom: 10px;
+      right: 130px;
+      height: 100px;
+      z-index: 999; }
+      .main_galeria .btn--offcanvas .btn {
+        border-top-right-radius: 40px;
+        border-bottom-right-radius: 40px;
+        height: 50px;
+        border: none; }
+        .main_galeria .btn--offcanvas .btn:hover {
+          transition: all 0.3s ease;
+          background-color: black;
+          color: #fff; }
+      .main_galeria .btn--offcanvas .offcanvas-body {
+        padding-right: 30px; }
+        .main_galeria .btn--offcanvas .offcanvas-body a img {
+          width: 100px;
+          height: 100px;
+          padding-top: 5px; }
+        .main_galeria .btn--offcanvas .offcanvas-body a:hover {
+          transition: all 0.3s ease;
+          opacity: 60%; }
   /**************seccion about***********/
   .main_second {
     width: 100%;
@@ -987,37 +1000,41 @@
         height: auto; }
         .main_galeria .main_gallery .modal_container img {
           width: 100%;
-          height: 100%;
+          object-fit: cover;
+          margin-bottom: 20px; }
+        .main_galeria .main_gallery .modal_container h3 {
+          font-size: 14px;
+          text-align: center;
+          font-weight: 300; }
+    .main_galeria .btn--offcanvas {
+      width: 100%;
+      text-align: center;
+      margin-top: 5px;
+      position: fixed;
+      bottom: 10px;
+      right: 110px;
+      height: 100px;
+      z-index: 999; }
+      .main_galeria .btn--offcanvas .btn {
+        border-radius: 40px;
+        height: 70px;
+        border: none; }
+        .main_galeria .btn--offcanvas .btn:hover {
+          transition: all 0.3s ease;
+          background-color: black;
+          color: #fff; }
+      .main_galeria .btn--offcanvas .offcanvas-start {
+        width: 100%; }
+      .main_galeria .btn--offcanvas .offcanvas-body {
+        padding-right: 30px; }
+        .main_galeria .btn--offcanvas .offcanvas-body a img {
+          width: 100px;
+          height: 100px;
+          padding-top: 5px;
           object-fit: cover; }
-      .main_galeria .main_gallery .btn--offcanvas {
-        width: 100%;
-        text-align: center;
-        margin-top: 5px;
-        position: fixed;
-        bottom: 10px;
-        right: 110px;
-        height: 100px;
-        z-index: 999; }
-        .main_galeria .main_gallery .btn--offcanvas .btn {
-          border-radius: 40px;
-          height: 70px;
-          border: none; }
-          .main_galeria .main_gallery .btn--offcanvas .btn:hover {
-            transition: all 0.3s ease;
-            background-color: black;
-            color: #fff; }
-        .main_galeria .main_gallery .btn--offcanvas .offcanvas-start {
-          width: 100%; }
-        .main_galeria .main_gallery .btn--offcanvas .offcanvas-body {
-          padding-right: 30px; }
-          .main_galeria .main_gallery .btn--offcanvas .offcanvas-body a img {
-            width: 100px;
-            height: 100px;
-            padding-top: 5px;
-            object-fit: cover; }
-          .main_galeria .main_gallery .btn--offcanvas .offcanvas-body a:hover {
-            transition: all 0.3s ease;
-            opacity: 60%; }
+        .main_galeria .btn--offcanvas .offcanvas-body a:hover {
+          transition: all 0.3s ease;
+          opacity: 60%; }
   /**************seccion about***********/
   .main_second {
     width: 100%;
@@ -1289,35 +1306,43 @@
         width: 100%;
         height: 100%;
         object-fit: cover; }
-  .main_galeria .main_gallery .btn--offcanvas {
+  .main_galeria .btn--offcanvas {
     width: 100%;
     text-align: center;
     margin-top: 5px;
     position: fixed;
-    bottom: 10px;
-    right: 170px;
+    bottom: 0;
+    right: 35%;
     height: 100px;
     z-index: 999; }
-    .main_galeria .main_gallery .btn--offcanvas .btn {
+    .main_galeria .btn--offcanvas .btn {
       border-radius: 40px;
       height: 70px;
       border: none; }
-      .main_galeria .main_gallery .btn--offcanvas .btn:hover {
+      .main_galeria .btn--offcanvas .btn:hover {
         transition: all 0.3s ease;
         background-color: black;
         color: #fff; }
-    .main_galeria .main_gallery .btn--offcanvas .offcanvas-start {
+    .main_galeria .btn--offcanvas .offcanvas-start {
       width: 100%; }
-    .main_galeria .main_gallery .btn--offcanvas .offcanvas-body {
+    .main_galeria .btn--offcanvas .offcanvas-body {
       padding-right: 30px; }
-      .main_galeria .main_gallery .btn--offcanvas .offcanvas-body a img {
+      .main_galeria .btn--offcanvas .offcanvas-body a img {
         width: 100px;
         height: 100px;
         padding-top: 5px;
         object-fit: cover; }
-      .main_galeria .main_gallery .btn--offcanvas .offcanvas-body a:hover {
+      .main_galeria .btn--offcanvas .offcanvas-body a:hover {
         transition: all 0.3s ease;
         opacity: 60%; }
+  .main_galeria .main_gallery {
+    width: 100%; }
+    .main_galeria .main_gallery .modal_container {
+      width: 100%;
+      border: none; }
+      .main_galeria .main_gallery .modal_container h3 {
+        font-size: 16px;
+        margin-bottom: 10px; }
   /**************seccion about***********/
   .main_second {
     width: 100%;
@@ -1478,46 +1503,54 @@
           height: 100%;
           object-fit: cover; }
     .main_galeria .main_gallery {
-      width: 100%; }
+      width: 100%;
+      padding-left: 50px;
+      padding-right: 50px; }
       .main_galeria .main_gallery .modal_container {
-        width: 350px;
-        height: 400px;
+        width: 90%;
         margin-bottom: 20px;
         padding: 20px 20px;
-        background-color: #c1c1c1; }
+        border: 1px solid #000;
+        border-radius: 20px;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 30px; }
         .main_galeria .main_gallery .modal_container img {
-          width: 100%;
-          height: 100%;
-          object-fit: contain; }
-      .main_galeria .main_gallery .btn--offcanvas {
-        width: 100%;
-        text-align: center;
-        margin-top: 5px;
-        position: fixed;
-        bottom: 10px;
-        right: 300px;
-        height: 100px;
-        z-index: 999; }
-        .main_galeria .main_gallery .btn--offcanvas .btn {
-          border-radius: 40px;
-          height: 70px;
-          border: none; }
-          .main_galeria .main_gallery .btn--offcanvas .btn:hover {
-            transition: all 0.3s ease;
-            background-color: black;
-            color: #fff; }
-        .main_galeria .main_gallery .btn--offcanvas .offcanvas-start {
-          width: 100%; }
-        .main_galeria .main_gallery .btn--offcanvas .offcanvas-body {
-          padding-right: 30px; }
-          .main_galeria .main_gallery .btn--offcanvas .offcanvas-body a img {
-            width: 200px;
-            height: 200px;
-            padding-top: 5px;
-            object-fit: cover; }
-          .main_galeria .main_gallery .btn--offcanvas .offcanvas-body a:hover {
-            transition: all 0.3s ease;
-            opacity: 60%; }
+          width: 30%;
+          height: 20%;
+          object-fit: cover; }
+        .main_galeria .main_gallery .modal_container h3 {
+          text-align: center;
+          font-size: 14px; }
+    .main_galeria .btn--offcanvas {
+      width: 100%;
+      text-align: center;
+      margin-top: 5px;
+      position: fixed;
+      bottom: 0;
+      right: 40%;
+      height: 100px;
+      z-index: 999; }
+      .main_galeria .btn--offcanvas .btn {
+        border-radius: 40px;
+        height: 70px;
+        border: none; }
+        .main_galeria .btn--offcanvas .btn:hover {
+          transition: all 0.3s ease;
+          background-color: black;
+          color: #fff; }
+      .main_galeria .btn--offcanvas .offcanvas-body {
+        padding-right: 30px; }
+        .main_galeria .btn--offcanvas .offcanvas-body a img {
+          width: 200px;
+          height: 200px;
+          padding-top: 5px;
+          object-fit: cover; }
+        .main_galeria .btn--offcanvas .offcanvas-body a:hover {
+          transition: all 0.3s ease;
+          opacity: 60%; }
   /****sobremi***/
   .main_second {
     width: 100%;
@@ -1637,45 +1670,55 @@
           width: 45%;
           height: auto; }
   /*GALERIA DE IMAGENES*/
-  .main_galeria #contenedor--principal {
-    width: 100%;
-    height: 100%; }
-    .main_galeria #contenedor--principal #contenedor--interno {
-      width: 450px;
-      height: auto; }
-      .main_galeria #contenedor--principal #contenedor--interno #img-activa {
-        width: 100%;
-        height: 100%;
-        object-fit: cover; }
-  .main_galeria .main_gallery .btn--offcanvas {
-    width: 100%;
-    text-align: center;
-    margin-top: 5px;
-    position: fixed;
-    bottom: 10px;
-    right: 380px;
-    height: 100px;
-    z-index: 999; }
-    .main_galeria .main_gallery .btn--offcanvas .btn {
-      border-radius: 40px;
-      height: 70px;
-      border: none; }
-      .main_galeria .main_gallery .btn--offcanvas .btn:hover {
-        transition: all 0.3s ease;
-        background-color: black;
-        color: #fff; }
-    .main_galeria .main_gallery .btn--offcanvas .offcanvas-start {
+  .main_galeria {
+    width: 100%; }
+    .main_galeria #contenedor--principal {
+      width: 100%;
+      height: 100%; }
+      .main_galeria #contenedor--principal #contenedor--interno {
+        width: 450px;
+        height: auto; }
+        .main_galeria #contenedor--principal #contenedor--interno #img-activa {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+    .main_galeria .main_gallery {
       width: 100%; }
-    .main_galeria .main_gallery .btn--offcanvas .offcanvas-body {
-      padding-right: 30px; }
-      .main_galeria .main_gallery .btn--offcanvas .offcanvas-body a img {
-        width: 300px;
-        height: 300px;
-        padding-top: 5px;
-        object-fit: cover; }
-      .main_galeria .main_gallery .btn--offcanvas .offcanvas-body a:hover {
-        transition: all 0.3s ease;
-        opacity: 60%; }
+      .main_galeria .main_gallery .modal_container {
+        height: 20%; }
+        .main_galeria .main_gallery .modal_container img {
+          height: auto;
+          width: 40%;
+          object-fit: cover; }
+    .main_galeria .btn--offcanvas {
+      width: 100%;
+      text-align: center;
+      margin-top: 5px;
+      position: fixed;
+      bottom: 10px;
+      right: 380px;
+      height: 100px;
+      z-index: 999; }
+      .main_galeria .btn--offcanvas .btn {
+        border-radius: 40px;
+        height: 70px;
+        border: none; }
+        .main_galeria .btn--offcanvas .btn:hover {
+          transition: all 0.3s ease;
+          background-color: black;
+          color: #fff; }
+      .main_galeria .btn--offcanvas .offcanvas-start {
+        width: 100%; }
+      .main_galeria .btn--offcanvas .offcanvas-body {
+        padding-right: 30px; }
+        .main_galeria .btn--offcanvas .offcanvas-body a img {
+          width: 300px;
+          height: 300px;
+          padding-top: 5px;
+          object-fit: cover; }
+        .main_galeria .btn--offcanvas .offcanvas-body a:hover {
+          transition: all 0.3s ease;
+          opacity: 60%; }
   /*FOOTER*/
   .footer_main {
     width: 100%;
@@ -2089,6 +2132,34 @@
         grid-area: a10;
         background-image: url(../img/exposiciones/cuadro5.jpg);
         background-size: cover; }
+  .main_galeria .main_gallery {
+    width: 100%; }
+    .main_galeria .main_gallery .modal_container {
+      width: 30%;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+      border-radius: 20px;
+      background: none;
+      border: 2px solid #000;
+      cursor: auto; }
+      .main_galeria .main_gallery .modal_container img {
+        width: auto;
+        height: 45%;
+        object-fit: cover;
+        border-radius: 10px;
+        cursor: pointer;
+        margin-bottom: 30px; }
+        .main_galeria .main_gallery .modal_container img:hover {
+          transform: scale(120%);
+          transition: all 0.3s ease; }
+      .main_galeria .main_gallery .modal_container h3 {
+        width: 100%;
+        font-size: 18px;
+        text-align: center;
+        font-weight: 300;
+        font-variant: italic; }
   .main_galeria #contenedor--principal {
     width: 100%;
     height: 100%; }
