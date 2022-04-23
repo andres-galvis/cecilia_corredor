@@ -61,37 +61,42 @@
 /**********************GALERIA************************/
 .main_galeria {
   width: 100%;
-  padding-top: 100px; }
+  height: 100%; }
+  .main_galeria .btn--offcanvas {
+    display: none; }
   .main_galeria .main_gallery {
-    width: 100%; }
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    gap: 40px;
+    padding: 150px 50px; }
     .main_galeria .main_gallery .modal_container {
-      width: 30%;
+      height: 400px;
+      width: 400px;
       display: flex;
       flex-flow: column nowrap;
       justify-content: center;
       align-items: center;
       border-radius: 20px;
-      background: none;
       border: 2px solid #000;
-      cursor: auto; }
+      padding: 50px; }
       .main_galeria .main_gallery .modal_container img {
-        width: auto;
-        height: 45%;
+        width: 60%;
+        height: 60%;
         object-fit: cover;
-        border-radius: 10px;
         cursor: pointer;
         margin-bottom: 30px; }
         .main_galeria .main_gallery .modal_container img:hover {
           transform: scale(120%);
           transition: all 0.3s ease; }
       .main_galeria .main_gallery .modal_container h3 {
-        width: 100%;
+        width: auto;
+        height: auto;
         font-size: 18px;
         text-align: center;
         font-weight: 300;
         font-variant: italic; }
-  .main_galeria .galeria_carousel {
-    display: none; }
   .main_galeria #contenedor--principal {
     position: fixed;
     top: 0;
@@ -142,11 +147,6 @@
         color: #ffff;
         border: none;
         padding: 0px 20px; }
-      .main_galeria #contenedor--principal #contenedor--interno .boton_galeria {
-        cursor: pointer;
-        background: transparent;
-        border: none;
-        color: #f3f3f3; }
 
 /**************SECCION ABOUT********************/
 .main_about {
@@ -673,8 +673,7 @@
         font-size: 13px; }
   /**************main galeria************/
   .main_galeria {
-    width: 100%;
-    padding-top: 100px; }
+    width: 100%; }
     .main_galeria #contenedor--principal {
       width: 100%;
       height: 100%; }
@@ -686,14 +685,15 @@
           height: 100%;
           object-fit: cover; }
     .main_galeria .main_gallery {
-      width: 100%; }
+      width: 100%;
+      padding: 100px 40px; }
       .main_galeria .main_gallery .modal_container {
-        background: none;
         width: 100%;
-        height: auto; }
+        height: auto;
+        border: 1px solid #000; }
         .main_galeria .main_gallery .modal_container img {
           width: 100%;
-          object-fit: cover;
+          object-fit: contain;
           margin-bottom: 20px; }
         .main_galeria .main_gallery .modal_container h3 {
           font-size: 14px;
@@ -707,7 +707,8 @@
       bottom: 10px;
       right: 130px;
       height: 100px;
-      z-index: 999; }
+      z-index: 999;
+      display: block; }
       .main_galeria .btn--offcanvas .btn {
         border-top-right-radius: 40px;
         border-bottom-right-radius: 40px;
@@ -993,19 +994,23 @@
           height: 100%;
           object-fit: cover; }
     .main_galeria .main_gallery {
-      width: 100%; }
+      width: 100%;
+      padding: 40px 30px; }
       .main_galeria .main_gallery .modal_container {
         background: none;
         width: 100%;
-        height: auto; }
+        height: auto;
+        padding: 30px;
+        border: 1px solid #000; }
         .main_galeria .main_gallery .modal_container img {
           width: 100%;
-          object-fit: cover;
+          object-fit: contain;
           margin-bottom: 20px; }
         .main_galeria .main_gallery .modal_container h3 {
           font-size: 14px;
           text-align: center;
-          font-weight: 300; }
+          font-weight: 300;
+          margin-top: 10px; }
     .main_galeria .btn--offcanvas {
       width: 100%;
       text-align: center;
@@ -1014,7 +1019,8 @@
       bottom: 10px;
       right: 110px;
       height: 100px;
-      z-index: 999; }
+      z-index: 999;
+      display: block; }
       .main_galeria .btn--offcanvas .btn {
         border-radius: 40px;
         height: 70px;
@@ -1296,53 +1302,60 @@
         padding: 15px 0px 0px 0px;
         font-size: 14px; }
   /**************main galeria***$alturah_480****/
-  .main_galeria #contenedor--principal {
-    width: 100%;
-    height: 100%; }
-    .main_galeria #contenedor--principal #contenedor--interno {
-      width: auto;
-      height: auto; }
-      .main_galeria #contenedor--principal #contenedor--interno #img-activa {
-        width: 100%;
-        height: 100%;
-        object-fit: cover; }
-  .main_galeria .btn--offcanvas {
-    width: 100%;
-    text-align: center;
-    margin-top: 5px;
-    position: fixed;
-    bottom: 0;
-    right: 35%;
-    height: 100px;
-    z-index: 999; }
-    .main_galeria .btn--offcanvas .btn {
-      border-radius: 40px;
-      height: 70px;
-      border: none; }
-      .main_galeria .btn--offcanvas .btn:hover {
-        transition: all 0.3s ease;
-        background-color: black;
-        color: #fff; }
-    .main_galeria .btn--offcanvas .offcanvas-start {
-      width: 100%; }
-    .main_galeria .btn--offcanvas .offcanvas-body {
-      padding-right: 30px; }
-      .main_galeria .btn--offcanvas .offcanvas-body a img {
-        width: 100px;
-        height: 100px;
-        padding-top: 5px;
-        object-fit: cover; }
-      .main_galeria .btn--offcanvas .offcanvas-body a:hover {
-        transition: all 0.3s ease;
-        opacity: 60%; }
-  .main_galeria .main_gallery {
+  .main_galeria {
     width: 100%; }
-    .main_galeria .main_gallery .modal_container {
+    .main_galeria #contenedor--principal {
       width: 100%;
-      border: none; }
-      .main_galeria .main_gallery .modal_container h3 {
-        font-size: 16px;
-        margin-bottom: 10px; }
+      height: 100%; }
+      .main_galeria #contenedor--principal #contenedor--interno {
+        width: auto;
+        height: auto; }
+        .main_galeria #contenedor--principal #contenedor--interno #img-activa {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+    .main_galeria .btn--offcanvas {
+      width: 100%;
+      text-align: center;
+      margin-top: 5px;
+      position: fixed;
+      bottom: 0;
+      right: 35%;
+      height: 100px;
+      z-index: 999; }
+      .main_galeria .btn--offcanvas .btn {
+        border-radius: 40px;
+        height: 70px;
+        border: none; }
+        .main_galeria .btn--offcanvas .btn:hover {
+          transition: all 0.3s ease;
+          background-color: black;
+          color: #fff; }
+      .main_galeria .btn--offcanvas .offcanvas-start {
+        width: 100%; }
+      .main_galeria .btn--offcanvas .offcanvas-body {
+        padding-right: 30px; }
+        .main_galeria .btn--offcanvas .offcanvas-body a img {
+          width: 100px;
+          height: 100px;
+          padding-top: 5px;
+          object-fit: cover; }
+        .main_galeria .btn--offcanvas .offcanvas-body a:hover {
+          transition: all 0.3s ease;
+          opacity: 60%; }
+    .main_galeria .main_gallery {
+      width: 100%;
+      padding: 40px 30px; }
+      .main_galeria .main_gallery .modal_container {
+        width: 45%;
+        border: 1px solid #000;
+        padding: 0px 20px 20px 20px; }
+        .main_galeria .main_gallery .modal_container img {
+          height: 50%;
+          object-fit: contain; }
+        .main_galeria .main_gallery .modal_container h3 {
+          font-size: 14px;
+          margin-bottom: 10px; }
   /**************seccion about***********/
   .main_second {
     width: 100%;
@@ -1497,33 +1510,32 @@
       height: 100%; }
       .main_galeria #contenedor--principal #contenedor--interno {
         width: auto;
-        height: auto; }
+        height: 600px; }
         .main_galeria #contenedor--principal #contenedor--interno #img-activa {
           width: 100%;
           height: 100%;
           object-fit: cover; }
     .main_galeria .main_gallery {
       width: 100%;
-      padding-left: 50px;
-      padding-right: 50px; }
+      padding: 80px 40px; }
       .main_galeria .main_gallery .modal_container {
-        width: 90%;
+        width: 45%;
         margin-bottom: 20px;
-        padding: 20px 20px;
+        padding: 20px;
         border: 1px solid #000;
         border-radius: 20px;
         display: flex;
-        flex-flow: column wrap;
+        flex-flow: column nowrap;
         justify-content: space-evenly;
-        align-items: center;
-        margin-top: 30px; }
+        align-items: center; }
         .main_galeria .main_gallery .modal_container img {
-          width: 30%;
-          height: 20%;
-          object-fit: cover; }
+          width: 60%;
+          object-fit: contain; }
         .main_galeria .main_gallery .modal_container h3 {
           text-align: center;
-          font-size: 14px; }
+          font-size: 14px;
+          margin: 10px 0px;
+          padding: 0px; }
     .main_galeria .btn--offcanvas {
       width: 100%;
       text-align: center;
@@ -1683,13 +1695,16 @@
           height: 100%;
           object-fit: cover; }
     .main_galeria .main_gallery {
-      width: 100%; }
+      width: 100%;
+      padding: 60px 50px;
+      gap: 40px; }
       .main_galeria .main_gallery .modal_container {
-        height: 20%; }
+        width: 30%;
+        border: 1px solid #000;
+        margin: 0px; }
         .main_galeria .main_gallery .modal_container img {
-          height: auto;
-          width: 40%;
-          object-fit: cover; }
+          width: 65%;
+          object-fit: contain; }
     .main_galeria .btn--offcanvas {
       width: 100%;
       text-align: center;
@@ -1790,26 +1805,31 @@
         margin: 0px 0px; }
   /*****galeria****/
   .main_galeria {
-    width: 100%;
-    height: 100%;
-    padding-top: 100px; }
-    .main_galeria .main_gallery {
+    width: 100%; }
+    .main_galeria #contenedor--principal {
       width: 100%;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-evenly;
-      align-items: center; }
-      .main_galeria .main_gallery .modal_container {
-        width: 300px;
-        height: 350px;
-        margin-bottom: 30px;
-        padding: 30px 30px;
-        background-color: #c1c1c1; }
-        .main_galeria .main_gallery .modal_container img {
+      height: 100%; }
+      .main_galeria #contenedor--principal #contenedor--interno {
+        width: 380px;
+        height: auto; }
+        .main_galeria #contenedor--principal #contenedor--interno #img-activa {
           width: 100%;
           height: 100%;
-          object-fit: contain; }
+          object-fit: cover; }
+    .main_galeria .main_gallery {
+      width: 100%;
+      padding: 60px 50px;
+      gap: 20px;
+      justify-content: space-evenly; }
+      .main_galeria .main_gallery .modal_container {
+        width: 30%;
+        border: 1px solid #000;
+        margin: 0px; }
+        .main_galeria .main_gallery .modal_container img {
+          width: 100%;
+          height: 60%;
+          object-fit: contain;
+          padding: 0px; }
     .main_galeria .btn--offcanvas {
       display: none; }
     .main_galeria .galeria_carousel {
@@ -1831,8 +1851,7 @@
   /*galeria*/
   .main_galeria {
     width: 100%;
-    height: 100%;
-    padding-top: 100px; }
+    height: 100%; }
     .main_galeria #contenedor--principal {
       width: 100%;
       height: 100%; }
@@ -1844,17 +1863,22 @@
           height: 100%;
           object-fit: cover; }
     .main_galeria .main_gallery {
-      width: 100%; }
+      width: 100%;
+      padding: 0xp;
+      gap: 30px; }
       .main_galeria .main_gallery .modal_container {
-        width: 350px;
-        height: 400px;
-        margin: 10px 10px;
+        width: 20%;
         padding: 20px 20px;
-        background-color: #c1c1c1; }
+        border: 1px solid #000; }
+        .main_galeria .main_gallery .modal_container #img--14 {
+          width: 80px;
+          height: auto; }
         .main_galeria .main_gallery .modal_container img {
-          width: 100%;
-          height: 100%;
+          height: 50%;
           object-fit: contain; }
+        .main_galeria .main_gallery .modal_container h3 {
+          font-size: 15px;
+          margin: 8px; }
   /**footer**/
   .footer_main {
     width: 100%;
@@ -2032,25 +2056,37 @@
           width: 100%;
           height: 100%;
           object-fit: cover; }
-    .main_galeria .main_gallery {
-      width: 100%;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-evenly;
-      align-items: center; }
-      .main_galeria .main_gallery .modal_container {
-        width: 300px;
-        height: 350px;
-        margin-bottom: 30px;
-        padding: 30px 30px;
-        background-color: #c1c1c1; }
-        .main_galeria .main_gallery .modal_container img {
-          width: 100%;
-          height: 100%;
-          object-fit: contain; }
-      .main_galeria .main_gallery .btn--offcanvas {
-        display: none; }
+  /*.main_gallery {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+
+
+            .modal_container {
+                width: 300px;
+                height: 350px;
+                margin-bottom: 30px;
+                padding: 30px 30px;
+                background-color: #c1c1c1;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+
+
+            }
+
+            .btn--offcanvas {
+                display: none;
+            }
+        }
+
+    } */
   /**EXPOSICIONES Y RECONOCIMIENTOS***/
   .main_exposiciones {
     width: 100%;
@@ -2075,8 +2111,7 @@
       height: auto;
       padding-top: 40px; }
   .main_galeria {
-    width: 100%;
-    padding-top: 140px; }
+    width: 100%; }
     .main_galeria #contenedor--principal {
       width: 100%;
       height: 100%; }
@@ -2090,14 +2125,10 @@
     .main_galeria .main_gallery {
       width: 100%; }
       .main_galeria .main_gallery .modal_container {
-        width: 400px;
-        height: 450px;
-        margin-bottom: 30px;
-        padding: 30px 30px;
-        background-color: #c1c1c1; }
+        width: 20%;
+        padding: 30px; }
         .main_galeria .main_gallery .modal_container img {
           width: 100%;
-          height: 100%;
           object-fit: contain; }
       .main_galeria .main_gallery .btn--offcanvas {
         display: none; } }
@@ -2132,34 +2163,6 @@
         grid-area: a10;
         background-image: url(../img/exposiciones/cuadro5.jpg);
         background-size: cover; }
-  .main_galeria .main_gallery {
-    width: 100%; }
-    .main_galeria .main_gallery .modal_container {
-      width: 30%;
-      display: flex;
-      flex-flow: column nowrap;
-      justify-content: center;
-      align-items: center;
-      border-radius: 20px;
-      background: none;
-      border: 2px solid #000;
-      cursor: auto; }
-      .main_galeria .main_gallery .modal_container img {
-        width: auto;
-        height: 45%;
-        object-fit: cover;
-        border-radius: 10px;
-        cursor: pointer;
-        margin-bottom: 30px; }
-        .main_galeria .main_gallery .modal_container img:hover {
-          transform: scale(120%);
-          transition: all 0.3s ease; }
-      .main_galeria .main_gallery .modal_container h3 {
-        width: 100%;
-        font-size: 18px;
-        text-align: center;
-        font-weight: 300;
-        font-variant: italic; }
   .main_galeria #contenedor--principal {
     width: 100%;
     height: 100%; }
@@ -2169,4 +2172,32 @@
       .main_galeria #contenedor--principal #contenedor--interno #img-activa {
         width: 100%;
         height: 100%;
-        object-fit: cover; } }
+        object-fit: cover; }
+  .main_galeria .main_gallery {
+    width: 100%; }
+    .main_galeria .main_gallery .modal_container {
+      width: 20%;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+      border-radius: 20px;
+      background: none;
+      border: 1px solid #000;
+      cursor: auto; }
+      .main_galeria .main_gallery .modal_container img {
+        width: 100%;
+        object-fit: contain;
+        cursor: pointer;
+        margin-bottom: 30px;
+        padding: 10px; }
+        .main_galeria .main_gallery .modal_container img:hover {
+          transform: scale(120%);
+          transition: all 0.3s ease; }
+      .main_galeria .main_gallery .modal_container h3 {
+        width: 100%;
+        font-size: 18px;
+        text-align: center;
+        font-weight: 300;
+        font-variant: italic;
+        margin-top: 10px; } }
