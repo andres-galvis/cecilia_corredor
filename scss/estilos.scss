@@ -1023,12 +1023,13 @@
 
             .modal_container {
                 width: 100%;
-                height: auto;
+                height: 19rem;
                 border: 1px solid #000;
 
 
                 img {
                     width: 100%;
+                    height: 6rem;
                     object-fit: contain;
                     margin-bottom: 20px;
 
@@ -1038,6 +1039,7 @@
                     font-size: 14px;
                     text-align: center;
                     font-weight: 300;
+                    padding-top: 10px;
                 }
 
             }
@@ -1530,12 +1532,13 @@
             .modal_container {
                 background: none;
                 width: 100%;
-                height: auto;
+                height: 20rem;
                 padding: 30px;
                 border: 1px solid #000;
 
                 img {
                     width: 100%;
+                    height: 8rem;
                     object-fit: contain;
                     margin-bottom: 20px;
                 }
@@ -2088,11 +2091,13 @@
 
             .modal_container {
                 width: 45%;
+                height: 20rem;
                 border: 1px solid #000;
                 padding: 0px 20px 20px 20px;
 
                 img{
-                    height: 50%;
+                    height: 100%;
+                    height: 6rem;
                     object-fit: contain;
                 }
 
@@ -2373,10 +2378,11 @@
 
         .main_gallery {
             width: 100%;
-           padding: 80px 40px;
+            padding: 80px 40px;
 
             .modal_container {
                 width: 45%;
+                height: 20rem;
                 margin-bottom: 20px;
                 padding: 20px;
                 border: 1px solid #000;
@@ -2388,6 +2394,7 @@
 
                 img {
                     width: 60%;
+                    height: 8rem;
                     object-fit: contain;
                 }
 
@@ -2698,11 +2705,13 @@
 
             .modal_container {
                 width: 30%;
+                height: 20rem;
                 border: 1px solid #000;
                 margin: 0px;
 
                 img {
                     width: 65%;
+                    height: 10rem;
                     object-fit: contain;
                 }
             }
@@ -2942,12 +2951,13 @@
 
             .modal_container {
                 width: 30%;
+                height: 20rem;
                 border: 1px solid #000;
                 margin: 0px;
 
                 img {
-                    width: 100%;
-                    height: 60%;
+                    width: 80%;
+                    height: 7rem;
                     object-fit: contain;
                     padding: 0px;
                 }
@@ -3017,16 +3027,14 @@
 
             .modal_container {
                 width: 20%;
+                height: 20rem;
                 padding: 20px 20px;
                 border: 1px solid #000;
 
-                #img--14{
-                    width: 80px;
-                    height: auto;
-                }
-
+                
                 img {
                     height: 50%;
+                    height: 8rem;
                     object-fit: contain;
                 }
 
@@ -3353,6 +3361,20 @@
                 }
             }
         }
+
+        .main_gallery{
+            width: 100%;
+            
+            .modal_container{
+                width: 20%;
+                height: 20rem;
+
+                img{
+                    width: 100%;
+                    height: 8rem;
+                }
+            }
+        }
     }
 
         /*.main_gallery {
@@ -3456,10 +3478,12 @@
 
             .modal_container {
                 width: 20%;
+                height: 25rem;
                 padding: 30px;
 
                 img {
                     width: 100%;
+                    height: 15rem;
                     object-fit: contain;
                 }
 
@@ -3554,6 +3578,7 @@
 
             .modal_container {
                 width: 20%;
+                height: 30rem;
                 display: flex;
                 flex-flow: column nowrap;
                 justify-content: center;
@@ -3564,14 +3589,15 @@
                 cursor: auto;
 
                 img {
-                    width: 100%;
+                    width: 20rem;
+                    height: 15rem;
                     object-fit: contain;
                     cursor: pointer;
                     margin-bottom: 30px;
                     padding: 10px;
 
                     &:hover {
-                        transform: scale(120%);
+                        transform: scale(110%);
                         transition: all 0.3s ease;
                     }
                 }
