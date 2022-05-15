@@ -141,7 +141,7 @@ let productosGenerales = [
         nombre: " Calentamiento Global 3",
         img: '../img/img_galeria/calentamiento_global_3.jpg',
         tecnica: "Oleo sobre Lienzo",
-        precio: "vendido",
+        precio: "$ 4.000.000",
     },
 
     {
@@ -165,7 +165,7 @@ let productosGenerales = [
         nombre: " Calentamiento Global 6",
         img: '../img/img_galeria/calentamiento_global_6.jpg',
         tecnica: "Oleo sobre Lienzo",
-        precio: "vendido",
+        precio: "$ 3.000.000",
     },
 
     {
